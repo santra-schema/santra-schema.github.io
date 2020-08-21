@@ -362,7 +362,7 @@
      <!-- SCRIPTS -->
 	 <script>
 	 function copylink() {
-  var copyText = document.getElementById("myInput");
+  var copyText = $("#myInput").val();
   copyText.select();
   copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");
