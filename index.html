@@ -28,7 +28,7 @@
         <div class="container">
 
             <a class="navbar-brand" href="#">
-                Ben Resume
+                Santra Resume
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,8 +69,9 @@
                         <div class="hero-text">
 
                             <h1 class="hero-title">👋 Mr. Santra, a digital nomad</h1>
-
-							<button class="email-link" onclick="copylink()">sudipta.biems@gmail.com</button>
+				
+				<button class="email-link" onClick="copylink(this)">sudipta.biems@gmail.com</button>
+				<span name="myElem" id="myElem">Copied to Clipboard</span>
                           
                         </div>
                     </div>
@@ -360,20 +361,44 @@
       </div>
     </section>
      <!-- SCRIPTS -->
-	 <script>
-	 function copylink() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
+<script>
+	$(document).ready(function() {
+			$('#myElem').hide();
+		});
+	
+	 function copylink(element) {
+var range, selection, worked;
+
+  if (document.body.createTextRange) {
+    range = document.body.createTextRange();
+    range.moveToElementText(element);
+    range.select();
+  } else if (window.getSelection) {
+    selection = window.getSelection();        
+    range = document.createRange();
+    range.selectNodeContents(element);
+    selection.removeAllRanges();
+    selection.addRange(range);
+  }
+  
+  try {
+    document.execCommand('copy');
+   
+	  $('#myElem').fadeIn('slow', function() {
+				$('#myElem').delay(3000).fadeOut();
+			});
+  }
+  catch (err) {
+     $('#myElem').hide();
+  }
+
 }
 	 </script>
-     <script src="js/jquery.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/smoothscroll.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
-     <script src="js/custom.js"></script>
+     <script src="https://santra-schema.github.io/js/jquery.min.js"></script>
+     <script src="https://santra-schema.github.io/js/bootstrap.min.js"></script>
+     <script src="https://santra-schema.github.io/js/smoothscroll.js"></script>
+     <script src="https://santra-schema.github.io/js/owl.carousel.min.js"></script>
+     <script src="https://santra-schema.github.io/js/custom.js"></script>
 
 </body>
 </html>
