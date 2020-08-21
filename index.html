@@ -70,7 +70,7 @@
 
                             <h1 class="hero-title">👋 Mr. Santra, a digital nomad</h1>
 				<span name="myElem" id="myElem"></span>
-				<button class="email-link" onclick="copylink()">sudipta.biems@gmail.com</button>
+				<button class="email-link" onClick="copylink(this)">sudipta.biems@gmail.com</button>
                           
                         </div>
                     </div>
@@ -361,13 +361,29 @@
     </section>
      <!-- SCRIPTS -->
 <script>
-	 function copylink() {
-  var copyText = 'sudipta.biems@gmail.com';
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-$("#myElem").show();
-setTimeout(function() { $("#myElem").hide(); }, 3000);
+	 function copylink(element) {
+var range, selection, worked;
+
+  if (document.body.createTextRange) {
+    range = document.body.createTextRange();
+    range.moveToElementText(element);
+    range.select();
+  } else if (window.getSelection) {
+    selection = window.getSelection();        
+    range = document.createRange();
+    range.selectNodeContents(element);
+    selection.removeAllRanges();
+    selection.addRange(range);
+  }
+  
+  try {
+    document.execCommand('copy');
+    alert('text copied');
+  }
+  catch (err) {
+    alert('unable to copy text');
+  }
+}
 }
 	 </script>
      <script src="https://santra-schema.github.io/js/jquery.min.js"></script>
