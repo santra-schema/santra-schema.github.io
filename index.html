@@ -69,7 +69,7 @@
                         <div class="hero-text">
 
                             <h1 class="hero-title">👋 Mr. Santra, a digital nomad</h1>
-				<input type="hidden" id="myInput" value"sudipta.biems@gmail.com">
+				<input type="hidden" name="myInput" id="myInput" value"sudipta.biems@gmail.com">
 				<button class="email-link" onclick="copylink()">sudipta.biems@gmail.com</button>
                           
                         </div>
@@ -363,6 +363,7 @@
 	 <script>
 	 function copylink() {
   var copyText = $("#myInput").val();
+		 alert(copyText);
   copyText.select();
   copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");
