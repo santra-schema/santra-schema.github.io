@@ -606,11 +606,11 @@ https://www.tooplate.com/view/2120-ben-resume
   @media screen and (max-width: 480px) {
 
     .hero-title {
-      font-size: 16px;
+      font-size: 18px;
     }
 
     .email-link {
-      font-size: 20px;
+      font-size: 16px;
       padding: 0.3rem 2rem 0.6rem 2rem;
     }
   }
