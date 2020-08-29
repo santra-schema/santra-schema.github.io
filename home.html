@@ -66,6 +66,7 @@
 			position: absolute;
 			top: 0;
 			transition: 1s;
+			font-size:10px;
 		}
 		.item:before{
 			content: ' ';
@@ -77,6 +78,7 @@
 			position: absolute;
 			top: 70px;
 			left: -40px;
+			font-size:0px;
 		}
 		#add{
 			font-size: 80px;
@@ -106,19 +108,22 @@
 	<div class="container" onclick="expand()">
 		<div class="toggle" id="toggle">
 			<i class="fa fa-plus" id="add">
-				<br>Menu
+				
 			</i>
+			<br>Menu
 		</div>
 	</div>
 	<div class="menu" id="menu">
 		<div class="item">
 			<a href="#">
-				<i class="fa fa-user">About Me</i>
+				<i class="fa fa-user"></i>
+				<br>About Me
 			</a>
 		</div>
 		<div class="item">
 			<a href="#">
-				<i class="fa fa-briefcase"><br> Professional</i>
+				<i class="fa fa-briefcase"></i>
+				<br> Professional
 			</a>
 		</div>
 		<div class="item">
