@@ -105,23 +105,20 @@
 <body>
 	<div class="container" onclick="expand()">
 		<div class="toggle" id="toggle">
-			<i class="fa fa-list" id="add">
-				
-			</i>
-			<i class="fa fa-plus" id="close">
-				
+			<i class="fa fa-plus" id="add">
+				<br>Menu
 			</i>
 		</div>
 	</div>
 	<div class="menu" id="menu">
 		<div class="item">
 			<a href="#">
-				<i class="fa fa-user"></i>
+				<i class="fa fa-user">About Me</i>
 			</a>
 		</div>
 		<div class="item">
 			<a href="#">
-				<i class="fa fa-briefcase"></i>
+				<i class="fa fa-briefcase"><br> Professional</i>
 			</a>
 		</div>
 		<div class="item">
@@ -146,12 +143,11 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-		document.getElementById("close").hide();
 		var j=0;
 		var i = document.getElementById("menu").childNodes;
 		function expand(){
 			if (j==0) {
-				document.getElementById("close").show();
+				document.getElementById("add").style.transform = 'rotate(45deg)';
 				document.getElementById("menu").style.transform= 'scale(1)';
 				i[1].style.transform='translateY(-160px)';
 				i[3].style.transform='translate(140px,-80px)';
