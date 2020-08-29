@@ -66,7 +66,7 @@
 			position: absolute;
 			top: 0;
 			transition: 1s;
-			font-size:10px;
+			font-size:12px;
 		}
 		.item:before{
 			content: ' ';
@@ -84,8 +84,8 @@
 			font-size: 80px;
 			color: #fff;
 			position: relative;
-			top: 20px;
-			right: 1px;
+			top: 30px;
+			right: -2px;
 			transition: 1s;
 		}
 		a>.fa{
@@ -108,22 +108,20 @@
 	<div class="container" onclick="expand()">
 		<div class="toggle" id="toggle">
 			<i class="fa fa-plus" id="add">
-				
 			</i>
-			<br>Menu
 		</div>
 	</div>
 	<div class="menu" id="menu">
 		<div class="item">
 			<a href="#">
 				<i class="fa fa-user"></i>
-				<br>About Me
+				<br><br>About Me
 			</a>
 		</div>
 		<div class="item">
 			<a href="#">
 				<i class="fa fa-briefcase"></i>
-				<br> Professional
+				<br><br> Professional
 			</a>
 		</div>
 		<div class="item">
@@ -149,17 +147,18 @@
 	</div>
 	<script type="text/javascript">
 		var j=0;
+	
 		var i = document.getElementById("menu").childNodes;
 		function expand(){
 			if (j==0) {
 				document.getElementById("add").style.transform = 'rotate(45deg)';
 				document.getElementById("menu").style.transform= 'scale(1)';
-				i[1].style.transform='translateY(-160px)';
-				i[3].style.transform='translate(140px,-80px)';
-				i[5].style.transform='translate(140px,80px)';
-				i[7].style.transform='translateY(160px)';
-				i[9].style.transform='translate(-140px,80px)';
-				i[11].style.transform='translate(-140px,-80px)';
+				i[1].style.transform='translate(18px,-150px)';
+				i[3].style.transform='translate(145px,-75px)';
+				i[5].style.transform='translate(145px,75px)';
+				i[7].style.transform='translate(18px,150px)';
+				i[9].style.transform='translate(-115px,75px)';
+				i[11].style.transform='translate(-115px,-75px)';
 				j=1;
 			}else{
 				document.getElementById("add").style.transform = 'rotate(0deg)';
