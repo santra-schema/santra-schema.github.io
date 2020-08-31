@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Santra - Home</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<script language="JavaScript" type="text/javascript" src="https://santra-schema.github.io/js/jquery-1.2.6.min.js"></script>	
+	<script language="JavaScript" type="text/javascript" src="https://santra-schema.github.io/js/sprinkle.js"></script>
+    <link rel="stylesheet" href="https://santra-schema.github.io/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://santra-schema.github.io/css/bootstrap.min2.css">
+
+    <link rel="stylesheet" href="https://santra-schema.github.io/css/all.min.css">
+    <link rel="stylesheet" href="https://santra-schema.github.io/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://santra-schema.github.io/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://santra-schema.github.io/css/tooplate-santra-style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<style>
+
+	
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 3px;
+}
+
+.social-network a.icoLinkedin {
+	background-color:#ffb894;
+}
+.social-network a.icoFacebook {
+	background-color:#ff9d6b;
+}
+.social-network a.icoTwitter {
+	background-color:#f78245;
+}
+.social-network a.icoGoogle {
+	background-color:#de6a2f;
+}
+.social-network a.icoVimeo {
+	background-color:#0590B8;
+}
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 35px;
+	height: 35px;
+	font-size:20px;
+	background-color: #D3D3D3;
+}
+.social-circle li i {
+	margin:0;
+	line-height:35px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+	
+.customFooter {
+	position: fixed;
+	bottom: 0px;
+	height: auto;
+	background-color: #d4d4d4;
+	width: 100%;
+	padding-bottom: 10px;
+	
+}
+body{
+
+	background-color: #2a3a49;
+	padding: 0;
+	margin: 0;
+}
+
+.menu{
+	position: fixed;
+	left:10px;
+	transform: scale(0.7);
+}
+
+.item{
+	height: 0;
+	width: 160px;
+	border-bottom: 70px solid #fff;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	position: absolute;
+	top: 0;
+	transition: 1s;
+	font-size:12px;
+	font-weight:bold;
+}
+.item:before{
+	content: ' ';
+	height: 0;
+	width: 160px;
+	border-top: 70px solid #fff;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	position: absolute;
+	top: 70px;
+	left: -40px;
+	font-size:12px;
+	font-weight:bold;
+}
+.selected{
+border-bottom: 70px solid #ff9d73;
+}
+.selected:before{
+border-top: 70px solid #ff9d73;
+}
+.main{
+border-bottom: 70px solid #e06c00;
+}
+.main:before{
+border-top: 70px solid #e06c00;
+}
+#add{
+	font-size: 80px;
+	color: #fff;
+	position: relative;
+}
+.menu a>.fa{
+	font-size: 60px;
+}
+.menu a{
+	position: relative;
+	top: 40px;
+	left: 10px;
+	
+}
+.menu :not(.main) a>.fa:hover{
+	color: #bd3c00;
+	transform: scale(1.3);
+	transition: 1s;
+}
+#namespan{
+	font-family:calibari;font-size:23px; color:#e06c00; padding:5px 10px 5px 10px; border: 2px solid #e06c00;border-radius: 25px; background-color:#fbffc9;
+}
+</style>
+	
+</head>
+<body>
+	<div>
+		<img src="https://santra-schema.github.io//images/header.jpg" style="width:100%;" alt="header">
+	</div>
+	<div class="menu" id="menu">
+		<div class="item" style="transform : translate(0px,50px)">
+			<a  style="color:#e06c00;"href="https://santra-schema.github.io/">
+				<i style="padding:0px 5px 3px 5px;"class="fa fa-home"></i>
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;Home
+			</a>
+		</div>
+
+		<div class="item main" style=" z-index: 9;transform : translate(135px,125px)">
+			<a  style="color:white;"href="#" onclick="toggle()">
+				<i class="fa fa-close" id="add"></i>
+			</a>
+		</div>
+		
+		<div class="item selected" style=" transform : translate(0px,200px)">
+			<a style="color:#5c1200;" href="https://santra-schema.github.io/about.html">
+				<i style="padding:0px 5px 3px 5px;"class="fa fa-user"></i>
+				<br>About Me
+			</a>
+		</div>
+		<div class="item" style=" transform : translate(0px,350px)">
+			<a  style="color:#e06c00;" href="https://santra-schema.github.io/professional.html">
+				<i class="fa fa-briefcase"></i>
+				<br>Professional<br>Experience
+			</a>
+		</div>
+		<div class="item" style=" transform : translate(0px,500px)">
+			<a style="color:#e06c00;"  href="https://santra-schema.github.io/academic.html">
+				<i class="fa fa-institution"></i>
+				<br><br>Academics
+			</a>
+		</div>
+		<div class="item" style=" transform : translate(0px,650px)">
+			<a style="color:#e06c00;"  href="https://santra-schema.github.io/certificate.html">
+				<i class="fa fa-list"></i>
+				<br>Courses &<br>Certificate
+			</a>
+		</div>
+		<div class="item" style=" transform : translate(0px,800px)">
+			<a style="color:#e06c00;"  href="https://santra-schema.github.io/about.html">
+				<i class="fa fa-cubes"></i>
+				<br><br>Activities
+			</a>
+		</div>
+		<div class="item" style=" transform : translate(0px,950px)">
+			<a style="color:#e06c00;"  href="https://santra-schema.github.io/contact.html">
+				<i style="padding:0px 5px 3px 5px;"class="fa fa-tty"></i>
+				<br>Contact Me
+			</a>
+		</div>
+	</div>
+<script type="text/javascript">
+
+		var j=0;
+	
+		var i = document.getElementById("menu").childNodes;
+		function toggle(){
+			if (j==0) {
+				document.getElementById("menu").style.transform= 'scale(0.7)';				
+				document.getElementById("add").style.transform = 'rotate(45deg)';
+				i[3].style.transform='translate(0px,50px)';
+				i[1].style.transform='translate(0px,50px)';
+				i[5].style.transform='translate(0px,50px)';
+				i[7].style.transform='translate(0px,50px)';
+				i[9].style.transform='translate(0px,50px)';
+				i[11].style.transform='translate(0px,50px)';
+				i[13].style.transform='translate(0px,50px)';
+				i[15].style.transform='translate(0px,50px)';
+				j=1;
+			}else{
+				document.getElementById("add").style.transform = 'rotate(0deg)';
+				document.getElementById("menu").style.transform= 'scale(0.7)';
+				i[3].style.transform='translate(135px,125px)';
+				i[1].style.transform='translate(0px,50px)';
+				i[5].style.transform='translate(0px,200px)';
+				i[7].style.transform='translate(0px,350px)';
+				i[9].style.transform='translate(0px,500px)';
+				i[11].style.transform='translate(0px,650px)';
+				i[13].style.transform='translate(0px,800px)';
+				i[15].style.transform='translate(0px,950px)';
+				j=0;
+			}
+		}
+	</script>
+	
+<div class="login-footer"
+		style="	z-index: 1;
+position: fixed; bottom: 0; left: 0; right: 0;">
+		<div style="margin-right: 0px;">
+			<footer class="customFooter">
+					
+					<span style="color:#bd3c00;font-size: 12px;text-align:left; width:30%"id="date"></span>
+					<br>
+					<div style="width: 100%;">
+					<table style="width: 100%;">
+						<tbody>
+							<tr>
+								<td style="width:42%;"><span style="color:#7d7d7d; font-size: 15px;" id="info"></span>   </td>
+								<td>
+								<span style="text-align:center;float:middle;color:#130970; font-weight:bold; "id ="cc"> <script type="text/javascript">var today=new Date(); var yr = today.getFullYear();
+								document.getElementById('cc').innerHTML = yr</script>
+								 ©&nbsp;Mr. Sudipta Santra, All rights reserved.  </span>
+								</td>
+								<td style="padding-left:50px;">
+								<div style="float:right; margin-right:10px;">
+								  <div>
+									<ul class="social-network social-circle">
+									  <li><a target="_blank" href="https://www.linkedin.com/in/sudiptasantra" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+									  <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+									  <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+									  <li><a  target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=sudipta.biems@gmail.com" class="icoGoogle" title="Google +"><i class="fa fa-google"></i></a></li>
+									</ul>
+								  </div>
+								</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					</div>
+					
+
+			  
+			  
+			<script>
+
+					var d = new Date();
+					document.getElementById("date").innerHTML = d;
+			</script>
+			<script>
+			$.getJSON("https://api.ipify.org?format=json", function (data) {
+				$("#info").html("You are surfing this site using Public IP: <b>" + data.ip + "</b>");
+			})
+			</script>
+			</footer>
+		</div>
+	</div>
+
+</body>
+</html>
