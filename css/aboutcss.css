@@ -185,8 +185,6 @@ border-top: 70px solid #e06c00;
 .menu{
 	position: relative;
 	width:50px;
-	height:500px;
-	bottom:75px;
 	transform: scale(0.7);
 }
 .item{
