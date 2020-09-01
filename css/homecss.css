@@ -4,13 +4,119 @@
 #signdiv{
 	padding-left:36%;
 }
+
+* {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#element {
+  animation: load 1s infinite;
+  background-color: #ed5f00;
+  width: 5px;
+  height: 30px;
+  border-radius: 6px;
+}
+.loader{
+	position:relative;width:80px;transform:translate(925px,-40px)
+}
+
+.loader #element {
+  display: inline-block;
+  margin: 3px;
+}
+
+.loader #element:nth-child(1) {
+  -webkit-animation-delay: .25s;
+  animation-delay: .25s;
+}
+
+.loader #element:nth-child(2) {
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+}
+
+.loader #element:nth-child(3) {
+  -webkit-animation-delay: .75s;
+  animation-delay: .75s;
+}
+
+.loader #element:nth-child(4) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+@keyframes load {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @media only screen and (max-width: 800px){
 #sign{
 	width:300px; height:125px;
 }
 #signdiv{
-	padding-left:20%;
+	padding-left:19%;
 	padding-bottom:0px;
+}
+* {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#element {
+  animation: load 1s infinite;
+  background-color: #ed5f00;
+  width: 5px;
+  height: 30px;
+  border-radius: 6px;
+}
+.loader{
+	position:relative;width:80px;transform:translate(170px,-20px)
+}
+
+.loader #element {
+  display: inline-block;
+  margin: 3px;
+}
+
+.loader #element:nth-child(1) {
+  -webkit-animation-delay: .25s;
+  animation-delay: .25s;
+}
+
+.loader #element:nth-child(2) {
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+}
+
+.loader #element:nth-child(3) {
+  -webkit-animation-delay: .75s;
+  animation-delay: .75s;
+}
+
+@keyframes load {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 }
 ul.social-network {
@@ -114,7 +220,6 @@ body{
 	background:#2a2a49;
 	padding: 0;
 	margin: 0;
-	
 }
 .container,.menu{
 	height: 140px;
