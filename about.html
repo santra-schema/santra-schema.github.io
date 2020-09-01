@@ -42,6 +42,225 @@
 	font-size:15px;
 }
 }
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+
+.container {
+	padding: 20px;
+	width: 100%;
+	margin: 20px auto;
+	margin-left:-20px;
+}
+
+.container h1 {
+	text-align: center;
+	color: #FFF;
+	letter-spacing: 2px;
+	opacity: 0;
+}
+
+.acc {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px !important;
+}
+
+.acc .btns {
+	width: 30%;
+	list-style: none;
+	background-color: #DDD;
+	height: 400px;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.acc .btns div {
+	padding: 10px 10px 10px 20px;
+	cursor: pointer;
+	color: white;
+	background: #0a0724;
+	transition: all .5s ease-in-out;
+	position: relative;
+	display: flex;
+	align-items: center;
+	letter-spacing: 2px;
+}
+
+.acc .btns div:not(:last-child) {
+	border-bottom: 2px solid #2a2a49 !important;
+}
+
+.acc .btns div:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 2px;
+	height: 0;
+	background-color: transparent;
+	transition: all .5s;
+}
+
+.acc .btns div:hover, .acc .btns div.active {
+	color: #ff8847;
+	background-color:#2a2a49;
+}
+
+.acc .btns div:hover:after, .acc .btns div.active:after {
+	color: #ff8847;
+	background-color: #ff8847;
+	height: 100%;
+}
+
+.acc .info {
+	width: 70%;
+	color: #DDD;
+	background: linear-gradient(to right, #2a2a49, white);
+	letter-spacing: 1px;
+
+	position: relative;
+	overflow: hidden;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.acc .info .content {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	overflow: auto;
+	left: 100%;
+}
+
+.acc .info .content:not(:first-child) {
+	display: none;
+	left: 0;
+}
+
+.acc .info .content h4 {
+	color: #ff8847;
+}
+
+.acc .info .content p {
+	font-size: 14px;
+	color: black;
+	line-height: 1.8;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	padding-right: 20px;
+}
+
+.controls {
+	display: flex;
+	position: relative;
+	background: linear-gradient(to right, rgba(17, 17, 17, 0.38), rgba(30, 36, 37, 0.25));
+	padding: 10px 20px 0 0;
+	width: 100%;
+	max-height: 100%;
+}
+
+.controls * {
+	opacity: 0;
+}
+
+.controls::after {
+	content: "";
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 1px;
+	background-color: #000;
+}
+
+.controls .btn {
+	width: 10%;
+}
+
+
+
+.controls .arrows, .controls .arrows2 {
+	list-style: none;
+	overflow: hidden;
+	padding: 0 20px;
+	margin: 0;
+}
+
+.controls .arrows {
+	width: 100%;
+	z-index: 5;
+}
+
+.controls .arrows li {
+	display: inline-block;
+	color: #525c5f;
+	font-size: 25px;
+	font-weight: 700;
+	float: right;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+}
+
+.controls .arrows li:last-child {
+	animation: arrowEffect 3s 3000ms infinite;
+}
+
+.controls .arrows li:hover, .controls .arrows li:last-child:hover {
+	color: #ff8847;
+}
+
+.controls .arrows li:first-child {
+	float: left;
+}
+
+.controls .arrows .li:last-child  {
+	float: right;
+}
+
+.controls .arrows2 {
+	position: absolute;
+	top: 20px;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	width: 60%;
+	left: 20%;
+	z-index: 10;
+}
+
+.controls .arrows2 li {
+	width: 16px;
+	height: 12px;
+	float: none;
+	background-color: transparent;
+	border: 2px solid #525c5f;
+	border-radius: 30% 4px;
+	margin: 5px;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+}
+
+.controls .arrows2 li.active, .controls .arrows2 li:hover {
+	background-color: #ff8847;
+	border: 2px solid #ff8847;
+}
+
+::selection {
+	color: #FFF;
+	background-color: #ff8847;
+}
+
+
 </style>
 
 </head>
@@ -56,6 +275,215 @@
 	<b style="font-size:22px; color:#ff8847;">I am a Web Designer / Developer based in India. </b>
 	<br><br>
 	Since you landed here you have found the man who can handle projects from scratch (yes, even a logo) that build on visuals and aesthetics. No matter the size of the project - I can do it all. I am part of a network of creative professionals and capable of handling even the most challenging jobs.
+	
+	
+	
+	
+	
+			<div class="container">
+			<div class="acc">
+				<div class="btns">
+					<div data-slide="one" class="active">Planning</div>
+					<div data-slide="two">Analysis</div>
+					<div data-slide="three">Design</div>
+					<div data-slide="four">Implementation</div>
+					<div data-slide="five">Testing & Integration</div>
+					<div data-slide="six">Maintainance</div>
+				</div>
+				<div class="info">
+					<div id="one" class="content active">
+						<h4>Planning</h4>
+						<p>aaaaaaaaaaaaaaaaaaaaaaaaa
+						</p>
+					</div>
+					<div id="two" class="content">
+						<h4>Analysis</h4>
+						<p>sssssssssssssssssssssssssssssss
+						</p>
+					</div>
+					<div id="three" class="content">
+						<h4>Design</h4>
+						<p>ddddddddddddddddddddddddddddddd
+						</p>
+					</div>
+					<div id="four" class="content">
+						<h4>Implementation</h4>
+						<p>ffffffffffffffffffffffff
+						</p>
+					</div>
+					<div id="five" class="content">
+						<h4>Testing & Integration</h4>
+						<p>ggggggggggggggggggggggggggggggggg
+						</p>
+					</div>
+					<div id="six" class="content">
+						<h4>Maintainance</h4>
+						<p>qqqqqqqqqqqqqqqqqqqqqq
+						</p>
+					</div>
+				</div>
+				<div class="controls">
+					<ul class="arrows">
+						<li class="left">&lt;</li>
+						<li class="right">&gt;</li>
+					</ul>
+					<ul class="arrows2">
+						<li data-slide="one" class="active"></li>
+						<li data-slide="two"></li>
+						<li data-slide="three"></li>
+						<li data-slide="four"></li>
+						<li data-slide="five"></li>
+						<li data-slide="six"></li>
+					</ul>
+				</div>
+		</div>
+	</div>
+<script>
+
+$(function () {
+    "use strict";
+
+    function Slider() {
+        this.elements = function () {
+            return {
+                btn: $(".acc .btns > div"), 
+                btnActive: $(".acc .btns > div.active"),
+                btnFirst: $(".acc .btns > div:first-child"),
+                btnLast: $(".acc .btns > div:last-child"),
+                btnDataSlide: $(".acc .btns > div"),
+                arrow: $(".controls .arrows li"),
+                arrowActive: $(".controls .arrows li.active"),
+                arrowFirst: $(".controls .arrows li:first-child"),
+                arrowLast: $(".controls .arrows li:last-child"),
+                circles: $(".controls .arrows2 li"),
+                circlesActive: $(".controls .arrows2 li.active"),
+                circlesFirst: $(".controls .arrows2 li:first-child"),
+                circlesLast: $(".controls .arrows2 li:last-child"),
+                contentActive: $(".acc .info > .content.active"),
+                content: $(".acc .info > .content"),
+                contentFirst: $(".acc .info > .content:first-of-type"),
+                contentLast: $(".acc .info > .content:last-of-type"),
+                stopButton: $(".controls .stop"),
+                acc: $(".acc")
+            }
+        },
+        this.animation = function () {
+            let ele = new Slider().elements();
+            // Slide Animation Function
+            $(".container h1").animate({opacity: 1}, 1000);
+            ele.acc.delay(300).animate({bottom: 0});
+            ele.acc.animate({bottom: "10px"}, 100);
+            ele.acc.animate({bottom: 0}, 100); 
+            ele.acc.animate({bottom: "10px"}, 100);
+            ele.acc.animate({bottom: 0}, 100);
+            $(".acc .controls *").delay(300).animate({opacity: 1}, 300);
+            ele.contentFirst.delay(300).animate({left: 0});
+            
+            // Buttons Dynamic Height Function
+            $(".acc .btns > div").each(function () {
+                $(this).outerHeight($(this).parent().outerHeight() / $(this).parent().children().length);
+            });
+        },
+        this.arrowsFunc = function (eventElement, arrows) {
+            eventElement.on("click", function () {
+                let dataSlide = $(this).data("slide");
+                $(this).addClass("active").siblings().removeClass("active");
+                $("#" + dataSlide).addClass("active").delay(300).fadeIn(300).siblings(".content").removeClass("active").fadeOut(300);
+                arrows.each(function () {
+                    if ($(this).data("slide") == dataSlide) {
+                        $(this).addClass("active").siblings().removeClass("active");
+                    }
+                });                
+            });
+        },
+
+        this.nextFunc = function () {
+            const ele = new Slider().elements();
+            if (!ele.btnActive.is(":last-child")) { // Buttons
+                ele.btnActive.removeClass("active").next().addClass("active");  
+            } else {
+                ele.btnFirst.addClass("active").siblings().removeClass("active"); 
+            }
+
+            if (!ele.circlesActive.is(":last-child")) { // Circles
+                ele.circlesActive.removeClass("active").next().addClass("active");  
+            } else {
+                ele.circlesFirst.addClass("active").siblings().removeClass("active"); 
+            }
+
+            if (!ele.contentActive.is(":last-of-type")) { // Content
+                ele.contentActive.removeClass("active").fadeOut(300).next().addClass("active").delay(300).fadeIn(300);
+            } else {
+                ele.contentFirst.addClass("active").delay(300).fadeIn(300).siblings(".content").removeClass("active").fadeOut(300);
+            }
+        },
+        this.prevFunc = function () {
+            const ele = new Slider().elements();
+
+            if (!ele.btnActive.is(":first-child")) { // Buttons
+                ele.btnActive.removeClass("active").prev().addClass("active");  
+            } else {
+                ele.btnLast.addClass("active").siblings().removeClass("active"); 
+            }
+
+            if (!ele.circlesActive.is(":first-child")) { // Circles
+                ele.circlesActive.removeClass("active").prev().addClass("active");  
+            } else {
+                ele.circlesLast.addClass("active").siblings().removeClass("active"); 
+            }
+
+            if (!ele.contentActive.is(":first-of-type")) { // Content
+                ele.contentActive.removeClass("active").fadeOut(300).prev().addClass("active").delay(300).fadeIn(300);
+            } else {
+                ele.contentLast.addClass("active").delay(300).fadeIn(300).siblings(".content").removeClass("active").fadeOut(300);
+            }
+
+        },
+        this.leftRightArrows = function (element) {
+            let next = this.nextFunc,
+                prev = this.prevFunc;
+                
+            element.click(function () {
+
+                if ($(this).hasClass("right")) { 
+                    return next();    
+                } else { // Left Arrow Function
+                    return prev();
+                }          
+                      
+            });
+        },
+        this.Auto = function (element) {
+            let next = this.nextFunc,
+                autoSlider = setInterval(next, 6000);
+            
+                element.on("click", function () {
+                    clearInterval(autoSlider);
+                    console.log("Good")
+                });
+        }
+
+    } 
+
+    let slider = new Slider(),
+        elements = slider.elements();
+    
+    // Animation Function
+    slider.animation();
+    // Buttons Function
+    slider.arrowsFunc(elements.btn, elements.circles);
+    // Circles Function
+    slider.arrowsFunc(elements.circles, elements.btn);
+    // Arrows Function
+    slider.leftRightArrows(elements.arrow);
+    // Auto Slider
+    slider.Auto(elements.stopButton);
+
+});
+
+
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	
 	
 	</div>
