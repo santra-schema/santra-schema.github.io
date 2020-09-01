@@ -1,8 +1,12 @@
 #sign{
 	width:600px; height:250px;
+	top:0; bottom:0; left:0; right:0;
+	position:absolute;
+	margin-left:auto;
+	margin-right:auto;
 }
 #signdiv{
-	padding-left:36%;
+	
 }
 
 * {
@@ -21,7 +25,10 @@
   border-radius: 6px;
 }
 .loader{
-	position:relative;width:80px;transform:translate(925px,-40px)
+	/*position:relative;width:80px;transform:translate(925px,-40px)*/
+			margin-left: auto;
+	justify-content: center;
+	margin-right:auto
 }
 
 .loader #element {
