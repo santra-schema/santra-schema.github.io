@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 	<title>Santra - Home</title>
-    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<script language="JavaScript" type="text/javascript" src="https://santra-schema.github.io/js/jquery-1.2.6.min.js"></script>	
@@ -111,18 +111,20 @@ a.socialIcon:hover, .socialHoverClass {
 	height: auto;
 	background-color: #d4d4d4;
 	width: 100%;
-	padding-bottom: 10px;
-	
+	z-index:99;
 }
 body{
-	background: linear-gradient(to right, #2a3a49 0%, #2a3a49 68.2%, white 68.2%, white 100%);
+	/*background: linear-gradient(to right, #2a3a49 0%, #2a3a49 68.2%, white 68.2%, white 100%);*/
+	background: #2a3a49;
 	padding: 0;
 	margin: 0;
 }
 
 .menu{
-	position: fixed;
-	left:10px;
+	position: relative;
+	width:100px;
+	height:1000px;
+	bottom:150px;
 	transform: scale(0.7);
 }
 
@@ -185,6 +187,91 @@ border-top: 70px solid #e06c00;
 #namespan{
 	font-family:calibari;font-size:23px; color:#e06c00; padding:5px 10px 5px 10px; border: 2px solid #e06c00;border-radius: 25px; background-color:#fbffc9;
 }
+.item1{transform : translate(0px,50px)
+}.item2{z-index: 9;transform : translate(135px,125px)
+}.item3{transform : translate(0px,200px)
+}.item4{transform : translate(0px,350px)
+}.item5{transform : translate(0px,500px)
+}.item6{transform : translate(0px,650px)
+}.item7{transform : translate(0px,800px)
+}.item8{transform : translate(0px,950px)
+}
+@media only screen and (max-width: 800px){
+.menu{
+	position: relative;
+	width:50px;
+	height:500px;
+	bottom:75px;
+	transform: scale(0.7);
+}
+.item{
+	height: 0;
+	width: 80px;
+	border-bottom: 35px solid #fff;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	position: absolute;
+	top: 0;
+	transition: 1s;
+	font-size:0px;
+	font-weight:bold;
+}
+.item:before{
+	content: ' ';
+	height: 0;
+	width: 80px;
+	border-top: 35px solid #fff;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	position: absolute;
+	top: 35px;
+	left: -20px;
+	font-size:4px;
+	font-weight:bold;
+}
+.selected{
+border-bottom: 35px solid #ff9d73;
+}
+.selected:before{
+border-top: 35px solid #ff9d73;
+}
+.main{
+border-bottom: 35px solid #e06c00;
+}
+.main:before{
+border-top: 35px solid #e06c00;
+}
+#add{
+	font-size: 40px;
+	color: #fff;
+	position: relative;
+}
+.menu a>.fa{
+	font-size: 30px;
+}
+.menu a{
+	position: relative;
+	top: 20px;
+	left: 5px;
+	
+}
+.menu :not(.main) a>.fa:hover{
+	color: #bd3c00;
+	transform: scale(0.6);
+	transition: 1s;
+}
+
+.item1{transform : translate(0px,25px)
+}.item2{z-index: 9;transform : translate(70px,62px)
+}.item3{transform : translate(0px,105px)
+}.item4{transform : translate(0px,185px)
+}.item5{transform : translate(0px,265px)
+}.item6{transform : translate(0px,345px)
+}.item7{transform : translate(0px,425px)
+}.item8{transform : translate(0px,505px)
+}
+}
+
 </style>
 	
 </head>
@@ -193,51 +280,51 @@ border-top: 70px solid #e06c00;
 		<img src="https://santra-schema.github.io//images/header.jpg" style="width:100%;" alt="header">
 	</div>
 	<div class="menu" id="menu">
-		<div class="item" style="transform : translate(0px,50px)">
+		<div class="item item1">
 			<a  style="color:#e06c00;"href="https://santra-schema.github.io/">
 				<i style="padding:0px 5px 3px 5px;"class="fa fa-home"></i>
 				<br>&nbsp;&nbsp;&nbsp;&nbsp;Home
 			</a>
 		</div>
 
-		<div class="item main" style=" z-index: 9;transform : translate(135px,125px)">
+		<div class="item item2 main">
 			<a  style="color:white;"href="#" onclick="toggle()">
 				<i class="fa fa-close" id="add"></i>
 			</a>
 		</div>
 		
-		<div class="item selected" style=" transform : translate(0px,200px)">
+		<div class="item item3 selected">
 			<a style="color:#5c1200;" href="https://santra-schema.github.io/about.html">
 				<i style="padding:0px 5px 3px 5px;"class="fa fa-user"></i>
 				<br>About Me
 			</a>
 		</div>
-		<div class="item" style=" transform : translate(0px,350px)">
+		<div class="item item4" >
 			<a  style="color:#e06c00;" href="https://santra-schema.github.io/professional.html">
 				<i class="fa fa-briefcase"></i>
 				<br>Professional<br>Experience
 			</a>
 		</div>
-		<div class="item" style=" transform : translate(0px,500px)">
+		<div class="item item5">
 			<a style="color:#e06c00;"  href="https://santra-schema.github.io/academic.html">
 				<i class="fa fa-institution"></i>
 				<br><br>Academics
 			</a>
 		</div>
-		<div class="item" style=" transform : translate(0px,650px)">
+		<div class="item item6">
 			<a style="color:#e06c00;"  href="https://santra-schema.github.io/certificate.html">
 				<i class="fa fa-list"></i>
 				<br>Courses &<br>Certificate
 			</a>
 		</div>
-		<div class="item" style=" transform : translate(0px,800px)">
+		<div class="item item7" >
 			<a style="color:#e06c00;"  href="https://santra-schema.github.io/about.html">
 				<i class="fa fa-cubes"></i>
 				<br><br>Activities
 			</a>
 		</div>
-		<div class="item" style=" transform : translate(0px,950px)">
-			<a style="color:#e06c00;"  href="https://santra-schema.github.io/contact.html">
+		<div class="item item8">
+		<a style="color:#e06c00;"  href="https://santra-schema.github.io/contact.html">
 				<i style="padding:0px 5px 3px 5px;"class="fa fa-tty"></i>
 				<br>Contact Me
 			</a>
@@ -249,40 +336,66 @@ border-top: 70px solid #e06c00;
 	
 		var i = document.getElementById("menu").childNodes;
 		function toggle(){
-			if (j==0) {
-				document.getElementById("menu").style.transform= 'scale(0.7)';				
-				document.getElementById("add").style.transform = 'rotate(45deg)';
-				i[3].style.transform='translate(0px,50px)';
-				i[1].style.transform='translate(0px,50px)';
-				i[5].style.transform='translate(0px,50px)';
-				i[7].style.transform='translate(0px,50px)';
-				i[9].style.transform='translate(0px,50px)';
-				i[11].style.transform='translate(0px,50px)';
-				i[13].style.transform='translate(0px,50px)';
-				i[15].style.transform='translate(0px,50px)';
-				j=1;
+			if(screen.width > 800){
+				if (j==0) {
+					document.getElementById("menu").style.transform= 'scale(0.7)';				
+					document.getElementById("add").style.transform = 'rotate(45deg)';
+					i[3].style.transform='translate(0px,50px)';
+					i[1].style.transform='translate(0px,50px)';
+					i[5].style.transform='translate(0px,50px)';
+					i[7].style.transform='translate(0px,50px)';
+					i[9].style.transform='translate(0px,50px)';
+					i[11].style.transform='translate(0px,50px)';
+					i[13].style.transform='translate(0px,50px)';
+					i[15].style.transform='translate(0px,50px)';
+					j=1;
+				}else{
+					document.getElementById("add").style.transform = 'rotate(0deg)';
+					document.getElementById("menu").style.transform= 'scale(0.7)';
+					i[3].style.transform='translate(135px,125px)';
+					i[1].style.transform='translate(0px,50px)';
+					i[5].style.transform='translate(0px,200px)';
+					i[7].style.transform='translate(0px,350px)';
+					i[9].style.transform='translate(0px,500px)';
+					i[11].style.transform='translate(0px,650px)';
+					i[13].style.transform='translate(0px,800px)';
+					i[15].style.transform='translate(0px,950px)';
+					j=0;
+				}
 			}else{
-				document.getElementById("add").style.transform = 'rotate(0deg)';
-				document.getElementById("menu").style.transform= 'scale(0.7)';
-				i[3].style.transform='translate(135px,125px)';
-				i[1].style.transform='translate(0px,50px)';
-				i[5].style.transform='translate(0px,200px)';
-				i[7].style.transform='translate(0px,350px)';
-				i[9].style.transform='translate(0px,500px)';
-				i[11].style.transform='translate(0px,650px)';
-				i[13].style.transform='translate(0px,800px)';
-				i[15].style.transform='translate(0px,950px)';
-				j=0;
+			if (j==0) {
+					document.getElementById("menu").style.transform= 'scale(0.7)';				
+					document.getElementById("add").style.transform = 'rotate(45deg)';
+					i[3].style.transform='translate(0px,25px)';
+					i[1].style.transform='translate(0px,25px)';
+					i[5].style.transform='translate(0px,25px)';
+					i[7].style.transform='translate(0px,25px)';
+					i[9].style.transform='translate(0px,25px)';
+					i[11].style.transform='translate(0px,25px)';
+					i[13].style.transform='translate(0px,25px)';
+					i[15].style.transform='translate(0px,25px)';
+					j=1;
+				}else{
+					document.getElementById("add").style.transform = 'rotate(0deg)';
+					document.getElementById("menu").style.transform= 'scale(0.7)';
+					i[3].style.transform='translate(70px,62px)';
+					i[1].style.transform='translate(0px,25px)';
+					i[5].style.transform='translate(0px,105px)';
+					i[7].style.transform='translate(0px,185px)';
+					i[9].style.transform='translate(0px,265px)';
+					i[11].style.transform='translate(0px,345px)';
+					i[13].style.transform='translate(0px,425px)';
+					i[15].style.transform='translate(0px,505px)';
+					j=0;
+				}
 			}
 		}
 	</script>
 	
-<div class="login-footer"
-		style="	z-index: 1;
-position: fixed; bottom: 0; left: 0; right: 0;">
+<div class="login-footer">
 		<div style="margin-right: 0px;">
 			<footer class="customFooter">
-					
+					<div class="col-xs-12 col-sm-12 col-lg-12">
 					<span style="color:#bd3c00;font-size: 12px;text-align:left; width:30%"id="date"></span>
 					<br>
 					<div style="width: 100%;">
@@ -326,6 +439,7 @@ position: fixed; bottom: 0; left: 0; right: 0;">
 				$("#info").html("You are surfing this site using Public IP: <b>" + data.ip + "</b>");
 			})
 			</script>
+			</div>
 			</footer>
 		</div>
 	</div>
