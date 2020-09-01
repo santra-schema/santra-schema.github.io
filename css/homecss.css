@@ -1,4 +1,18 @@
-	
+#sign{
+	width:600px; height:250px;
+}
+#signdiv{
+	padding-left:36%;
+}
+@media only screen and (max-width: 800px){
+#sign{
+	width:300px; height:125px;
+}
+#signdiv{
+	padding-left:20%;
+	padding-bottom:0px;
+}
+}
 ul.social-network {
 	list-style: none;
 	display: inline;
