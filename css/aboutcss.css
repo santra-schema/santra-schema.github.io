@@ -172,7 +172,8 @@ border-top: 70px solid #e06c00;
 	font-family:calibari;font-size:23px; color:#e06c00; padding:5px 10px 5px 10px; border: 2px solid #e06c00;border-radius: 25px; background-color:#fbffc9;
 }
 .item1{transform : translate(0px,50px)
-}.item2{z-index: 9;transform : translate(135px,125px)
+}.item21{z-index: 9;transform : translate(135px,125px)
+}.item22{z-index: 9;transform : translate(135px,275px)
 }.item3{transform : translate(0px,200px)
 }.item4{transform : translate(0px,350px)
 }.item5{transform : translate(0px,500px)
@@ -244,7 +245,8 @@ border-top: 35px solid #e06c00;
 }
 
 .item1{transform : translate(0px,25px)
-}.item2{z-index: 9;transform : translate(70px,62px)
+}.item21{z-index: 9;transform : translate(70px,62px)
+}.item22{z-index: 9;transform : translate(70px,142px)
 }.item3{transform : translate(0px,105px)
 }.item4{transform : translate(0px,185px)
 }.item5{transform : translate(0px,265px)
