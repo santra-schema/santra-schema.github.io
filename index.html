@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://santra-schema.github.io/css/owl.carousel.min.css">
     <link rel="stylesheet" href="https://santra-schema.github.io/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="https://santra-schema.github.io/css/tooplate-santra-style.css">
-	<link rel="stylesheet" href="https://santra-schema.github.io/css/homecss.css">
+	<link rel="stylesheet" href="F:/Package/santra-schema.github.io/santra-schema.github.io/css/homecss.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <style>
 
@@ -25,52 +25,51 @@
 	<div id="signdiv">
 		<img id="sign" src="https://santra-schema.github.io//images/sign.jpg" alt="header">
 	</div>
-	<div class="loader">
-		<div id="element"></div>
-		<div id="element"></div>
-		<div id="element"></div>
-		<div id="element"></div>
-	</div>
-	
 	
 	<div class="container" onclick="expand()">
 		<div class="toggle" id="toggle">
 			<i class="fa fa-plus" id="add">
 			</i>
 		</div>
+	<div class="loader">
+		<div id="element"></div>
+		<div id="element"></div>
+		<div id="element"></div>
+		<div id="element"></div>
+	</div>
 	</div>
 	<div class="menu" id="menu">
-		<div class="item">
+		<div class="item item1">
 			<a href="https://santra-schema.github.io/about.html">
 				<i style="padding:0px 5px 3px 5px;"class="fa fa-user"></i>
 				<br><br>About Me
 			</a>
 		</div>
-		<div class="item">
+		<div class="item item2">
 			<a href="https://santra-schema.github.io/professional.html">
 				<i class="fa fa-briefcase"></i>
 				<br>Professional<br>Experience
 			</a>
 		</div>
-		<div class="item">
+		<div class="item item3">
 			<a href="https://santra-schema.github.io/academic.html">
 				<i class="fa fa-institution"></i>
 				<br><br>Academics
 			</a>
 		</div>
-		<div class="item">
+		<div class="item item4">
 			<a href="https://santra-schema.github.io/certificate.html">
 				<i class="fa fa-list"></i>
 				<br>Courses &<br>Certification
 			</a>
 		</div>
-		<div class="item">
+		<div class="item item5">
 			<a href="https://santra-schema.github.io/about.html">
 				<i class="fa fa-cubes"></i>
 				<br><br>Activities
 			</a>
 		</div>
-		<div class="item">
+		<div class="item item6">
 			<a href="https://santra-schema.github.io/contact.html">
 				<i style="padding:0px 5px 3px 5px;"class="fa fa-tty"></i>
 				<br><br>Contact Me
@@ -84,27 +83,51 @@
 	
 		var i = document.getElementById("menu").childNodes;
 		function expand(){
-			if (j==0) {
-				document.getElementById("add").style.transform = 'rotate(45deg)';
-				document.getElementById("menu").style.transform= 'scale(1)';				
-				i[1].style.transform='translate(-4px,-150px)';
-				i[3].style.transform='translate(122px,-75px)';
-				i[5].style.transform='translate(122px,75px)';
-				i[7].style.transform='translate(-4px,150px)';
-				i[9].style.transform='translate(-132px,75px)';
-				i[11].style.transform='translate(-132px,-75px)';
-				j=1;
+		if(screen.width < 800){
+				if (j==0) {
+					document.getElementById("add").style.transform = 'rotate(45deg)';
+					document.getElementById("menu").style.transform= 'scale(1)';				
+					i[1].style.transform='translate(-10px,135px)';
+					i[3].style.transform='translate(55px,173px)';
+					i[5].style.transform='translate(55px,247px)';
+					i[7].style.transform='translate(-10px,285px)';
+					i[9].style.transform='translate(-75px,173px)';
+					i[11].style.transform='translate(-75px,247px)';
+					j=1;
+				}else{
+					document.getElementById("add").style.transform = 'rotate(0deg)';
+					document.getElementById("menu").style.transform= 'scale(0.9)';
+					i[1].style.transform='translate(-10px,192px)';
+					i[3].style.transform='translate(-10px,192px)';
+					i[5].style.transform='translate(-10px,192px)';
+					i[7].style.transform='translate(-10px,192px)';
+					i[9].style.transform='translate(-10px,192px)';
+					i[11].style.transform='translate(-10px,192px)';
+					j=0;
+				}
 			}else{
-				document.getElementById("add").style.transform = 'rotate(0deg)';
-				document.getElementById("menu").style.transform= 'scale(0.9)';
-				i[1].style.transform='translateY(0)';
-				i[3].style.transform='translate(0)';
-				i[5].style.transform='translate(0)';
-				i[7].style.transform='translateY(0)';
-				i[9].style.transform='translate(0)';
-				i[11].style.transform='translate(0)';
-				j=0;
-			}
+				if (j==0) {
+					document.getElementById("add").style.transform = 'rotate(45deg)';
+					document.getElementById("menu").style.transform= 'scale(1)';				
+					i[1].style.transform='translate(-4px,-150px)';
+					i[3].style.transform='translate(122px,-75px)';
+					i[5].style.transform='translate(122px,75px)';
+					i[7].style.transform='translate(-4px,150px)';
+					i[9].style.transform='translate(-132px,75px)';
+					i[11].style.transform='translate(-132px,-75px)';
+					j=1;
+				}else{
+					document.getElementById("add").style.transform = 'rotate(0deg)';
+					document.getElementById("menu").style.transform= 'scale(0.9)';
+					i[1].style.transform='translateY(0)';
+					i[3].style.transform='translate(0)';
+					i[5].style.transform='translate(0)';
+					i[7].style.transform='translateY(0)';
+					i[9].style.transform='translate(0)';
+					i[11].style.transform='translate(0)';
+					j=0;
+				}
+				}
 		}
 	</script>
 	
@@ -125,7 +148,7 @@
 								<span style="text-align:center;float:middle;color:#130970; font-weight:bold; "id ="cc"> <script type="text/javascript">var today=new Date(); var yr = today.getFullYear();
 								document.getElementById('cc').innerHTML = yr</script>
 								 ©&nbsp;Mr. Sudipta Santra, All rights reserved.  </span>
-								 &nbsp;&nbsp;&nbsp;<span style="font-size:8px;">This is Desktop Version! Android Link will be coming soon.</span>
+								 
 								</td>
 								<td style="padding-left:50px;">
 								<div style="float:right; margin-right:10px;">
