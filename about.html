@@ -156,7 +156,7 @@
 	color: black;
 	line-height: 1.8;
 	letter-spacing: 1px;
-	word-spacing: 2px;
+	word-spacing: 1px;
 	padding-right: 20px;
 }
 
@@ -260,7 +260,9 @@
 	background-color: #ff8847;
 }
 
-
+.info p{
+	font-weight:bold;
+}
 </style>
 
 </head>
@@ -291,22 +293,43 @@
 				<div class="info">
 					<div id="one" class="content active">
 						<h4>Planning</h4>
-						<p>Need to write
+						<p><span style="font-size:20px;">Answer Me & I will Plan for you.</span><br>
+							&#8226; &nbsp; What do you want ? <br>
+							&#8226; &nbsp; What is your objective ? <br>
+							&#8226; &nbsp; What are the current problems ? <br>
+							&#8226; &nbsp; What about the timeline vs resources? <br>
+							&#8226; &nbsp; What is the risk? <br>
+							&#8226; &nbsp; What will be the cost/budget ? <br>
+							&#8226; &nbsp; Why not others but me ? <br>
 						</p>
 					</div>
 					<div id="two" class="content">
 						<h4>Analysis</h4>
-						<p>sssssssssssssssssssssssssssssss
+						<p><span style="font-size:20px;">I will do the Requirement Analysis</span><br>
+							&#8226; &nbsp; Will analyze the feasibility. <br>
+							&#8226; &nbsp; Will develop a strategy for the project effort.  <br>
+							&#8226; &nbsp; Market analysis for the cost vs expertise. <br>
+							&#8226; &nbsp; Focusing on Risk Management and required functions. <br>
+							&#8226; &nbsp; Prepare all Prensentation and Documentation for Product & Software Requirements. <br>
+							&#8226; &nbsp; Finally, You will be provided a Business Requirement Doc. for Approval.  <br>
 						</p>
 					</div>
 					<div id="three" class="content">
 						<h4>Design</h4>
-						<p>ddddddddddddddddddddddddddddddd
+						<p><span style="font-size:20px;">How I will get what I want ?</span><br>
+							&#8226; &nbsp; I will design a system Architechture. <br>
+							&#8226; &nbsp; Desired features, operations and data-flow will be described in detail. <br>
+							&#8226; &nbsp; Include Software Specifications in Design Plan. <br>
+							&#8226; &nbsp; Suggestion gathering from Experts. <br>
+							&#8226; &nbsp; Prepare the HLD & LLD Document. <br>
+							<br>
+							<span style="color:white">Yeah ! <span style="color:#ff8847">All finalized ! </span>Let's <span style="color:green">START </span>the engine.</span>
 						</p>
 					</div>
 					<div id="four" class="content">
 						<h4>Implementation</h4>
-						<p>ffffffffffffffffffffffff
+						<p><span style="font-size:20px;"><span style="color:white">Wait. </span> I am Busy with Coding ....</span><br><br>
+							<iframe style="height:250px;" src="https://santra-schema.github.io//images/loading.gif"  frameBorder="0"  ></iframe>
 						</p>
 					</div>
 					<div id="five" class="content">
@@ -453,7 +476,7 @@ $(function () {
         },
         this.Auto = function (element) {
             let next = this.nextFunc,
-                autoSlider = setInterval(next, 6000);
+                autoSlider = setInterval(next, 15000);
             
                 element.on("click", function () {
                     clearInterval(autoSlider);
