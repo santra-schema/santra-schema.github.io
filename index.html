@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://santra-schema.github.io/css/owl.carousel.min.css">
     <link rel="stylesheet" href="https://santra-schema.github.io/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="https://santra-schema.github.io/css/tooplate-santra-style.css">
-	<link rel="stylesheet" href="https://santra-schema.github.io/css/homecss.css">
+	<link rel="stylesheet" href="F:/Package/santra-schema.github.io/santra-schema.github.io/css/homecss.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <style>
 
@@ -80,29 +80,31 @@
 	<script type="text/javascript">
 
 		var j=0;
-	
+		document.getElementById("menu").style.zIndex= '-10';
 		var i = document.getElementById("menu").childNodes;
 		function expand(){
 		if(screen.width < 800){
 				if (j==0) {
 					document.getElementById("add").style.transform = 'rotate(45deg)';
-					document.getElementById("menu").style.transform= 'scale(0.8)';				
-					i[1].style.transform='translate(-10px,50px)';
-					i[3].style.transform='translate(65px,90px)';
-					i[5].style.transform='translate(68px,180px)';
-					i[7].style.transform='translate(-7px,224px)';
-					i[9].style.transform='translate(-86px,93px)';
-					i[11].style.transform='translate(-86px,180px)';
+					document.getElementById("menu").style.transform= 'scale(0.8)';	
+					document.getElementById("menu").style.zIndex= '10';					
+					i[1].style.transform='translate(-10px,120px)';
+					i[3].style.transform='translate(70px,165px)';
+					i[5].style.transform='translate(70px,255px)';
+					i[7].style.transform='translate(-7px,300px)';
+					i[9].style.transform='translate(-86px,165px)';
+					i[11].style.transform='translate(-90px,255px)';
 					j=1;
 				}else{
+					document.getElementById("menu").style.zIndex= '-10';
 					document.getElementById("add").style.transform = 'rotate(0deg)';
-					document.getElementById("menu").style.transform= 'scale(0.7)';
-					i[1].style.transform='translate(-10px,120px)';
-					i[3].style.transform='translate(-10px,120px)';
-					i[5].style.transform='translate(-10px,120px)';
-					i[7].style.transform='translate(-10px,120px)';
-					i[9].style.transform='translate(-10px,120px)';
-					i[11].style.transform='translate(-10px,120px)';
+					document.getElementById("menu").style.transform= 'scale(0.8)';
+					i[1].style.transform='translate(-10px,210px)';
+					i[3].style.transform='translate(-10px,210px)';
+					i[5].style.transform='translate(-10px,210px)';
+					i[7].style.transform='translate(-10px,210px)';
+					i[9].style.transform='translate(-10px,210px)';
+					i[11].style.transform='translate(-10px,210px)';
 					j=0;
 				}
 			}else{

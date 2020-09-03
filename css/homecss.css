@@ -335,10 +335,10 @@ body{
 	cursor: pointer;
 }
 .menu{
+
 	position: relative;
 	width:50px;
 	transform: scale(0.8);
-	padding-bottom:750px;
 }
 .toggle{
 	height: 0;
@@ -409,14 +409,13 @@ body{
 }
 
 
-.item1{transform : translate(-10px,140px)
-}.item2{transform : translate(-10px,140px)
-}.item3{transform : translate(-10px,140px)
-}.item4{transform : translate(-10px,140px)
-}.item5{transform : translate(-10px,140px)
-}.item6{transform : translate(-10px,140px)
-}.container .toggle{
-	transform: scale(0.7);
-	transform : translate(-30px,-80px)
+.item1{transform : translate(-10px,210px)
+}.item2{transform : translate(-10px,210px)
+}.item3{transform : translate(-10px,210px)
+}.item4{transform : translate(-10px,210px)
+}.item5{transform : translate(-10px,210px)
+}.item6{transform : translate(-10px,210px)
+}.toggle{
+	transform : translate(-30px,-75px)
 }
 }
