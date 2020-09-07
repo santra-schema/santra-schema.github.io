@@ -182,12 +182,6 @@ border-top: 70px solid #e06c00;
 }.item8{transform : translate(0px,950px)
 }
 @media only screen and (max-width: 800px){
-.logoclass{
-	width:100%;
-	float:right;
-	color:white;
-	margin-bottom:10%;
-}
 .menu{
 	position: relative;
 	width:50px;
@@ -502,13 +496,24 @@ border-top: 35px solid #e06c00;
 	font-weight:bold;
 }
 @media only screen and (max-width: 800px){
+.logoclass{	
+	bottom: 0px;
+	position:fixed;
+	background-color:#2a2a49;
+	height:100px;
+	width:100%;
+	float:right;
+	color:white;
+	margin-top: 3%;
+	margin-bottom: 45%;
+}
 .maincontent{
 	width:70%;
 	float:right;
 	color:white;
 	padding-top:20px;
 	padding-right:0%;
-	padding-bottom:150px;
+	padding-bottom:250px;
 }
 .headbtn{
 	font-size:15px;
@@ -770,7 +775,7 @@ border-top: 35px solid #e06c00;
   position: absolute;
   animation-name: example;
   animation-duration: 18s;
-  animation-delay: 16.5s;
+  animation-delay: 19.5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -781,3 +786,177 @@ border-top: 35px solid #e06c00;
   50%  {opacity:1; left:50%; top:0px;}
   100%  {opacity:0; left:100%; top:0px;}
 }
+
+@media only screen and (max-width:800px){
+#main{
+	z-index:0;
+	display: flex;
+	position: relative;
+
+}
+
+#a {
+  opacity:0;
+  z-index:8;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#b {
+  opacity:0;
+  z-index:7;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#c {
+  opacity:0;
+  z-index:6;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#d {
+  opacity:0;
+  z-index:5;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#e {
+  opacity:0;
+  z-index:4;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#f {
+  opacity:0;
+  z-index:3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;  
+}
+#g {
+  opacity:0;
+  z-index:3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#h {
+  opacity:0;
+  z-index:3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 16s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+#i {
+  opacity:0;
+  z-index:3;
+  width: 50px;
+  height:50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 18s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#j {
+  opacity:0;
+  z-index:3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#k {
+  opacity:0;
+  z-index:3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 22s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#l {
+  opacity:0;
+  z-index:3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 24s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#x {
+  opacity:1;
+  z-index:2;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 26s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes example {
+  0%   {opacity:0;left:0px; top:0px;}
+  25%  {opacity:1; left:50%; top:0px;}
+  100%  {opacity:0; left:200%; top:0px;}
+}
+	}
