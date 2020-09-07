@@ -11,7 +11,7 @@
   color: white;
   cursor: pointer;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 50px;
   margin-bottom:3%;
 }
 
@@ -201,6 +201,23 @@ border-top: 70px solid #e06c00;
 }.item8{transform : translate(0px,950px)
 }
 @media only screen and (max-width: 800px){
+	
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+  z-index: 99;
+  font-size: 2px;
+  border: none;
+  outline: none;
+  background-color: #de6a2f;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50px;
+  margin-bottom:50%;
+}
 .menu{
 	position: relative;
 	width:50px;
