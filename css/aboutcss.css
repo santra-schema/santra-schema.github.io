@@ -1,4 +1,23 @@
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 40px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #de6a2f;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom:3%;
+}
 
+#myBtn:hover {
+  background-color: #ff9d6b;;
+}
 ul.social-network {
 	list-style: none;
 	display: inline;
