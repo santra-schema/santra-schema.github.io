@@ -18,6 +18,11 @@
 #myBtn:hover {
   background-color: #ff9d6b;;
 }
+#award {
+  display: none;
+  position: fixed;
+
+}
 ul.social-network {
 	list-style: none;
 	display: inline;
@@ -193,6 +198,7 @@ border-top: 70px solid #e06c00;
 .item1{transform : translate(0px,50px)
 }.item21{z-index: 9;transform : translate(135px,125px)
 }.item22{z-index: 9;transform : translate(135px,275px)
+}.item23{z-index: 9;transform : translate(135px,575px)
 }.item3{transform : translate(0px,200px)
 }.item4{transform : translate(0px,350px)
 }.item5{transform : translate(0px,500px)
@@ -284,6 +290,7 @@ border-top: 35px solid #e06c00;
 .item1{transform : translate(0px,25px)
 }.item21{z-index: 9;transform : translate(70px,62px)
 }.item22{z-index: 9;transform : translate(70px,142px)
+}.item23{z-index: 9;transform : translate(70px,306px)
 }.item3{transform : translate(0px,105px)
 }.item4{transform : translate(0px,185px)
 }.item5{transform : translate(0px,265px)
