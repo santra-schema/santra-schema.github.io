@@ -13,13 +13,19 @@
     <link rel="stylesheet" href="https://santra-schema.github.io/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="https://santra-schema.github.io/css/tooplate-santra-style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="F:/Package/git/santra-schema.github.io/css/aboutcss.css">
+	<link rel="stylesheet" href="https://santra-schema.github.io/css/aboutcss.css">
 	<style>
 
 
 </style>
 </head>
 <body>
+	<div class="faicon">
+		<img id="imgcontact" src="https://santra-schema.github.io//images/contact.png" width="500%" height="500%">
+		<img id="imgmail" src="https://santra-schema.github.io//images/mail.png" width="500%" height="500%">
+		<img id="imgsocial" src="https://santra-schema.github.io//images/social.png" width="500%" height="500%">
+		<img id="imgmap" src="https://santra-schema.github.io//images/map.png" width="500%" height="500%">
+	</div>
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i><br>Top	</button>
 <script>
 //Get the button
@@ -92,12 +98,17 @@ var yy = year - 2019;
 	<br><br>
 	<div style="margin-left:60%;">
 		<div id="divcontact" style="float:left;">
-		Mr. Sudipta Santra<br>
-		<p>Present Address:</p>
-		<p>Present Address:</p>
-		<p>Present Address:</p>
-		Mobile: <a style="color:#ff8847;"href="tel:+91 8900620346">(+91) - 8900620346</a> <br>
-		Email: sudipta.biems@gmail.com
+			<span style="font-weight:bold;color:#ff8847;">MR. SUDIPTA SANTRA</span><br>
+			System Engineer, <br>TCS -  Hyderabad
+			<br><br>
+			<span style="color:grey;">Office Address : </span> &nbsp;	<span style="color:white;">TATA Consultancy Services, Kohinoor Park, Gachibowli, Hyderabad, Telangana - 500032</span>
+			<br><br>
+			<span style="color:grey;">Present Address : </span> &nbsp;	<span style="color:white;">IDRBT, Road No 1, Castle Hills, NMDC, Hyderabad, TS - 500057</span>
+			<br><br>
+			<span style="color:grey;">Permanent Address : </span> &nbsp;	<span style="color:white;">Ajodhya, Bagnan, Howrah, WB - 711312</span>
+			<br><br>
+			<span style="color:grey;">Mobile: </span>&nbsp;<a style="color:#ff8847;"href="tel:+91 8900620346">(+91) - 8900620346</a> <br><br>
+			<span style="color:grey;">Email: </span>&nbsp;<a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=sudipta.biems@gmail.com" style="color:#ff8847;">sudipta.biems@gmail.com</a>
 		</div>
 		<div id="divmail" style="float:left;">mail
 		</div>
@@ -116,7 +127,10 @@ var yy = year - 2019;
 		</div>
 
 		<div class="itemb">
+			<a  style="color:white;" href="#">
+				<i style="cursor:none;padding:0px 5px 3px 5px;"class="fa fa-cog"></i>
 
+			</a>
 		</div>
 		
 		<div class="itemx itemc">
@@ -150,30 +164,50 @@ var yy = year - 2019;
 	
 	<script>
 	$(document).ready(function() {
+		$("#imgcontact").show();	
+		$("#imgmail").hide();
+		$("#imgsocial").hide();
+		$("#imgmap").hide();
 		$("#divcontact").show();	
 		$("#divmail").hide();
 		$("#divsocial").hide();
 		$("#divmap").hide();
 	});
 	function contactfunc(){
+		$("#imgcontact").show();
+		$("#imgmail").hide();
+		$("#imgsocial").hide();
+		$("#imgmap").hide();		
 		$("#divcontact").show();	
 		$("#divmail").hide();
 		$("#divsocial").hide();
 		$("#divmap").hide();
 	}
 	function mailfunc(){
+		$("#imgcontact").hide();	
+		$("#imgmail").show();
+		$("#imgsocial").hide();
+		$("#imgmap").hide();
 		$("#divcontact").hide();	
 		$("#divmail").show();
 		$("#divsocial").hide();
 		$("#divmap").hide();
 	}
 	function socialfunc(){
+		$("#imgcontact").hide();	
+		$("#imgmail").hide();
+		$("#imgsocial").show();
+		$("#imgmap").hide();
 		$("#divcontact").hide();	
 		$("#divmail").hide();
 		$("#divsocial").show();
 		$("#divmap").hide();
 	}
 	function mapfunc(){
+		$("#imgcontact").hide();	
+		$("#imgmail").hide();
+		$("#imgsocial").hide();
+		$("#imgmap").show();
 		$("#divcontact").hide();	
 		$("#divmail").hide();
 		$("#divsocial").hide();
