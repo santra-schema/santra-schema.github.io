@@ -140,16 +140,7 @@ body{
 	/*background-image: url("F:/Package/santra-schema.github.io/santra-schema.github.io/images/source.gif"); */
 
 }
-.faicon{
-	width:50px;
-  position: absolute;
-  top: 50%;
-  left: 52%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-  opacity:0.4;
 
-}
 .itemx{
 	height: 0;
 	width: 160px;
