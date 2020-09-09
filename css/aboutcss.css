@@ -23,6 +23,11 @@
   position: fixed;
 
 }
+#certdiv {
+  display: block;
+  position: fixed;
+
+}
 ul.social-network {
 	list-style: none;
 	display: inline;
@@ -317,6 +322,8 @@ border-top: 35px solid #e06c00;
 	padding-top:20px;
 	padding-right:5%;
 	margin-bottom: 100px;
+}
+.certificate .maincontent{
 }
 .headbtn{
 	font-size:26px;

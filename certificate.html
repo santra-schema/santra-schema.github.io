@@ -19,58 +19,254 @@
 	<style>
 	
 
+
+#scroll-indicator {
+	 position: fixed;
+	 top: 50%;
+	 left: 20%;
+	 transform: translate(0, -50%);
+	 color:#ba561c;
+
+}
+ #scroll-indicator ul {
+	 margin: 0;
+	 padding: 0;
+	 list-style: none;
+}
+ #scroll-indicator li {
+	 position: relative;
+	 line-height: 36px;
+}
+ #scroll-indicator li.active:before {
+	 opacity: 0;
+	 visibility: hidden;
+	 transform: translate(-50% 0);
+}
+ #scroll-indicator li.active a {
+	 height: 44px;
+}
+ #scroll-indicator li:before {
+	 position: absolute;
+	 bottom: -5px;
+	 left: calc(100% + 20px);
+	 font-weight: 700;
+	 font-size: 12px;
+	 line-height: 1;
+	 text-transform: lowercase;
+	 opacity: 0;
+	 visibility: hidden;
+
+	 transition: left 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955), visibility 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+ #scroll-indicator li:after {
+	 content: '';
+	 display: block;
+	 position: absolute;
+	 bottom: 0px;
+	 left: 2px;
+	 height: 2px;
+	 width: calc(100% - 4px);
+	 background: #ba561c;
+	 pointer-events: none;
+	 transition: width 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s, height 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s, left 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s, bottom 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s;
+}
+ #scroll-indicator li:hover:after {
+	 left: 0px;
+	 bottom: -1px;
+	 width: 100%;
+	 height: 4px;
+	 transition: width 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955), height 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955), left 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955), bottom 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+ #scroll-indicator li:hover:before {
+	 left: calc(100% + 10px);
+	 opacity: 1;
+	 visibility: visible;
+}
+ #scroll-indicator a {
+	 display: block;
+	 position: relative;
+	 height: 4px;
+	 margin: 4px 0 0 0;
+	 font-weight: bold;
+	 font-size: 40px;
+	 line-height: 36px;
+	 font-family: 'Open Sans', sans-serif;
+	 text-decoration: none;
+	 color:#ba561c;
+	 overflow: hidden;
+	 transition: height 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+ 
+
 	
 	</style>
 </head>
 <body>
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i><br>Top	</button>
+
+<nav id="scroll-indicator">
+</nav>
+
 <script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
+console.clear();
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+ScrollIndicator = (function(){
+	
+	var scrollIndicator,
+			sections;
+	
+	function onSectionClick(e) {
+		
+		e.preventDefault();
+		
+		if (!/li|a/.test(e.target.nodeName.toLowerCase())) {
+			return false;
+		}
+		
+		ScrollIt(e.target);
+		
+	}
+	
+	function addEventListeners() {
+		scrollIndicator.addEventListener('click', onSectionClick);
+	}
+	
+	function update(val) {
+		
+		var winOffset = window.innerHeight * 0.25;
+		
+		for (var i = 0; i < sections.length; i++) {
+			var activeTitle = sections[i].getAttribute('data-title'),
+					activeSection = scrollIndicator.querySelector('[data-title=' + activeTitle + ']');
 
-function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+			if (val >= (sections[i].offsetTop - winOffset) && val < sections[i].offsetTop + (sections[i].clientHeight - winOffset)) {
+				activeSection.className = 'active';
+			} else {
+				activeSection.removeAttribute('class');
+			}
+		}
+		
+	}
+	
+	function init() {
+		
+		scrollIndicator = document.getElementById('scroll-indicator');
+		sections = document.querySelectorAll('section');
+		
+		var ul = document.createElement('ul');
+		
+		//build the scroll nav
+		for (var i = 0; i < sections.length; i++) {
+			
+			var count = (i < 9 ? '0' : '') + (i + 1),
+					section = sections[i],
+					li = document.createElement('li'),
+					a = document.createElement('a'),
+					id = section.id;
+			
+			li.setAttribute('data-title', section.getAttribute('data-title'));
+			
+			a.innerHTML = count;
+			a.href = '#'+id;
+			
+			li.appendChild(a);
+			ul.appendChild(li);
+		}
+		
+		scrollIndicator.appendChild(ul);
+		
+		addEventListeners();
+	}
+	
+	document.addEventListener('DOMContentLoaded', init);
+	
+	return {
+		update: update
+	}
+	
+})();
+
+
+
+GlobalScroll = (function() {
+	var scrollPos;
+	
+	function getValue() {
+		return scrollPos;
+	}
+	
+	function scrollVal() {
+		scrollPos = window.pageYOffset || document.body.scrollTop;
+		ScrollIndicator.update(scrollPos);
+		requestAnimationFrame(scrollVal);
+	}
+	
+	document.addEventListener('DOMContentLoaded', scrollVal);
+	
+})();
+
+ScrollIt = function(target, time) {
+	
+	var targetId = target.href.split('#')[1],
+			end = document.getElementById(targetId).offsetTop,
+			start = window.pageYOffset,
+			duration = time || 1000,
+			distance = end - start,
+			timeStart = Date.now(),
+			timeEnd = timeStart + duration,
+			tick, cachedTick;
+	
+	//https://en.wikipedia.org/wiki/Smoothstep
+	function step(startTime, endTime, point) {
+		if (point <= startTime) { return 0; }
+		if (point >= endTime) { return 1; }
+		var x = (point - startTime) / (endTime - startTime);
+		return x*x*x*(x*(x*6 - 15) + 10);
+	}
+	
+  (function loop() {
+	
+		var now = Date.now(),
+				tick = start + (distance * step(timeStart, timeEnd, now));
+		
+		window.scrollTo(0, Math.floor(tick));
+
+		if (now <= timeEnd) {
+			requestAnimationFrame(loop);
+		}
+		
+  })();
+  
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+
 </script>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i><br>Top	</button>
 	<div>
 		<img src="https://santra-schema.github.io//images/header.jpg" style="width:100%;" alt="header">
 	</div>
-	<div class="maincontent">
+	<div class="certificate maincontent">
 	
-		<div id="certdiv" style="position:fixed;width:89%; z-index:-2;">
+		<div id="certdiv" style="width:89%;">
 			<div style="width:80%; float:left;">
 				<button style="cursor:default; background-color:#ba561c; border-color:#ba561c;" class="headbtn btn btn-primary active">Certificates :</button><br><br>
 
 			</div>
-
-
 		</div>
-		<div id="award" style="width:89%; z-index:-1;">
+		<div id="award" style="width:89%;">
 			<div style="width:80%; float:left;">
 				<button style="cursor:default; background-color:#ba561c; border-color:#ba561c;" class="headbtn btn btn-primary active">Awards :</button><br><br>
 
 			</div>
-			<script>
+		</div>
+		<script>
 			//Get the button
 			var awardbutton = document.getElementById("award");
 			var certbtn = document.getElementById("certdiv");
+			var mybutton = document.getElementById("myBtn");
 			// When the user scrolls down 20px from the top of the document, show the button
-			window.onscroll = function() {scrollFunction()};
+			window.onscroll = function() {scrollFunc()};
 
-			function scrollFunction() {
+			function scrollFunc() {
 			  if (document.body.scrollTop > 4750 || document.documentElement.scrollTop > 4750) {
 				awardbutton.style.display = "block";
 				certbtn.style.display = "none";
@@ -78,38 +274,45 @@ function topFunction() {
 				awardbutton.style.display = "none";
 				certbtn.style.display = "block";
 			  }
+			   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+					mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+
 			}
-			</script>
+			function topFunction() {
+			$('html,body').animate({ scrollTop: 0 }, 1000);
 
-
-		</div>
+			}
+		</script>
 <!--
  Author: Hendry Sadrak
 -->
 <div id="parallax-world-of-ugg">
   
 
-<section>
+<section onContextMenu="return false;" data-title="One" id="one">
     <div class="parallax-one">
-	<div style="float:right;width:40%;">
+	<div style="margin-top:12%;float:right;width:40%;">
 	  <span class="yearspan">2019</span><br>
       <h6 class="certspan">Core JAVA Concepts</h6>
 	  <span class="compspan">TATA Consultancy Services</span>
     </div>
 	</div>
 </section>
-<section>
+<section onContextMenu="return false;" data-title="Two" id="two">
   <div class="parallax-two">
-  <div style="float:right;width:40%;">
+  <div style="margin-top:12%;float:right;width:40%;">
   	  <span class="yearspan">2020</span><br>
       <h6 class="certspan">Python for Machine Learning</h6>
 	  <span class="compspan">Electronics & ICT Academy - <b>IIT Roorkee</b> <br>(E&ICT IITR)</span>
 	 </div>
   </div>
 </section>
-<section>
+<section onContextMenu="return false;" data-title="Three" id="three">
   <div class="parallax-three">
-    <div style="float:right;width:40%;">
+    <div style="margin-top:12%;float:right;width:40%;">
 	<span class="yearspan">2020</span><br>
     <h6 class="certspan">Cyber Security Tools & Cyber Attacks</h6>
 	  <span class="compspan">IBM - Coursera</span>
@@ -117,18 +320,18 @@ function topFunction() {
   </div>
 </section>
 
-<section>
+<section onContextMenu="return false;" data-title="Four" id="four">
   <div class="parallax-four">
-    <div style="float:right;width:40%;">
+    <div style="margin-top:15%;float:right;width:40%;">
 	<span class="yearspan">2020</span><br>
     <h6 class="certspan">Object Oriented Programming in JAVA</h6>
 	  <span class="compspan">University of California, San Diago</span>
 	 </div>
   </div>
 </section>
-<section>
+<section onContextMenu="return false;" data-title="Five" id="five">
   <div class="parallax-five">
-    <div style="float:right;width:40%;">
+    <div style="margin-top:15%;float:right;width:40%;">
 	<span class="yearspan">2020</span><br>
     <h6 class="certspan">HTML5 & CSS3</h6>
 	  <span class="compspan">TATA Consultancy Services</span>
@@ -136,63 +339,63 @@ function topFunction() {
   </div>
 </section>
 
-<section>
+<section onContextMenu="return false;" data-title="Six" id="six">
   <div class="parallax-six">
-    <div style="float:right;width:40%;">
+    <div style="margin-top:12%;float:right;width:40%;">
 	<span class="yearspan">2020</span><br>
     <h6 class="certspan">Cloud Computing : Core Concepts</h6>
 	  <span class="compspan">National Registry of CPE <br>National Association of State Board of Accuntancy<br> LinkedIn Learning</span>
 	 </div>
   </div>
 </section>
-<section>
+<section onContextMenu="return false;" data-title="Seven" id="seven">
   <div class="parallax-sev">
-    <div style="float:right;width:40%;">
+    <div style="margin-top:15%;float:right;width:40%;">
 	<span class="yearspan">2017</span><br>
     <h6 class="certspan">JAVA Restful Web Services</h6>
 	  <span class="compspan">TATA Consultancy Services</span>
 	 </div>
   </div>
 </section>
-<section>
+<section onContextMenu="return false;" data-title="Eight" id="eight">
   <div class="parallax-eig">
-    <div style="float:right;width:40%;">
+    <div style="margin-top:14%;float:right;width:40%;">
 	<span class="yearspan">2020</span><br>
     <h6 class="certspan">HTML5 & CSS3</h6>
 	  <span class="compspan">Udemy</span>
 	 </div>
   </div>
 </section>
-<section>
+<section onContextMenu="return false;" data-title="Nine" id="nine">
   <div class="parallax-nine">
-    <div style="float:right;width:40%;">
+    <div style="margin-top:12%;float:right;width:40%;">
 	<span class="yearspan">2018</span><br>
     <h6 class="certspan">Web Development - JAVAScript Foundation</h6>
 	  <span class="compspan">TATA Consultancy Services</span>
 	 </div>
   </div>
 </section>
-<section>
+<section onContextMenu="return false;" data-title="Ten" id="ten">
   <div class="parallax-ten">
-    <div style="float:right;width:40%;">
+    <div style="margin-top:14%;float:right;width:40%;">
 	<span class="yearspan">2019</span><br>
     <h6 class="certspan">Service & Commitment Award</h6>
 	  <span class="compspan">TATA Consultancy Services</span>
 	 </div>
   </div>
 </section>
-<section>
+<section onContextMenu="return false;" data-title="Eleven" id="eleven">
   <div class="parallax-ele">
-    <div style="float:right;width:40%;">
+    <div style="margin-top:12%;float:right;width:40%;">
 	<span class="yearspan">2020</span><br>
     <h6 class="certspan">Best Team Award</h6>
 	  <span class="compspan">TATA Consultancy Services</span>
 	 </div>
   </div>
 </section>
-<section>
+<section onContextMenu="return false;" data-title="Twelve" id="twelve">
   <div class="parallax-twe">
-    <div style="float:right;width:40%;">
+    <div style="margin-top:12%;margin-bottom:10%;float:right;width:40%;">
 	<span class="yearspan">2018 , 2019</span><br>
     <h6 class="certspan">STAR Team Award</h6>
 	  <span class="compspan">TATA Consultancy Services</span>
