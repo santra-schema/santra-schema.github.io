@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-	<title>Santra - Professional</title>
+	<title>Santra - Contact</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<script language="JavaScript" type="text/javascript" src="https://santra-schema.github.io/js/jquery-1.2.6.min.js"></script>	
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://santra-schema.github.io/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="https://santra-schema.github.io/css/tooplate-santra-style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://santra-schema.github.io/css/aboutcss.css">
+	<link rel="stylesheet" href="F:/Package/git/santra-schema.github.io/css/aboutcss.css">
 	<style>
 
 
@@ -46,120 +46,146 @@ function topFunction() {
 		<img src="https://santra-schema.github.io//images/header.jpg" style="width:100%;" alt="header">
 	</div>
 	<div class="maincontent">
-	<button style="cursor:default; background-color:#ba561c; border-color:#ba561c;" class="headbtn btn btn-primary active">Professional Experience :</button><br><br>
-	<span class="hellospan">Am an IT Professional having a total experience of 
-	<span style="color:#ff8847;" id ="expY"></span> and <span style="color:#ff8847;" id ="expM"></span></span>
+	<button style="cursor:default; background-color:#ba561c; border-color:#ba561c;" class="headbtn btn btn-primary active">Contact Me :</button>&nbsp;&nbsp;&nbsp;&nbsp;
+	<span id="hellospan" style="color:white; font-size:10px;"></span><br><br>
+	<script>
+var d = new Date();
+ 
+var date = d.getDate(); 
+var month = d.getMonth() + 1;
+var year = d.getFullYear();
+var y = 0;
+var c = 0;
+var m = 0;
+var yy = year - 2019;
+ if(yy > 0 && yy < 3){
+    y=11;
+  }else if(yy > 3 && yy < 8){
+    y=23;
+  }else if(yy > 11 && yy < 14){
+    y=18;
+  }else if(yy > 15 && yy < 22){
+    y=13;
+  }else if(yy > 25 && yy < 30){
+    y=16;
+  }else{
+    y=10;
+  }
+
+  if(month == 1){
+    m=8;
+  }else if(month == 2 || month == 4 || month == 9){
+    m=11;
+  }else if(month == 3 || month == 8){
+    m=17;
+  }else if(month == 5 || month == 12){
+    m=7;
+  }else if(month == 6 || month == 11){
+    m=12;
+  }else if(month == 7 || month == 10){
+    m=9;
+  }
+  
+  c=" &nbsp; Last Month Profile Viewers : <b style='color:red;'>"+(c+y+m)+"</b>";
+  document.getElementById('hellospan').innerHTML = c;
+</script>	
 	<br><br>
-	<table>
-		<tbody style="vertical-align:top;">
-			<tr>
-				<td class="td td1" style="border-bottom:2px solid #ff8847;" colspan="2"><b style="font-size:22px; color:#ff8847;">Dec - 2016 &nbsp;&nbsp; TO &nbsp;&nbsp; Present </b>&nbsp;&nbsp;<span id ="exp"></span></td>
-			</tr>
-			<tr>
-				<td class="td td21" style="text-align:right; padding-right: 5px;border-right:2px solid #ff8847; width:20%;">Company Name  </td>
-				<td class="td td22" style="padding-left: 5px;"><a style="color:white;"target="_blank" href="https://www.tcs.com/"><b style="font-size:20px;">TATA Consultancy Services</b> 
-				<img src="https://santra-schema.github.io//images/tatalogo.png" alt="header" style="float:right;width:10%;">
-				</a></td>
-			</tr>
-			<tr>
-				<td class="td td31" style="text-align:right;padding-right: 5px; border-right:2px solid #ff8847;">Role </td>
-				<td class="td td32" style="padding-left: 5px;">Software Developer</td>
-			</tr>
-			<tr>
-				<td class="td td41" style="text-align:right; padding-right: 5px;border-right:2px solid #ff8847;">Position </td>
-				<td class="td td42" style="padding-left: 5px;">System Engineer</td>
-			</tr>
-			<tr>
-				<td class="td td51" style="text-align:right; padding-right: 5px;border-right:2px solid #ff8847;">Responsibilities </td>
-				<td class="td td52">
-				<div style="padding-left:5px;">
-					<li><span style="color:#ff8847;">Project-1 : </span> &nbsp;As a full stack JAVA developer, developed ‘Cyber Threat Exchange’ web application using Spring framework for all financial sector under RBI (Govt. of India).</li>
-					<li><span style="color:#ff8847;">Project-2 : </span> As a full stack developer, Implementing <a href="https://oasis-open.github.io/cti-documentation/stix/intro.html" target="_blank" style="text-decoration: underline;color:#ff8847;">STIX & TAXII</a> standards using Python knowledge to develop ‘Threat Intelligence Platform’ under RBI (Govt. of India).
-					
-					</li>
-					<li><span style="color:#ff8847;">Project-3 : </span> &nbsp;Worked with Support Management role for ‘Customer Billing Format’ under TATA Communications Ltd.</li>
-					<li><span style="color:#ff8847;">Project-4 : </span> &nbsp;Develop HRMS application of Banking R &D Institute.</li>
-				</div>
-				</td>
-			</tr>
-			<tr>
-				<td class="td td61" style="text-align:right; padding-right: 5px; border-bottom:2px solid #ff8847;  border-right:2px solid #ff8847; ">Technologies</td>
-				<td class="td td62" style="padding-left: 5px;border-bottom:2px solid #ff8847;"> Core JAVA, Advance JAVA, Spring Framework, Web Services, HiberNate, JPA, PostgreSQL, MongoDB, MySQL, jQuery, JavaScript, Ajax, HTML5, CSS, BootStrap, Python, Django, Flask, Tomcat Server, TAXII Server, STIX</td>
-			</tr>
-		</tbody>
-	</table>
-<script>
-		var date1 = new Date('12/8/2016');
-		var date2 = new Date();
-		var yearsDiff =  date2.getFullYear() - date1.getFullYear();
-		var monthDiff;
-		if(date2.getMonth() == date1.getMonth()){
-			monthDiff = 0;
-		}else{
-			monthDiff = date2.getMonth()+1;
-			yearsDiff = yearsDiff - 1;
-		}
-		var month;
-		var expY = yearsDiff+" Years";
-		var expM = monthDiff+" Months";
-		if(monthDiff < 6){
-			month = monthDiff;
-		}else if(monthDiff >= 6 && monthDiff != 12){
-			month = monthDiff-1;
-		}else{
-			month = 0;
-		}
-		var exp = yearsDiff+"."+month+" Y";
-		document.getElementById('exp').innerHTML = exp;
-		document.getElementById('expY').innerHTML = expY;
-		document.getElementById('expM').innerHTML = expM;
-	</script>	
+	<div style="margin-left:60%;">
+		<div id="divcontact" style="float:left;">
+		Mr. Sudipta Santra<br>
+		<p>Present Address:</p>
+		<p>Present Address:</p>
+		<p>Present Address:</p>
+		Mobile: <a style="color:#ff8847;"href="tel:+91 8900620346">(+91) - 8900620346</a> <br>
+		Email: sudipta.biems@gmail.com
+		</div>
+		<div id="divmail" style="float:left;">mail
+		</div>
+		<div id="divsocial" style="float:left;">social
+		</div>
+		<div id="divmap" style="float:left;">map
+		</div>
+	</div>
+
+	<div class="menux" id="menux">
+		<div class="itemx itema" style="">
+			<a  style="color:#1c0b52" href="#" onclick="contactfunc();">
+				<i style="padding:0px 5px 3px 5px;"class="fa fa-headphones"></i>
+				<br>&nbsp;&nbsp;&nbsp;Contact
+			</a>
+		</div>
+
+		<div class="itemb">
+
+		</div>
+		
+		<div class="itemx itemc">
+			<a style="color:#1c0b52;" href="#" onclick="mapfunc();">
+				<i style="padding:0px 5px 3px 5px;"class="fa fa-plane"></i>
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MAP
+			</a>
+		</div>
+		<div class="itemx itemd">
+			<a style="color:#1c0b52;" href="#" onclick="mailfunc();">
+				<i class="fa fa-envelope"></i>
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;MAIL
+			</a>
+		</div>
+		<div class="itemx iteme">
+			<a style="color:#1c0b52;" href="#" onclick="socialfunc();">
+				<i class="fa fa-group"></i>
+				<br>&nbsp;&nbsp;&nbsp;SOCIAL
+			</a>
+		</div>
+		<div class="itemy itemf">
+
+		</div>
+		<div class="itemy itemg">
+
+		</div>
+		<div class="itemy itemh">
+
+	</div>
+	
+	
+	<script>
+	$(document).ready(function() {
+		$("#divcontact").show();	
+		$("#divmail").hide();
+		$("#divsocial").hide();
+		$("#divmap").hide();
+	});
+	function contactfunc(){
+		$("#divcontact").show();	
+		$("#divmail").hide();
+		$("#divsocial").hide();
+		$("#divmap").hide();
+	}
+	function mailfunc(){
+		$("#divcontact").hide();	
+		$("#divmail").show();
+		$("#divsocial").hide();
+		$("#divmap").hide();
+	}
+	function socialfunc(){
+		$("#divcontact").hide();	
+		$("#divmail").hide();
+		$("#divsocial").show();
+		$("#divmap").hide();
+	}
+	function mapfunc(){
+		$("#divcontact").hide();	
+		$("#divmail").hide();
+		$("#divsocial").hide();
+		$("#divmap").show();	
+	}
+	</script>
+</div>
+		
 	
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	
 	
-	</div>
-	<div class="logoclass">
-	<div id="main">
-		<div id="a">
-		<img src="https://santra-schema.github.io//images/javalogo.png" alt="header" style="width:100%;">
-		</div>
-		<div id="b">
-		<img src="https://santra-schema.github.io//images/springlogo.png" alt="header" style="margin-top:40%; width:100%;">
-		</div>
-		<div id="c">
-		<img src="https://santra-schema.github.io//images/postgreslogo.png" alt="header" style="margin-top:10%; width:100%;">
-		</div>
-		<div id="d">
-		<img src="https://santra-schema.github.io//images/hiberlogo.png" alt="header"  style="margin-top:40%;width:100%; height:40%">
-		</div>
-		<div id="e">
-		<img src="https://santra-schema.github.io//images/jquerylogo.png" alt="header" style="margin-top:30%; width:100%;">
-		</div>
-		<div id="f">
-		<img src="https://santra-schema.github.io//images/mysqllogo.png" alt="header" style="margin-top:10%; width:100%; height:80%">
-		</div>
-		<div id="g">
-		<img src="https://santra-schema.github.io//images/pythonlogo.png" alt="header" style="margin-top:20%; width:85%; height:75%">
-		</div>
-		<div id="h">
-		<img src="https://santra-schema.github.io//images/htmlcsslogo.png" alt="header" style="margin-top:20%; width:90%; height:55%">
-		</div>
-		<div id="i">
-		<img src="https://santra-schema.github.io//images/bootlogo.png" alt="header" style="margin-top:20%; width:90%; height:60%">
-		</div>
-		<div id="j">
-		<img src="https://santra-schema.github.io//images/tomcatlogo.png" alt="header" style="margin-top:20%; width:90%; height:60%">
-		</div>
-		<div id="k">
-		<img src="https://santra-schema.github.io//images/mongologo.png" alt="header" style="margin-top:20%; width:90%; height:60%">
-		</div>
-		<div id="l">
-		<img src="https://santra-schema.github.io//images/linuxlogo.png" alt="header" style="margin-top:20%; width:90%; height:60%">
-		</div>
-		<div id="x">
-		</div>
-	</div>
 	</div>
 	<div class="menu" id="menu">
 		<div class="item item1">
@@ -169,7 +195,7 @@ function topFunction() {
 			</a>
 		</div>
 
-		<div class="item item22 main">
+		<div class="item item26 main">
 			<a  style="color:white;"href="#" onclick="toggle()">
 				<i class="fa fa-close" id="add"></i>
 			</a>
@@ -181,8 +207,8 @@ function topFunction() {
 				<br>About Me
 			</a>
 		</div>
-		<div class="item item4 selected" >
-			<a  style="color:white;" href="https://santra-schema.github.io/professional.html">
+		<div class="item item4" >
+			<a  style="color:#e06c00;" href="https://santra-schema.github.io/professional.html">
 				<i class="fa fa-briefcase"></i>
 				<br>Professional<br>Experience
 			</a>
@@ -205,8 +231,8 @@ function topFunction() {
 				<br><br>Activities
 			</a>
 		</div>
-		<div class="item item8">
-		<a style="color:#e06c00;"  href="https://santra-schema.github.io/contact.html">
+		<div class="item item8 selected">
+		<a style="color:white;"  href="https://santra-schema.github.io/contact.html">
 				<i style="padding:0px 5px 3px 5px;"class="fa fa-tty"></i>
 				<br>Contact Me
 			</a>
@@ -236,7 +262,7 @@ function topFunction() {
 				}else{
 					document.getElementById("add").style.transform = 'rotate(0deg)';
 					document.getElementById("menu").style.transform= 'scale(0.7)';
-					i[3].style.transform='translate(135px,275px)';
+					i[3].style.transform='translate(135px,875px)';
 					i[1].style.transform='translate(0px,50px)';
 					i[5].style.transform='translate(0px,200px)';
 					i[7].style.transform='translate(0px,350px)';
