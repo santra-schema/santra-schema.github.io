@@ -144,7 +144,7 @@ body{
 .itemx{
 	height: 0;
 	width: 160px;
-	border-bottom: 70px solid #e8fcff;
+	border-bottom: 70px solid #ba561c;
 	border-left: 40px solid transparent;
 	border-right: 40px solid transparent;
 	position: absolute;
@@ -157,7 +157,7 @@ body{
 	content: ' ';
 	height: 0;
 	width: 160px;
-	border-top: 70px solid #e8fcff;
+	border-top: 70px solid #ba561c;
 	border-left: 40px solid transparent;
 	border-right: 40px solid transparent;
 	position: absolute;
