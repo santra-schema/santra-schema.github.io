@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="https://santra-schema.github.io/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="https://santra-schema.github.io/css/tooplate-santra-style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://santra-schema.github.io/css/aboutcss.css">
-	
+	<link rel="stylesheet" href="https://santra-schema.github.io/css/about.css">
+		<link rel="stylesheet" href="https://santra-schema.github.io/css/footer.css">
+
 </head>
 <body><button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i><br>Top	</button>
 <script>
@@ -25,11 +26,21 @@ var mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+	if(screen.width > 800){
+		if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	}else{
+		if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	
+	}
+ 
 }
 
 // When the user clicks on the button, scroll to the top of the document
@@ -43,24 +54,26 @@ function topFunction() {
 	</div>
 	<div class="maincontent">
 		<div style="width:89%; z-index:-20;">
-			<div style="width:80%; float:left;">
+			<div class="divtop">
 				<button style="cursor:default; background-color:#ba561c; border-color:#ba561c;" class="headbtn btn btn-primary active">About Me :</button><br><br>
 				<span class="hellospan">Hello &nbsp;|&nbsp; Ciào &nbsp;|&nbsp;   హలో     &nbsp;|&nbsp; Hola &nbsp;|&nbsp; Привет &nbsp;|&nbsp;  नमस्ते   &nbsp;|&nbsp;  Bonjour &nbsp;|&nbsp; Ahoj &nbsp; |&nbsp; مرحبا  &nbsp;|&nbsp; Olá  </span>,
 				<br><br>
-				<b style="font-size:19px; color:#ff8847;">I am a Web Designer / Developer based in India. </b>
+				<b class="myhead">I am a Web Designer / Developer based in India. </b>
 				<br>
+				<div id="normspan">
 				Since you landed here, you have found the man who can handle projects from scratch (even a logo) that build on visuals and aesthetics.  I am part of a network of creative professionals and capable of handling even the most challenging jobs.
-				
-			<br><br>
+				</div>
+			
 			</div>
-			<div style="width:20%; float:right;">
+			<div class="mypic">
 			<img src="https://santra-schema.github.io//images/mylogo.png" onContextMenu="return false;" alt="header" style="float:right; box-shadow: 0px 0px 20px #0a0724; border: 5px solid #0a0724; width:100%;"><br>
 			</div>
 
 		</div>
 		
-		<div class="container" style="margin-top:20%;">
-			<span style="float:left; position:relative;"><b style="font-size:22px; color:#ff8847;">My Rules : When I Build</b> &nbsp;&nbsp;&nbsp; <i>Don't Worry -- It's just SDLC </i>&#128519</span>
+		<div class="container">
+			<span style="float:left; position:relative;"><b class="spanhead1">My Rules : When I Build</b> &nbsp;&nbsp;&nbsp; <i id="sdlc">Don't Worry -- It's just SDLC </i>&#128519
+			</span>
 			<br><br>
 			<div class="acc">
 				<div class="btns">
@@ -74,7 +87,7 @@ function topFunction() {
 				<div class="info">
 					<div id="one" class="content active">
 						<h4>Planning</h4>
-						<p><span style="font-size:20px;">Answer Me & I will Plan for you.</span><br>
+						<p><span class="pspan">Answer Me & I will Plan for you.</span><br>
 							&#8226; &nbsp; What do you want ? <br>
 							&#8226; &nbsp; What is your objective ? <br>
 							&#8226; &nbsp; What are the current problems ? <br>
@@ -86,7 +99,7 @@ function topFunction() {
 					</div>
 					<div id="two" class="content">
 						<h4>Analysis</h4>
-						<p><span style="font-size:20px;">I will do the Requirement Analysis</span><br>
+						<p><span class="pspan">I will do the Requirement Analysis</span><br>
 							&#8226; &nbsp; Will analyze the feasibility. <br>
 							&#8226; &nbsp; Will develop a strategy for the project effort.  <br>
 							&#8226; &nbsp; Market analysis for the cost vs expertise. <br>
@@ -97,7 +110,7 @@ function topFunction() {
 					</div>
 					<div id="three" class="content">
 						<h4>Design</h4>
-						<p><span style="font-size:20px;">How I will get what I want ?</span><br>
+						<p><span class="pspan">How I will get what I want ?</span><br>
 							&#8226; &nbsp; I will design a system Architechture. <br>
 							&#8226; &nbsp; Desired features, operations and data-flow will be described in detail. <br>
 							&#8226; &nbsp; Include Software Specifications in Design Plan. <br>
@@ -115,7 +128,7 @@ function topFunction() {
 					</div>
 					<div id="five" class="content">
 						<h4>Testing & Integration</h4>
-						<p><span style="font-size:20px;">Is Everything Alright ?</span><br>
+						<p><span class="pspan">Is Everything Alright ?</span><br>
 							&#8226; &nbsp; I Don't know. I will test. <br>
 							&#8226; &nbsp; Still any doubt ? You can test. <br>
 							&#8226; &nbsp; Oh No! Found a <span style="font-size:25px">&#128030</span><br>
@@ -127,7 +140,7 @@ function topFunction() {
 					</div>
 					<div id="six" class="content">
 						<h4>Maintainance</h4>
-						<p><span style="font-size:20px;">I will never forget you</span><br>
+						<p><span class="pspan">I will never forget you</span><br>
 							The Application is assessed/evaluated to ensure it does not become obsolete. 
 							During maintainance stage, this is also where changes are made to initial software.
 							Application performance monitoring, Quality Check, and Production environment will be taken care if required.
@@ -415,29 +428,28 @@ $(function () {
 		}
 	</script>
 	
-<div class="login-footer">
+	<div class="login-footer"">
 		<div style="margin-right: 0px;">
 			<footer class="customFooter">
-					<div class="col-xs-12 col-sm-12 col-lg-12">
-					<span style="color:#bd3c00;font-size: 12px;text-align:left; width:30%"id="date"></span>
+					
+					<span class="footerdate" id="date"></span>
 					<br>
 					<div style="width: 100%;">
 					<table style="width: 100%;">
 						<tbody>
 							<tr>
-								<td style="width:42%;"><span style="color:#7d7d7d; font-size: 15px;" id="info"></span>   </td>
+								<td style="width:42%;"><span class="footerinfo" id="info"></span>   </td>
 								<td>
-								<span style="text-align:center;float:middle;color:#130970; font-weight:bold; "id ="cc"> <script type="text/javascript">var today=new Date(); var yr = today.getFullYear();
+								<span class="footercc"id ="cc"> <script type="text/javascript">var today=new Date(); var yr = today.getFullYear();
 								document.getElementById('cc').innerHTML = yr</script>
 								 ©&nbsp;Mr. Sudipta Santra, All rights reserved.  </span>
+								 
 								</td>
-								<td style="padding-left:50px;">
-								<div style="float:right; margin-right:10px;">
+								<td class="footertd1">
+								<div class="footerdivlast">
 								  <div>
 									<ul class="social-network social-circle">
 									  <li><a target="_blank" href="https://www.linkedin.com/in/sudiptasantra" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-									  <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-									  <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
 									  <li><a  target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=sudipta.biems@gmail.com" class="icoGoogle" title="Google +"><i class="fa fa-google"></i></a></li>
 									</ul>
 								  </div>
@@ -462,10 +474,8 @@ $(function () {
 				$("#info").html("You are surfing this site using Public IP: <b>" + data.ip + "</b>");
 			})
 			</script>
-			</div>
 			</footer>
 		</div>
 	</div>
-
 </body>
 </html>

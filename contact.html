@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="https://santra-schema.github.io/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="https://santra-schema.github.io/css/tooplate-santra-style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://santra-schema.github.io/css/aboutcss.css">
+	<link rel="stylesheet" href="F:/Package/git/santra-schema.github.io/css/aboutcss.css">
+	<link rel="stylesheet" href="F:/Package/git/santra-schema.github.io/css/footer.css">
+
 	<style>
 
 .faicon{
@@ -621,30 +623,28 @@ var yy = year - 2019;
 			}
 		}
 	</script>
-	
 <div class="login-footer">
 		<div style="margin-right: 0px;">
 			<footer class="customFooter">
-					<div class="col-xs-12 col-sm-12 col-lg-12">
-					<span style="color:#bd3c00;font-size: 12px;text-align:left; width:30%"id="date"></span>
+					
+					<span class="footerdate" id="date"></span>
 					<br>
 					<div style="width: 100%;">
 					<table style="width: 100%;">
 						<tbody>
 							<tr>
-								<td style="width:42%;"><span style="color:#7d7d7d; font-size: 15px;" id="info"></span>   </td>
+								<td style="width:42%;"><span class="footerinfo" id="info"></span>   </td>
 								<td>
-								<span style="text-align:center;float:middle;color:#130970; font-weight:bold; "id ="cc"> <script type="text/javascript">var today=new Date(); var yr = today.getFullYear();
+								<span class="footercc"id ="cc"> <script type="text/javascript">var today=new Date(); var yr = today.getFullYear();
 								document.getElementById('cc').innerHTML = yr</script>
 								 ©&nbsp;Mr. Sudipta Santra, All rights reserved.  </span>
+								 
 								</td>
-								<td style="padding-left:50px;">
-								<div style="float:right; margin-right:10px;">
+								<td class="footertd1">
+								<div class="footerdivlast">
 								  <div>
 									<ul class="social-network social-circle">
 									  <li><a target="_blank" href="https://www.linkedin.com/in/sudiptasantra" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-									  <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-									  <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
 									  <li><a  target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=sudipta.biems@gmail.com" class="icoGoogle" title="Google +"><i class="fa fa-google"></i></a></li>
 									</ul>
 								  </div>
@@ -655,10 +655,6 @@ var yy = year - 2019;
 					</table>
 					
 					</div>
-					
-
-			  
-			  
 			<script>
 
 					var d = new Date();
@@ -669,7 +665,6 @@ var yy = year - 2019;
 				$("#info").html("You are surfing this site using Public IP: <b>" + data.ip + "</b>");
 			})
 			</script>
-			</div>
 			</footer>
 		</div>
 	</div>
