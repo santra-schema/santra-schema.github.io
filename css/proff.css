@@ -1,0 +1,819 @@
+.headbtn{
+	font-size:26px;
+}
+.hellospan{
+	font-size:18px;
+}
+.bclass{
+	font-size:22px; color:#ff8847;
+}
+#bcomp{
+	font-size:20px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 40px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #de6a2f;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50px;
+  margin-bottom:3%;
+}
+
+#myBtn:hover {
+  background-color: #ff9d6b;;
+}
+
+body{
+	/*background: linear-gradient(to right, #2a3a49 0%, #2a3a49 68.2%, white 68.2%, white 100%);*/
+	background:#2a2a49;
+	padding: 0;
+	margin: 0;
+	
+}
+
+.menu, .menux{
+	position: relative;
+	width:100px;
+	height:1000px;
+	bottom:150px;
+	transform: scale(0.7);
+	/*background-image: url("F:/Package/santra-schema.github.io/santra-schema.github.io/images/source.gif"); */
+
+}
+
+.itemx{
+	height: 0;
+	width: 160px;
+	border-bottom: 71px solid #e8fcff;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	position: absolute;
+	top: 0;
+	transition: 1s;
+	font-size:12px;
+	font-weight:bold;
+}
+.itemx:before{
+	content: ' ';
+	height: 0;
+	width: 160px;
+	border-top: 71px solid #e8fcff;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	position: absolute;
+	top: 70px;
+	left: -40px;
+	font-size:12px;
+	font-weight:bold;
+
+}
+.itemb{
+	height: 0;
+	width: 160px;
+	border-bottom: 71px solid #ed7834;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	position: absolute;
+	top: 0;
+	transition: 1s;
+	font-size:12px;
+	font-weight:bold;
+}
+.itemb:before{
+	content: ' ';
+	height: 0;
+	width: 160px;
+	border-top: 71px solid #ed7834;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	position: absolute;
+	top: 70px;
+	left: -40px;
+	font-size:12px;
+	font-weight:bold;
+}.itemy{
+	height: 0;
+	width: 160px;
+	border-bottom: 71px solid #ed7834;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	position: absolute;
+	top: 0;
+	transition: 1s;
+	font-size:12px;
+	font-weight:bold;
+}
+.itemy:before{
+	content: ' ';
+	height: 0;
+	width: 160px;
+	border-top: 71px solid #ed7834;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	position: absolute;
+	top: 70px;
+	left: -40px;
+	font-size:12px;
+	font-weight:bold;
+}
+.item{
+	height: 0;
+	width: 160px;
+	border-bottom: 71px solid #fff;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	position: absolute;
+	top: 0;
+	transition: 1s;
+	font-size:12px;
+	font-weight:bold;
+}
+.item:before{
+	content: ' ';
+	height: 0;
+	width: 160px;
+	border-top: 71px solid #fff;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	position: absolute;
+	top: 70px;
+	left: -40px;
+	font-size:12px;
+	font-weight:bold;
+}
+.selected{
+border-bottom: 70px solid #e06c00;
+}
+.selected:before{
+border-top: 70px solid #e06c00;
+}
+.main{
+border-bottom: 70px solid #e06c00;
+}
+.main:before{
+border-top: 70px solid #e06c00;
+}
+#add{
+	font-size: 80px;
+	color: #fff;
+	position: relative;
+}
+.menu a>.fa{
+	font-size: 60px;
+}
+.menu a{
+	position: relative;
+	top: 40px;
+	left: 10px;
+	
+}
+.menu :not(.main) a>.fa:hover{
+	color: #bd3c00;
+	transform: scale(1.3);
+	transition: 1s;
+}
+
+.menux a>.fa{
+	font-size: 60px;
+}
+.menux a{
+	position: relative;
+	top: 40px;
+	left: 10px;
+	
+}
+.menux :not(.main) a>.fa:hover{
+	color: #4168b5;
+	transform: scale(1.3);
+	transition: 1s;
+}
+#namespan{
+	font-family:calibari;font-size:23px; color:#e06c00; padding:5px 10px 5px 10px; border: 2px solid #e06c00;border-radius: 25px; background-color:#fbffc9;
+}
+.item1{transform : translate(0px,50px)
+}.item21{z-index: 9;transform : translate(135px,125px)
+}.item22{z-index: 9;transform : translate(135px,275px)
+}.item23{z-index: 9;transform : translate(135px,575px)
+}.item26{z-index: 9;transform : translate(135px,875px)
+}.item3{transform : translate(0px,200px)
+}.item4{transform : translate(0px,350px)
+}.item5{transform : translate(0px,500px)
+}.item6{transform : translate(0px,650px)
+}.item7{transform : translate(0px,800px)
+}.item8{transform : translate(0px,950px)
+}
+.itema{transform : translate(0px,100px)
+}.itemb{opacity:0.5;cursor:none; transform : translate(0px,250px)
+}.itemc{transform : translate(0px,400px)
+}.itemd{transform : translate(130px,175px)
+}.iteme{transform : translate(130px,325px)
+}.itemf{transform : translate(260px,250px)
+}.itemg{transform : translate(-130px,175px)
+}.itemh{transform : translate(-130px,325px)
+}
+
+
+
+
+.logoclass{	
+	bottom: 0px;
+	position:fixed;
+	background-color:#2a2a49;
+	height:100px;
+	width:100%;
+	float:right;
+	color:white;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+.maincontent{
+	width:70%;
+	float:right;
+	color:white;
+	padding-top:20px;
+	padding-right:5%;
+	margin-bottom: 100px;
+}
+.certificate .maincontent{
+}
+
+
+.container {
+	padding: 5px 20px 20px 20px;
+	width: 100%;
+	margin: 10px auto;
+	margin-left:-20px;
+
+}
+
+.container h1 {
+	text-align: center;
+	color: #FFF;
+	letter-spacing: 2px;
+	opacity: 0;
+}
+
+.td {
+  margin: 0;
+  padding: 0;
+}
+
+.td {
+  padding: .5em 0;
+  position: relative;
+}
+.td31:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  border-top: 2px solid #ff8847;
+  width: 100%;
+  right: 0;
+}
+.td32:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  border-top: 2px solid #ff8847;;
+  width: 20%;
+  left: 0;
+}
+.td41:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  border-top: 2px solid #ff8847;;
+  width: 100%;
+  right: 0;
+}
+.td42:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  border-top: 2px solid #ff8847;;
+  width: 30%;
+  left: 0;
+}
+.td51:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  border-top: 2px solid #ff8847;;
+  width: 100%;
+  right: 0;
+}
+.td52:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  border-top: 2px solid #ff8847;;
+  width: 40%;
+  left: 0;
+}
+.td61:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  border-top: 2px solid #ff8847;;
+  width: 100%;
+  right: 0;
+}
+.td62:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  border-top: 2px solid #ff8847;;
+  width: 70%;
+  left: 0;
+}
+#main{
+	z-index:0;
+	display: flex;
+	position: relative;
+
+}
+
+#a {
+  opacity:0;
+  z-index:8;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation-name: example;
+  animation-duration: 18s;
+  animation-delay: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#b {
+  opacity:0;
+  z-index:7;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation-name: example;
+  animation-duration: 18s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#c {
+  opacity:0;
+  z-index:6;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 18s;
+  animation-delay: 4.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#d {
+  opacity:0;
+  z-index:5;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 18s;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#e {
+  opacity:0;
+  z-index:4;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 18s;
+  animation-delay: 7.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#f {
+  opacity:0;
+  z-index:3;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 18s;
+  animation-delay: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;  
+}
+#g {
+  opacity:0;
+  z-index:3;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 18s;
+  animation-delay: 10.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#h {
+  opacity:0;
+  z-index:3;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 18s;
+  animation-delay: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+#i {
+  opacity:0;
+  z-index:3;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 18s;
+  animation-delay: 13.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#j {
+  opacity:0;
+  z-index:3;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 18s;
+  animation-delay: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#k {
+  opacity:0;
+  z-index:3;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 18s;
+  animation-delay: 16.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#l {
+  opacity:0;
+  z-index:3;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 18s;
+  animation-delay: 18s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#x {
+  opacity:1;
+  z-index:2;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 18s;
+  animation-delay: 19.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes example {
+  0%   {opacity:0;left:0px; top:0px;}
+  50%  {opacity:1; left:50%; top:0px;}
+  100%  {opacity:0; left:100%; top:0px;}
+}
+
+@media only screen and (max-width:800px){
+	.maincontent table{
+	width: 110%;
+	transform : translate(-40px,20px);
+}
+
+#bcomp{
+	font-size:14px;
+}
+.td{
+	  font-size:8px;
+}
+.bclass{
+	font-size:10px; color:#ff8847;
+}
+
+	
+.headbtn{
+	font-size:5px;
+}
+.hellospan{
+	font-size:3px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+  z-index: 99;
+  font-size: 2px;
+  border: none;
+  outline: none;
+  background-color: #de6a2f;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50px;
+  margin-bottom:36%;
+}
+.menu{
+	position: relative;
+	width:50px;
+	transform: scale(0.7);
+
+}
+.item{
+	height: 0;
+	width: 80px;
+	border-bottom: 35px solid #fff;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	position: absolute;
+	top: 0;
+	transition: 1s;
+	font-size:0px;
+	font-weight:bold;
+}
+.item:before{
+	content: ' ';
+	height: 0;
+	width: 80px;
+	border-top: 35px solid #fff;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	position: absolute;
+	top: 34px;
+	left: -20px;
+	font-size:4px;
+	font-weight:bold;
+}
+.selected{
+border-bottom: 35px solid #e06c00;
+}
+.selected:before{
+border-top: 35px solid #e06c00;
+}
+.main{
+border-bottom: 35px solid #e06c00;
+}
+.main:before{
+border-top: 35px solid #e06c00;
+}
+#add{
+	font-size: 40px;
+	color: #fff;
+	position: relative;
+}
+.menu a>.fa{
+	font-size: 30px;
+}
+.menu a{
+	position: relative;
+	top: 20px;
+	left: 5px;
+	
+}
+.menu :not(.main) a>.fa:hover{
+	color: #bd3c00;
+	transform: scale(0.6);
+	transition: 1s;
+}
+
+.item1{transform : translate(0px,25px)
+}.item21{z-index: 9;transform : translate(70px,62px)
+}.item22{z-index: 9;transform : translate(70px,142px)
+}.item23{z-index: 9;transform : translate(70px,306px)
+}.item3{transform : translate(0px,105px)
+}.item4{transform : translate(0px,185px)
+}.item5{transform : translate(0px,265px)
+}.item6{transform : translate(0px,345px)
+}.item7{transform : translate(0px,425px)
+}.item8{transform : translate(0px,505px)
+}
+
+.logoclass{	
+	bottom: 0px;
+	position:fixed;
+	background-color:#2a2a49;
+	height:100px;
+	width:100%;
+	float:right;
+	color:white;
+	margin-top: 3%;
+	margin-bottom: 15%;
+}
+.maincontent{
+	width:70%;
+	float:right;
+	color:white;
+	padding-top:20px;
+	padding-right:0%;
+	padding-bottom:250px;
+}
+.headbtn{
+	font-size:15px;
+}
+
+
+#main{
+	z-index:0;
+	display: flex;
+	position: relative;
+
+}
+
+#a {
+  opacity:0;
+  z-index:8;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#b {
+  opacity:0;
+  z-index:7;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#c {
+  opacity:0;
+  z-index:6;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#d {
+  opacity:0;
+  z-index:5;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#e {
+  opacity:0;
+  z-index:4;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#f {
+  opacity:0;
+  z-index:3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;  
+}
+#g {
+  opacity:0;
+  z-index:3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#h {
+  opacity:0;
+  z-index:3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 16s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+#i {
+  opacity:0;
+  z-index:3;
+  width: 50px;
+  height:50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 18s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#j {
+  opacity:0;
+  z-index:3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#k {
+  opacity:0;
+  z-index:3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 22s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#l {
+  opacity:0;
+  z-index:3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 24s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#x {
+  opacity:1;
+  z-index:2;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 24s;
+  animation-delay: 26s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes example {
+  0%   {opacity:0;left:0px; top:0px;}
+  25%  {opacity:1; left:50%; top:0px;}
+  100%  {opacity:0; left:200%; top:0px;}
+}
+	
+}

@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://santra-schema.github.io/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="https://santra-schema.github.io/css/tooplate-santra-style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://santra-schema.github.io/css/aboutcss.css">
-		<link rel="stylesheet" href="F:/Package/git/santra-schema.github.io/css/footer.css">
+	<link rel="stylesheet" href="https://santra-schema.github.io/css/proff.css">
+		<link rel="stylesheet" href="https://santra-schema.github.io/css/footer.css">
 	<style>
 
 
@@ -30,13 +30,21 @@ var mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+	if(screen.width > 800){
+		if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	}else{
+		if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+			mybutton.style.display = "block";
+		} else {
+			mybutton.style.display = "none";
+		}
+	
+	}
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;
@@ -54,11 +62,11 @@ function topFunction() {
 	<table>
 		<tbody style="vertical-align:top;">
 			<tr>
-				<td class="td td1" style="border-bottom:2px solid #ff8847;" colspan="2"><b style="font-size:22px; color:#ff8847;">Dec - 2016 &nbsp;&nbsp; TO &nbsp;&nbsp; Present </b>&nbsp;&nbsp;<span id ="exp"></span></td>
+				<td class="td td1" style="border-bottom:2px solid #ff8847;" colspan="2"><b class="bclass">Dec - 2016 &nbsp;&nbsp; TO &nbsp;&nbsp; Present </b>&nbsp;&nbsp;<span id ="exp"></span></td>
 			</tr>
 			<tr>
-				<td class="td td21" style="text-align:right; padding-right: 5px;border-right:2px solid #ff8847; width:20%;">Company Name  </td>
-				<td class="td td22" style="padding-left: 5px;"><a style="color:white;"target="_blank" href="https://www.tcs.com/"><b style="font-size:20px;">TATA Consultancy Services</b> 
+				<td class="td td21" style="text-align:right; padding-right: 5px;border-right:2px solid #ff8847; width:25%;">Company Name  </td>
+				<td class="td td22" style="padding-left: 5px;"><a style="color:white;"target="_blank" href="https://www.tcs.com/"><b id="bcomp">TATA Consultancy Services</b> 
 				<img src="https://santra-schema.github.io//images/tatalogo.png" alt="header" style="float:right;width:10%;">
 				</a></td>
 			</tr>

@@ -9,6 +9,19 @@
 .compspan {
 	float:right;text-align:right;
 }
+@media only screen and (max-width:800px){
+
+.yearspan {
+	font-size:5px;font-weight:bold; color:grey;float:right;
+}
+.certspan {
+	font-size:17px;color:#ff8847; text-align:right;
+}
+.compspan {
+	font-size:6px; float:right;text-align:right;
+}
+
+}
 /* Override UGG site */
 #main {width: 100%; padding:0;}
 .content-asset p {margin:0 auto;}
