@@ -170,7 +170,7 @@ body{
 .itemb{
 	height: 0;
 	width: 160px;
-	border-bottom: 70px solid #b8ff8a;
+	border-bottom: 70px solid #ed7834;
 	border-left: 40px solid transparent;
 	border-right: 40px solid transparent;
 	position: absolute;
@@ -183,7 +183,7 @@ body{
 	content: ' ';
 	height: 0;
 	width: 160px;
-	border-top: 70px solid #b8ff8a;
+	border-top: 70px solid #ed7834;
 	border-left: 40px solid transparent;
 	border-right: 40px solid transparent;
 	position: absolute;
@@ -194,7 +194,7 @@ body{
 }.itemy{
 	height: 0;
 	width: 160px;
-	border-bottom: 70px solid #ffffa1;
+	border-bottom: 70px solid #ed7834;
 	border-left: 40px solid transparent;
 	border-right: 40px solid transparent;
 	position: absolute;
@@ -207,7 +207,7 @@ body{
 	content: ' ';
 	height: 0;
 	width: 160px;
-	border-top: 70px solid #ffffa1;
+	border-top: 70px solid #ed7834;
 	border-left: 40px solid transparent;
 	border-right: 40px solid transparent;
 	position: absolute;
@@ -303,7 +303,7 @@ border-top: 70px solid #e06c00;
 }.item8{transform : translate(0px,950px)
 }
 .itema{transform : translate(0px,100px)
-}.itemb{cursor:none; transform : translate(0px,250px)
+}.itemb{opacity:0.5;cursor:none; transform : translate(0px,250px)
 }.itemc{transform : translate(0px,400px)
 }.itemd{transform : translate(130px,175px)
 }.iteme{transform : translate(130px,325px)
