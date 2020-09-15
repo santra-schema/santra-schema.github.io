@@ -148,8 +148,7 @@ ul {
 
 @media only screen and (max-width: 800px){
 .deck__label{
-opacity:0;
-z-index:-100;
+display:none;
 }
 ul {
     list-style-type: none;
@@ -206,6 +205,8 @@ ul {
 	 display: block;
 	 color: white;
 	 color: rgba(255, 255, 255, .8);
+	 height:80px;
+	 
 }
  .deck__icon {
 	 font-family: 'FontAwesome', sans-serif;
@@ -213,14 +214,15 @@ ul {
 	 color: black;
 	 color: rgba(0, 0, 0, .6);
 	 display: block;
-	 margin: 0.5em auto;
+	 margin: auto;
 } .deck__icon:hover{
 	 font-family: 'FontAwesome', sans-serif;
 	 font-size: 18px;
 	 color: white;
 	 display: block;
-	 margin: 0.5em auto;
+	 margin: auto;
 }
+
 }
 
  .deck__item--facebook {
