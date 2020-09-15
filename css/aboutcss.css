@@ -356,7 +356,7 @@ text-align:top;z-index:-5;color:#301111; font-size:20px;position:absolute;
 	position: relative;
 	width:50px;
 	transform: scale(0.7);
-
+	padding-bottom:500px;
 }
 .item{
 	height: 0;
