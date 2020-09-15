@@ -346,13 +346,18 @@ text-align:top;z-index:-5;color:#301111; font-size:20px;position:absolute;
   border-radius: 50px;
   margin-bottom:50%;
 }
-.menu, .menux{
+.menu{
 	position: relative;
 	width:50px;
 	transform: scale(0.7);
 
 }
+.menux{
+	position: relative;
+	width:50px;
+	transform: scale(0.7);
 
+}
 .item{
 	height: 0;
 	width: 80px;
