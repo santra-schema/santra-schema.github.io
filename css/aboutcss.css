@@ -21,7 +21,7 @@ text-align:top;padding-left:50px;z-index:-5;color:#301111; font-size:50px;positi
 	margin-left:60%;
 }
 #myBtn:hover {
-  background-color: #ff9d6b;;
+  background-color: #ff9d6b;
 }
 #award {
   display: none;
@@ -760,7 +760,7 @@ border-top: 35px solid #e06c00;
   content: '';
   position: absolute;
   top: 0;
-  border-top: 2px solid #ff8847;;
+  border-top: 2px solid #ff8847;
   width: 100%;
   right: 0;
 }
@@ -784,7 +784,7 @@ border-top: 35px solid #e06c00;
   content: '';
   position: absolute;
   top: 0;
-  border-top: 2px solid #ff8847;;
+  border-top: 2px solid #ff8847;
   width: 30%;
   left: 0;
 }
