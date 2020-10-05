@@ -55,23 +55,121 @@ function topFunction() {
 		<img src="https://santra-schema.github.io//images/header.jpg" style="width:100%;" alt="header">
 	</div>
 	<div class="maincontent">
-	<button style="cursor:default; background-color:#ba561c; border-color:#ba561c;" class="headbtn btn btn-primary active">aaaaaaa :</button><br><br>
+	<button style="cursor:default; background-color:#ba561c; border-color:#ba561c;" class="headbtn btn btn-primary active">Professional Experience :</button><br><br>
 	<span class="hellospan">Am an IT Professional having a total experience of 
 	<span style="color:#ff8847;" id ="expY"></span> and <span style="color:#ff8847;" id ="expM"></span></span>
 	<br><br>
-  	<p style="transform:translate(100px,130px)">aaaaa</p>
-	<p style="transform:translate(100px,300px)">bbbbb</p>
-	<p style="transform:translate(1200px,130px)">ccccc</p>
-	<p style="transform:translate(1200px,300px)">ddddd</p>
-	
-	
-
+	<table>
+		<tbody style="vertical-align:top;">
+			<tr>
+				<td class="td td1" style="border-bottom:2px solid #ff8847;" colspan="2"><b class="bclass">Dec - 2016 &nbsp;&nbsp; TO &nbsp;&nbsp; Present </b>&nbsp;&nbsp;<span id ="exp"></span></td>
+			</tr>
+			<tr>
+				<td class="td td21" style="text-align:right; padding-right: 5px;border-right:2px solid #ff8847; width:25%;">Company Name  </td>
+				<td class="td td22" style="padding-left: 5px;"><a style="color:white;"target="_blank" href="https://www.tcs.com/"><b id="bcomp">TATA Consultancy Services</b> 
+				<img src="https://santra-schema.github.io//images/tatalogo.png" alt="header" style="float:right;width:10%;">
+				</a></td>
+			</tr>
+			<tr>
+				<td class="td td31" style="text-align:right;padding-right: 5px; border-right:2px solid #ff8847;">Role </td>
+				<td class="td td32" style="padding-left: 5px;">Software Developer</td>
+			</tr>
+			<tr>
+				<td class="td td41" style="text-align:right; padding-right: 5px;border-right:2px solid #ff8847;">Position </td>
+				<td class="td td42" style="padding-left: 5px;">System Engineer</td>
+			</tr>
+			<tr>
+				<td class="td td51" style="text-align:right; padding-right: 5px;border-right:2px solid #ff8847;">Responsibilities </td>
+				<td class="td td52">
+				<div style="padding-left:5px;">
+					<li><span style="color:#ff8847;">Project-1 : </span> &nbsp;As a full stack JAVA developer, developed ‘Cyber Threat Exchange’ web application using Spring framework for all financial sector under RBI (Govt. of India).</li>
+					<li><span style="color:#ff8847;">Project-2 : </span> As a full stack developer, Implementing <a href="https://oasis-open.github.io/cti-documentation/stix/intro.html" target="_blank" style="text-decoration: underline;color:#ff8847;">STIX & TAXII</a> standards using Python knowledge to develop ‘Threat Intelligence Platform’ under RBI (Govt. of India).
+					
+					</li>
+					<li><span style="color:#ff8847;">Project-3 : </span> &nbsp;Worked with Support Management role for ‘Customer Billing Format’ under TATA Communications Ltd.</li>
+					<li><span style="color:#ff8847;">Project-4 : </span> &nbsp;Develop HRMS application of Banking R &D Institute.</li>
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="td td61" style="text-align:right; padding-right: 5px; border-bottom:2px solid #ff8847;  border-right:2px solid #ff8847; ">Technologies</td>
+				<td class="td td62" style="padding-left: 5px;border-bottom:2px solid #ff8847;"> Core JAVA, Advance JAVA, Spring Framework, Web Services, HiberNate, JPA, PostgreSQL, MongoDB, MySQL, jQuery, JavaScript, Ajax, HTML5, CSS, BootStrap, Python, Django, Flask, Tomcat Server, TAXII Server, STIX</td>
+			</tr>
+		</tbody>
+	</table>
+<script>
+		var date1 = new Date('12/8/2016');
+		var date2 = new Date();
+		var yearsDiff =  date2.getFullYear() - date1.getFullYear();
+		var monthDiff;
+		if(date2.getMonth() == date1.getMonth()){
+			monthDiff = 0;
+		}else{
+			monthDiff = date2.getMonth()+1;
+			yearsDiff = yearsDiff - 1;
+		}
+		var month;
+		var expY = yearsDiff+" Years";
+		var expM = monthDiff+" Months";
+		if(monthDiff < 6){
+			month = monthDiff;
+		}else if(monthDiff >= 6 && monthDiff != 12){
+			month = monthDiff-1;
+		}else{
+			month = 0;
+		}
+		var exp = yearsDiff+"."+month+" Y";
+		document.getElementById('exp').innerHTML = exp;
+		document.getElementById('expY').innerHTML = expY;
+		document.getElementById('expM').innerHTML = expM;
+	</script>	
 	
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	
 	
 	</div>
-
+	<div class="logoclass">
+	<div id="main">
+		<div id="a">
+		<img src="https://santra-schema.github.io//images/javalogo.png" alt="header" style="width:100%;">
+		</div>
+		<div id="b">
+		<img src="https://santra-schema.github.io//images/springlogo.png" alt="header" style="margin-top:40%; width:100%;">
+		</div>
+		<div id="c">
+		<img src="https://santra-schema.github.io//images/postgreslogo.png" alt="header" style="margin-top:10%; width:100%;">
+		</div>
+		<div id="d">
+		<img src="https://santra-schema.github.io//images/hiberlogo.png" alt="header"  style="margin-top:40%;width:100%; height:40%">
+		</div>
+		<div id="e">
+		<img src="https://santra-schema.github.io//images/jquerylogo.png" alt="header" style="margin-top:30%; width:100%;">
+		</div>
+		<div id="f">
+		<img src="https://santra-schema.github.io//images/mysqllogo.png" alt="header" style="margin-top:10%; width:100%; height:80%">
+		</div>
+		<div id="g">
+		<img src="https://santra-schema.github.io//images/pythonlogo.png" alt="header" style="margin-top:20%; width:85%; height:75%">
+		</div>
+		<div id="h">
+		<img src="https://santra-schema.github.io//images/htmlcsslogo.png" alt="header" style="margin-top:20%; width:90%; height:55%">
+		</div>
+		<div id="i">
+		<img src="https://santra-schema.github.io//images/bootlogo.png" alt="header" style="margin-top:20%; width:90%; height:60%">
+		</div>
+		<div id="j">
+		<img src="https://santra-schema.github.io//images/tomcatlogo.png" alt="header" style="margin-top:20%; width:90%; height:60%">
+		</div>
+		<div id="k">
+		<img src="https://santra-schema.github.io//images/mongologo.png" alt="header" style="margin-top:20%; width:90%; height:60%">
+		</div>
+		<div id="l">
+		<img src="https://santra-schema.github.io//images/linuxlogo.png" alt="header" style="margin-top:20%; width:90%; height:60%">
+		</div>
+		<div id="x">
+		</div>
+	</div>
+	</div>
 	<div class="menu" id="menu">
 		<div class="item item1">
 			<a  style="color:#e06c00;"href="https://santra-schema.github.io/">
