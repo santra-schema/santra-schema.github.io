@@ -53,6 +53,40 @@ function topFunction() {
 	</div>
 	<div class="maincontent">
 
+<div class="menuz" id="menuz">
+		<div class="itemz itemi" style="">
+			<a  style="color:#1c0b52" href="#" onclick="act()">
+				<i style=""class="fa fa-cutlery"></i>
+				<br>Activities
+			</a>
+		</div>
+		
+		<div class="itemz itemj">
+			<a style="color:#1c0b52;" href="#" onclick="gossip()">
+				<i style=""class="fa fa-commenting"></i>
+				<br>Gossip
+			</a>
+		</div>
+		
+		<div class="itemz itemk">
+			<a style="color:#1c0b52;" href="#" onclick="hobby()">
+				<i style=""class="fa fa-dashboard"></i>
+				<br>Hobbies
+			</a>
+		</div>
+
+</div>
+	<br><br><br><br>
+	<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-spacing: 0px;"id="aspan">=========</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="bspan">=========</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="cspan">=========</span>
+	<br>
+	<br>
+	
+<div id="actdiv" class="actdiv">
+Contents are uploading...
+</div>	
+
+	
+<div id="gossipdiv" class="gossipdiv">
 	<button style="background-color:#ba561c; border-color:#ba561c;" id="tagitprof" class="btn btn-primary" onclick="itprof()">Comments from IT Proffesional</button>
 	<button style="color: #4f4e4d; background-color:#fff9f2; border-color:#ba561c;" id="tagcust" class="btn btn-primary" onclick="cust()">Commnets from Customer</button>
 	<button style="color: #4f4e4d; background-color:#fff9f2; border-color:#ba561c;" id="tagother" class="btn btn-primary" onclick="other()">Commnets from Others</button><br><br>
@@ -73,7 +107,7 @@ function topFunction() {
 	<div style="position:relative;display:flex;margin-bottom:15px;width:720px; height:160px">
 		<div style="background-color:#2a2a49;width:20%; height:100%"><img src="https://santra-schema.github.io//images/women.png" style="width:100%;height:100%;" alt="header"></div>
 		<div style="background-color:#7575a1; border-radius: 25px;width:80%; height:100%; padding:10px 15px 5px 15px;">
-			<div style="text-align: justify;line-height: 1.5;font-family:papyrus;font-size:15px;">Santra is proactive, flexible and reliable collaborator with a strong technical & problem solving skill. As a full stack developer he is expertise in JAVA, Web Service and UI designing. As a team member, I have developed my technical skill under his guidance and support. </div>
+			<div style="text-align: justify;line-height: 1.5;font-family:papyrus;font-size:15px;">Santra has a very high ability to grasp technical knowledge and utilize his skills in critical situation. As a developer, it is a delightful experience for me to work with him as he is a qualified professional.As I have worked with him in various projects over years, I am an witness of his passion, professionalism, mentor-ship and dedication. </div>
 			<div style="padding-left:5px;position: absolute; bottom: 5px;"><span style="color:black; font-size:8px;">
 			<a style="color:black;"target="_blank" href="https://www.linkedin.com/in/tanushree-maharana-a29279a2/"><i style="padding:4px 0px 0px 4px;width:20px; height:20px;background-color: white;border-radius: 2px; color:#2863a6;"class="fa fa-linkedin"></i>&nbsp;&nbsp;&nbsp;
 			<b>Tanushree Maharana</b></a></span><span style="color:#3f3f42; font-size:8px;">, Software Developer, <b>Accenture</b></span>
@@ -87,7 +121,7 @@ function topFunction() {
 	<div style="position:relative;display:flex;margin-bottom:15px;width:720px; height:160px">
 		<div style="background-color:#2a2a49;width:20%; height:100%"><img src="https://santra-schema.github.io//images/women.png" style="width:100%;height:100%;" alt="header"></div>
 		<div style="background-color:#7575a1; border-radius: 25px;width:80%; height:100%; padding:10px 15px 5px 15px;">
-			<div style="text-align: justify;line-height: 1.5;font-family:papyrus;font-size:15px;">Santra is proactive, flexible and reliable collaborator with a strong technical & problem solving skill. As a full stack developer he is expertise in JAVA, Web Service and UI designing. As a team member, I have developed my technical skill under his guidance and support. </div>
+			<div style="text-align: justify;line-height: 1.5;font-family:papyrus;font-size:15px;">aaaaaaa. </div>
 			<div style="padding-left:5px;position: absolute; bottom: 5px;"><span style="color:black; font-size:8px;">
 			<a style="color:black;"target="_blank" href="https://www.linkedin.com/in/tanushree-maharana-a29279a2/"><i style="padding:4px 0px 0px 4px;width:20px; height:20px;background-color: white;border-radius: 2px; color:#2863a6;"class="fa fa-linkedin"></i>&nbsp;&nbsp;&nbsp;
 			<b>Tanushree Maharana</b></a></span><span style="color:#3f3f42; font-size:8px;">, Software Developer, <b>Accenture</b></span>
@@ -97,13 +131,56 @@ function topFunction() {
 	</div>
 
 
+</div>
+<div id="hobbydiv" class="hobbydiv">
+Contents are uploading...
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	
+</div>
 <script>
 $(document).ready(function() {
+	$("#actdiv").show();
+	$("#gossipdiv").hide();
+	$("#hobbydiv").hide();
+	document.getElementById("aspan").style.color = "#ba561c";
+	document.getElementById("bspan").style.color = "white";
+	document.getElementById("cspan").style.color = "white";
 	$("#itprof").show();
 	$("#cust").hide();
 	$("#other").hide();
-		
+	document.getElementById("tagitprof").style.background = "#ba561c";
+	document.getElementById("tagcust").style.background = "#fff9f2";
+	document.getElementById("tagother").style.background = "#fff9f2";
+	document.getElementById("tagitprof").style.color = "white";
+	document.getElementById("tagcust").style.color = "#4f4e4d";
+	document.getElementById("tagother").style.color = "#4f4e4d";
 });
+function act() {
+	$("#actdiv").show();
+	$("#gossipdiv").hide();
+	$("#hobbydiv").hide();
+	document.getElementById("aspan").style.color = "#ba561c";
+	document.getElementById("bspan").style.color = "white";
+	document.getElementById("cspan").style.color = "white";
+}
+function gossip() {
+	$("#actdiv").hide();
+	$("#gossipdiv").show();
+	$("#hobbydiv").hide();
+	document.getElementById("aspan").style.color = "white";
+	document.getElementById("bspan").style.color = "#ba561c";
+	document.getElementById("cspan").style.color = "white";
+}
+function hobby() {
+	$("#actdiv").hide();
+	$("#gossipdiv").hide();
+	$("#hobbydiv").show();
+	document.getElementById("aspan").style.color = "white";
+	document.getElementById("bspan").style.color = "white";
+	document.getElementById("cspan").style.color = "#ba561c";
+}
+
 function itprof() {
 	$("#itprof").show();
 	$("#cust").hide();
@@ -138,9 +215,7 @@ function other() {
 	document.getElementById("tagother").style.color = "white";
 }
 </script>
-	
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-</div>
+
 	<div class="menu" id="menu">
 		<div class="item item1">
 			<a  style="color:#e06c00;"href="https://santra-schema.github.io/">
