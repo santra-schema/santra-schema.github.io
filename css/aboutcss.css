@@ -752,7 +752,7 @@ border-top: 35px solid #e06c00;
   content: '';
   position: absolute;
   top: 0;
-  border-top: 2px solid #ff8847;;
+  border-top: 2px solid #ff8847;
   width: 50%;
   left: 0;
 }
@@ -768,7 +768,7 @@ border-top: 35px solid #e06c00;
   content: '';
   position: absolute;
   top: 0;
-  border-top: 2px solid #ff8847;;
+  border-top: 2px solid #ff8847;
   width: 40%;
   left: 0;
 }
@@ -776,7 +776,7 @@ border-top: 35px solid #e06c00;
   content: '';
   position: absolute;
   top: 0;
-  border-top: 2px solid #ff8847;;
+  border-top: 2px solid #ff8847;
   width: 100%;
   right: 0;
 }
@@ -792,7 +792,7 @@ border-top: 35px solid #e06c00;
   content: '';
   position: absolute;
   top: 0;
-  border-top: 2px solid #ff8847;;
+  border-top: 2px solid #ff8847;
   width: 100%;
   right: 0;
 }
@@ -800,7 +800,7 @@ border-top: 35px solid #e06c00;
   content: '';
   position: absolute;
   top: 0;
-  border-top: 2px solid #ff8847;;
+  border-top: 2px solid #ff8847;
   width: 20%;
   left: 0;
 }
