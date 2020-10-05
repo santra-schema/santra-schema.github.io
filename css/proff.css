@@ -91,7 +91,7 @@ body{
 	position: absolute;
 	top: 0;
 	transition: 1s;
-	font-size:12px;
+	font-size:15px;
 	font-weight:bold;
 }
 .itemz:before{
@@ -233,7 +233,7 @@ border-top: 70px solid #e06c00;
 }
 .menuz a{
 	position: relative;
-	top: 40px;
+	top: 30px;
 	left: 10px;
 	
 }
