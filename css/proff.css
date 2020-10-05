@@ -75,6 +75,32 @@ body{
 	font-weight:bold;
 
 }
+.itemz{
+	height: 0;
+	width: 140px;
+	border-bottom: 71px solid #e8fcff;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	position: absolute;
+	top: 0;
+	transition: 1s;
+	font-size:10px;
+	font-weight:bold;
+}
+.itemz:before{
+	content: ' ';
+	height: 0;
+	width: 140px;
+	border-top: 71px solid #e8fcff;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	position: absolute;
+	top: 70px;
+	left: -30px;
+	font-size:10px;
+	font-weight:bold;
+
+}
 .itemb{
 	height: 0;
 	width: 160px;
