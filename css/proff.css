@@ -91,7 +91,7 @@ body{
 	position: absolute;
 	top: 0;
 	transition: 1s;
-	font-size:10px;
+	font-size:12px;
 	font-weight:bold;
 }
 .itemz:before{
@@ -104,7 +104,7 @@ body{
 	position: absolute;
 	top: 60px;
 	left: -30px;
-	font-size:10px;
+	font-size:12px;
 	font-weight:bold;
 
 }
@@ -224,6 +224,20 @@ border-top: 70px solid #e06c00;
 	
 }
 .menux :not(.main) a>.fa:hover{
+	color: #4168b5;
+	transform: scale(1.3);
+	transition: 1s;
+}
+.menuz a>.fa{
+	font-size: 60px;
+}
+.menuz a{
+	position: relative;
+	top: 40px;
+	left: 10px;
+	
+}
+.menuz :not(.main) a>.fa:hover{
 	color: #4168b5;
 	transform: scale(1.3);
 	transition: 1s;
