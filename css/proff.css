@@ -78,7 +78,7 @@ body{
 .itemz{
 	height: 0;
 	width: 140px;
-	border-bottom: 71px solid #e8fcff;
+	border-bottom: 60px solid #e8fcff;
 	border-left: 30px solid transparent;
 	border-right: 30px solid transparent;
 	position: absolute;
@@ -91,7 +91,7 @@ body{
 	content: ' ';
 	height: 0;
 	width: 140px;
-	border-top: 71px solid #e8fcff;
+	border-top: 60px solid #e8fcff;
 	border-left: 30px solid transparent;
 	border-right: 30px solid transparent;
 	position: absolute;
