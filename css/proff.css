@@ -562,13 +562,22 @@ border-top: 70px solid #e06c00;
 }
 
 @media only screen and (max-width:800px){
-	.maincontent table{
+.maincontent table{
 	width: 110%;
 	transform : translate(-40px,20px);
 }
 .accatab{
     width:125%;	
     transform : translate(-100px,10px);
+}
+.gossipdiv{
+	width:150%; margin-left:-100px;
+}
+#tagitprof,{
+margin-left:40px;width:25%;font-size:8px;
+}
+#tagcust, #tagother{
+width:25%;font-size:8px;
 }
 #bcomp{
 	font-size:14px;
