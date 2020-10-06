@@ -657,7 +657,7 @@ border-top: 70px solid #e06c00;
 .itemz:before{
 	content: ' ';
 	height: 0;
-	width: 140px;
+	width: 100px;
 	border-top: 40px solid #e8fcff;
 	border-left: 25px solid transparent;
 	border-right: 25px solid transparent;
