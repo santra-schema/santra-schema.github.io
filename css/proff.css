@@ -88,7 +88,7 @@ body{
 .itemz{
 	height: 0;
 	width: 140px;
-	border-bottom: 60px solid #e8fcff;
+	border-bottom: 61px solid #e8fcff;
 	border-left: 30px solid transparent;
 	border-right: 30px solid transparent;
 	position: absolute;
@@ -645,7 +645,7 @@ border-top: 70px solid #e06c00;
 .itemz{
 	height: 0;
 	width: 100px;
-	border-bottom: 40px solid #e8fcff;
+	border-bottom: 41px solid #e8fcff;
 	border-left: 25px solid transparent;
 	border-right: 25px solid transparent;
 	position: absolute;
@@ -705,7 +705,7 @@ border-top: 35px solid #e06c00;
 .menuz a{
 	position: relative;
 	top: 20px;
-	left: 5px;
+	left: 10px;
 	
 }
 .menuz :not(.main) a>.fa:hover{
