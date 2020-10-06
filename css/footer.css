@@ -108,20 +108,20 @@ float:right; margin-right:10px;
 	text-align: center;
 }
 .footerdate{
-color:#bd3c00;font-size: 2px;text-align:left; width:30%
+color:#bd3c00;font-size: 6px;text-align:left; width:30%
 }
 .footerinfo{
-color:#7d7d7d; font-size: 1px;
+color:#7d7d7d; font-size: 6px;
 }
 .footercc{
-	font-size:3px;text-align:center;float:middle;color:#130970; font-weight:bold; 
+	font-size:8px;text-align:center;float:middle;color:#130970; font-weight:bold; 
 }
 .footertd1{
 	width:10%;
-	padding-left:5px;
+	padding-left:10px;
 }
 .footerdivlast{
-float:right; margin-right:4px;
+float:right; margin-right:8px;
 }
 
 }
