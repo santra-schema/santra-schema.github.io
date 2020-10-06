@@ -466,10 +466,10 @@ border-top: 70px solid #e06c00;
 @media only screen and (max-width: 800px){
 
 .headbtn{
-	font-size:5px;
+	font-size:8px;
 }
 .hellospan{
-	font-size:3px;
+	font-size:10px;
 }
 .divtop{
 	width:100%; float:left;
@@ -487,7 +487,7 @@ font-size:0.5px; text-align: justify;
 	font-size:17px; color:#ff8847;
 }
 #sdlc{
-font-size:2px;
+font-size:8px;
 }
 
 #myBtn {
@@ -533,7 +533,7 @@ font-size:2px;
 	display: flex;
 	align-items: center;
 	letter-spacing: 1px;
-	font-size:1px;
+	font-size:8px;
 }
 
 .acc .btns div:not(:last-child) {
