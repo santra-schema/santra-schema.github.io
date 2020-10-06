@@ -113,6 +113,14 @@ transform: translate(-140%, 120%);
 </nav>
 
 <script>
+	if(screen.width > 800){
+	$("#scroll-indicator").show();	
+	}else{
+	
+	$("#scroll-indicator").hide();	
+	}	
+	
+	
 console.clear();
 
 ScrollIndicator = (function(){
@@ -273,13 +281,23 @@ ScrollIt = function(target, time) {
 			window.onscroll = function() {scrollFunc()};
 
 			function scrollFunc() {
-			  if (document.body.scrollTop > 6150 || document.documentElement.scrollTop > 6150) {
-				awardbutton.style.display = "block";
-				certbtn.style.display = "none";
-			  } else {
-				awardbutton.style.display = "none";
-				certbtn.style.display = "block";
-			  }
+				if(screen.width > 800){
+					  if (document.body.scrollTop > 6150 || document.documentElement.scrollTop > 6150) {
+						awardbutton.style.display = "block";
+						certbtn.style.display = "none";
+					  } else {
+						awardbutton.style.display = "none";
+						certbtn.style.display = "block";
+					  }
+				}else{
+					 if (document.body.scrollTop > 3000 || document.documentElement.scrollTop > 3000) {
+						awardbutton.style.display = "block";
+						certbtn.style.display = "none";
+					  } else {
+						awardbutton.style.display = "none";
+						certbtn.style.display = "block";
+					  }
+				}
 			   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 					mybutton.style.display = "block";
 			  } else {
