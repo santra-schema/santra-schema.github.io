@@ -10,6 +10,9 @@
 #bcomp{
 	font-size:20px;
 }
+.accatab{
+width:84%;	
+}
 #myBtn {
   display: none;
   position: fixed;
@@ -563,7 +566,10 @@ border-top: 70px solid #e06c00;
 	width: 110%;
 	transform : translate(-40px,20px);
 }
-
+.accatab{
+    width:130%;	
+    transform : translate(-100px,10px);
+}
 #bcomp{
 	font-size:14px;
 }
