@@ -466,7 +466,7 @@ border-top: 70px solid #e06c00;
 @media only screen and (max-width: 800px){
 
 .headbtn{
-	font-size:8px;
+	font-size:10px;
 }
 .hellospan{
 	font-size:10px;
@@ -496,7 +496,7 @@ font-size:8px;
   bottom: 20px;
   left: 10px;
   z-index: 99;
-  font-size: 2px;
+  font-size: 8px;
   border: none;
   outline: none;
   background-color: #de6a2f;
