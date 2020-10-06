@@ -478,13 +478,13 @@ border-top: 70px solid #e06c00;
 	margin-left:40%;padding-left:20px;position:absolute;z-index:-50;
 }
 .myhead{
-	font-size:14px; color:#ff8847;
+	font-size:13px; color:#ff8847;
 }
 #normspan{
-font-size:0.5px; text-align: justify;
+font-size:8px; text-align: justify;
 }
 .spanhead1{
-	font-size:17px; color:#ff8847;
+	font-size:15px; color:#ff8847;
 }
 #sdlc{
 font-size:8px;
@@ -511,8 +511,8 @@ font-size:8px;
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
-	width: 165%;
-	transform : translate(-100px,20px);
+	width: 160%;
+	transform : translate(-110px,20px);
 }
 
 .acc .btns {
