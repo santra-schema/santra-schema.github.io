@@ -593,7 +593,7 @@ border-top: 70px solid #e06c00;
   bottom: 20px;
   left: 10px;
   z-index: 99;
-  font-size: 2px;
+  font-size: 8px;
   border: none;
   outline: none;
   background-color: #de6a2f;
@@ -601,7 +601,7 @@ border-top: 70px solid #e06c00;
   cursor: pointer;
   padding: 10px;
   border-radius: 50px;
-  margin-bottom:36%;
+  margin-bottom:22%;
 }
 .menu{
 	position: relative;
