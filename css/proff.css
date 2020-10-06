@@ -612,6 +612,7 @@ border-top: 70px solid #e06c00;
 .menuz{
 	position: relative;
 	width:100%;
+	transform: translate(-50px,10px);
 	transform: scale(0.7);
 	/*background-image: url("F:/Package/santra-schema.github.io/santra-schema.github.io/images/source.gif"); */
 
