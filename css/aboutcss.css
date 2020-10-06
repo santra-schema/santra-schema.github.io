@@ -329,14 +329,13 @@ text-align:top;z-index:-5;color:#301111; font-size:20px;position:absolute;
 }.itemg{transform : translate(-35px,-42px)
 }.itemh{transform : translate(-35px,33px)
 }
-	
 #myBtn {
   display: none;
   position: fixed;
   bottom: 20px;
   left: 10px;
   z-index: 99;
-  font-size: 2px;
+  font-size: 8px;
   border: none;
   outline: none;
   background-color: #de6a2f;
@@ -344,7 +343,7 @@ text-align:top;z-index:-5;color:#301111; font-size:20px;position:absolute;
   cursor: pointer;
   padding: 10px;
   border-radius: 50px;
-  margin-bottom:50%;
+  margin-bottom:22%;
 }
 .menu{
 	position: relative;
