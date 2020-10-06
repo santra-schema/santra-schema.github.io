@@ -88,7 +88,6 @@ function topFunction() {
 	if(screen.width < 800){
 		$("#spaneq1").prepend("&nbsp;&nbsp;&nbsp;");
 		$("#cspan").prepend("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
-
 	}
 	</script>
 	<br>
@@ -175,8 +174,263 @@ Contents are uploading...
 
 </div>
 <div id="hobbydiv" class="hobbydiv">
-Contents are uploading...
+	<button style="background-color:#ba561c; border-color:#ba561c;" id="tagpaint" class="btn btn-primary" onclick="paint()">Painting</button>
+	<button style="color: #4f4e4d; background-color:#fff9f2; border-color:#ba561c;" id="tagtravel" class="btn btn-primary" onclick="travel()">Travelling</button>
+	<button style="color: #4f4e4d; background-color:#fff9f2; border-color:#ba561c;" id="tagbook" class="btn btn-primary" onclick="book()">Reading</button>
+	<button style="color: #4f4e4d; background-color:#fff9f2; border-color:#ba561c;" id="tagphoto" class="btn btn-primary" onclick="photo()">Photography</button><br><br>
+	<div id="bra"><br><br></div>
+	
+	<script>
+	if(screen.width > 800){
+		$("#bra").show();
+	}else{
+		$("#bra").hide();
+	}
+	</script>
+<style>
+.slider {
+margin-left:0px;
+  width: 60%;
+}
+
+.slide_viewer {
+  height: 340px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide_group {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.slide:nth-of-type(1) {
+  background: linear-gradient(to right, #5f5f85 , #2a2a49);
+}
+
+.slide:nth-of-type(2) {
+  background: linear-gradient(to right, #5f5f85 , #2a2a49);
+}
+
+.slide:nth-of-type(3) {
+  background: linear-gradient(to right, #5f5f85 , #2a2a49);
+}
+
+.slide:nth-of-type(4) {
+  background: linear-gradient(to right, #5f5f85 , #2a2a49);
+}
+
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+a.slide_btn {
+  color: white;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+  color: #428CC6;
+  cursor: pointer;
+}
+
+.directional_nav {
+  height: 340px;
+  max-width: 940px;
+  position: relative;
+  top: -340px;
+}
+
+.previous_btn {
+  bottom: 0;
+  left: 0px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+}
+
+.next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right:175px;
+  top: 0;
+}
+
+.previous_btn, .next_btn {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  width: 65px;
+}
+
+.previous_btn:hover, .next_btn:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .previous_btn {
+    left: 0px;
+  }
+  .next_btn {
+    right: -10px;
+  }
+}</style>
+<div id="paint">
+<div class="slider">
+  <div class="slide_viewer">
+    <div class="slide_group">
+      <div class="slide">
+	  <img src="https://santra-schema.github.io//images/paint1.jpg" style="margin-left:10%;width:50%;height:100%;" alt="header">	
+	  <span style="margin-right:40px;float:right;text-align:justify;">The Terai-forest region of a hill in<br>North-East India with a watch <br>tower. Monsoon just filled the <br>steady stream. </span>
+      </div>
+      <div class="slide">
+	   <img src="https://santra-schema.github.io//images/paint2.jpg" style="margin-left:10%;width:50%;height:100%;" alt="header">
+	   <span style="margin-right:40px;float:right;text-align:justify;">Afternoon time when The Great <br>Wall of China stands alone <br>with history of mankind.</span>
+      </div>
+      <div class="slide">
+      </div>
+      <div class="slide">
+      </div>
+    </div>
+  </div>
+</div><!-- End // .slider -->
+
+<div class="slide_buttons">
 </div>
+
+<div class="directional_nav">
+  <div class="previous_btn" title="Previous">
+		<i class="fa fa-arrow-left fa-3x" id="next"></i>
+  </div>
+  <div class="next_btn" title="Next">
+		<i class="fa fa-arrow-right fa-3x" id="next"></i>
+  </div>
+</div><!-- End // .directional_nav -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+<script>
+$('.slider').each(function() {
+  var $this = $(this);
+  var $group = $this.find('.slide_group');
+  var $slides = $this.find('.slide');
+  var bulletArray = [];
+  var currentIndex = 0;
+  var timeout;
+  
+  function move(newIndex) {
+    var animateLeft, slideLeft;
+    
+    advance();
+    
+    if ($group.is(':animated') || currentIndex === newIndex) {
+      return;
+    }
+    
+    bulletArray[currentIndex].removeClass('active');
+    bulletArray[newIndex].addClass('active');
+    
+    if (newIndex > currentIndex) {
+      slideLeft = '100%';
+      animateLeft = '-100%';
+    } else {
+      slideLeft = '-100%';
+      animateLeft = '100%';
+    }
+    
+    $slides.eq(newIndex).css({
+      display: 'block',
+      left: slideLeft
+    });
+    $group.animate({
+      left: animateLeft
+    }, function() {
+      $slides.eq(currentIndex).css({
+        display: 'none'
+      });
+      $slides.eq(newIndex).css({
+        left: 0
+      });
+      $group.css({
+        left: 0
+      });
+      currentIndex = newIndex;
+    });
+  }
+  
+  function advance() {
+    clearTimeout(timeout);
+    timeout = setTimeout(function() {
+      if (currentIndex < ($slides.length - 1)) {
+        move(currentIndex + 1);
+      } else {
+        move(0);
+      }
+    }, 6000);
+  }
+  
+  $('.next_btn').on('click', function() {
+    if (currentIndex < ($slides.length - 1)) {
+      move(currentIndex + 1);
+    } else {
+      move(0);
+    }
+  });
+  
+  $('.previous_btn').on('click', function() {
+    if (currentIndex !== 0) {
+      move(currentIndex - 1);
+    } else {
+      move(3);
+    }
+  });
+  
+  $.each($slides, function(index) {
+    var $button = $('<a class="slide_btn">&bull;</a>');
+    
+    if (index === currentIndex) {
+      $button.addClass('active');
+    }
+    $button.on('click', function() {
+      move(index);
+    }).appendTo('.slide_buttons');
+    bulletArray.push($button);
+  });
+  
+  advance();
+});
+</script>
+</div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	
 </div>
@@ -256,6 +510,64 @@ function other() {
 	document.getElementById("tagcust").style.color = "#4f4e4d";
 	document.getElementById("tagother").style.color = "white";
 }
+
+function paint() {
+	$("#paint").show();
+	$("#travel").hide();
+	$("#book").hide();
+	$("#photo").hide();
+	document.getElementById("tagpaint").style.background = "#ba561c";
+	document.getElementById("tagtravel").style.background = "#fff9f2";
+	document.getElementById("tagbook").style.background = "#fff9f2";
+	document.getElementById("tagphoto").style.background = "#fff9f2";
+	document.getElementById("tagpaint").style.color = "white";
+	document.getElementById("tagtravel").style.color = "#4f4e4d";
+	document.getElementById("tagbook").style.color = "#4f4e4d";
+	document.getElementById("tagphoto").style.color = "#4f4e4d";
+}
+function travel() {
+	$("#paint").hide();
+	$("#travel").show();
+	$("#book").hide();
+	$("#photo").hide();
+	document.getElementById("tagpaint").style.background = "#fff9f2";
+	document.getElementById("tagtravel").style.background = "#ba561c";
+	document.getElementById("tagbook").style.background = "#fff9f2";
+	document.getElementById("tagphoto").style.background = "#fff9f2";
+	document.getElementById("tagpaint").style.color = "#4f4e4d";
+	document.getElementById("tagtravel").style.color = "white";
+	document.getElementById("tagbook").style.color = "#4f4e4d";
+	document.getElementById("tagphoto").style.color = "#4f4e4d";
+}
+function book() {
+	$("#paint").hide();
+	$("#travel").hide();
+	$("#book").show();
+	$("#photo").hide();
+	document.getElementById("tagpaint").style.background = "#fff9f2";
+	document.getElementById("tagtravel").style.background = "#fff9f2";
+	document.getElementById("tagbook").style.background = "#ba561c";
+	document.getElementById("tagphoto").style.background = "#fff9f2";
+	document.getElementById("tagpaint").style.color = "#4f4e4d";
+	document.getElementById("tagtravel").style.color = "#4f4e4d";
+	document.getElementById("tagbook").style.color = "white";
+	document.getElementById("tagphoto").style.color = "#4f4e4d";
+}
+function photo() {
+	$("#paint").hide();
+	$("#travel").hide();
+	$("#book").hide();
+	$("#photo").show();
+	document.getElementById("tagpaint").style.background = "#fff9f2";
+	document.getElementById("tagtravel").style.background = "#fff9f2";
+	document.getElementById("tagbook").style.background = "#fff9f2";
+	document.getElementById("tagphoto").style.background = "#ba561c";
+	document.getElementById("tagpaint").style.color = "#4f4e4d";
+	document.getElementById("tagtravel").style.color = "#4f4e4d";
+	document.getElementById("tagbook").style.color = "4f4e4d";
+	document.getElementById("tagphoto").style.color = "#white";
+}
+
 </script>
 
 	<div class="menu" id="menu">
