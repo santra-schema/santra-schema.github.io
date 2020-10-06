@@ -609,6 +609,13 @@ border-top: 70px solid #e06c00;
 	transform: scale(0.7);
 
 }
+.menuz{
+	position: relative;
+	width:100%;
+	transform: scale(0.7);
+	/*background-image: url("F:/Package/santra-schema.github.io/santra-schema.github.io/images/source.gif"); */
+
+}
 .item{
 	height: 0;
 	width: 80px;
@@ -661,6 +668,20 @@ border-top: 35px solid #e06c00;
 	
 }
 .menu :not(.main) a>.fa:hover{
+	color: #bd3c00;
+	transform: scale(0.6);
+	transition: 1s;
+}
+.menuz a>.fa{
+	font-size: 30px;
+}
+.menuz a{
+	position: relative;
+	top: 20px;
+	left: 5px;
+	
+}
+.menuz :not(.main) a>.fa:hover{
 	color: #bd3c00;
 	transform: scale(0.6);
 	transition: 1s;
