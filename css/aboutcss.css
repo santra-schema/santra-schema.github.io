@@ -431,16 +431,16 @@ border-top: 35px solid #e06c00;
 }
 
 .item1{transform : translate(0px,25px)
-}.item21{z-index: 9;transform : translate(70px,62px)
-}.item22{z-index: 9;transform : translate(70px,142px)
-}.item23{z-index: 9;transform : translate(70px,306px)
-}.item26{z-index: 9;transform : translate(65px,465px)
-}.item3{transform : translate(0px,105px)
-}.item4{transform : translate(0px,185px)
-}.item5{transform : translate(0px,265px)
-}.item6{transform : translate(0px,345px)
-}.item7{transform : translate(0px,425px)
-}.item8{transform : translate(0px,505px)
+}.item21{z-index: 9;transform : translate(0px,25px)
+}.item22{z-index: 9;transform : translate(0px,25px)
+}.item23{z-index: 9;transform : translate(0px,25px)
+}.item26{z-index: 9;transform : translate(0px,25px)
+}.item3{transform : translate(0px,25px)
+}.item4{transform : translate(0px,25px)
+}.item5{transform : translate(0px,25px)
+}.item6{transform : translate(0px,25px)
+}.item7{transform : translate(0px,25px)
+}.item8{transform : translate(0px,25px)
 }
 }
 .logoclass{	
