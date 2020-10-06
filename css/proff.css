@@ -641,6 +641,32 @@ border-top: 70px solid #e06c00;
 	font-size:4px;
 	font-weight:bold;
 }
+.itemz{
+	height: 0;
+	width: 100px;
+	border-bottom: 40px solid #e8fcff;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	position: absolute;
+	top: 0;
+	transition: 1s;
+	font-size:10px;
+	font-weight:bold;
+}
+.itemz:before{
+	content: ' ';
+	height: 0;
+	width: 140px;
+	border-top: 40px solid #e8fcff;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	position: absolute;
+	top: 40px;
+	left: -20px;
+	font-size:10px;
+	font-weight:bold;
+
+}
 .selected{
 border-bottom: 35px solid #e06c00;
 }
