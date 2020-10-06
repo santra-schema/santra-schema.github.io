@@ -83,7 +83,13 @@ function topFunction() {
 		$("#br").hide();
 	}
 	</script>
-	<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-spacing: 0px;"id="aspan">=========</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="bspan">=========</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="cspan">=========</span>
+	<span id="spaneq1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-spacing: 0px;"id="aspan">=========</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="bspan">=========</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="cspan">=========</span>
+	<script>
+	if(screen.width < 800){
+		$("#spaneq1").prepend("&nbsp;&nbsp;&nbsp;&nbsp;");
+
+	}
+	</script>
 	<br>
 	<br>
 	
