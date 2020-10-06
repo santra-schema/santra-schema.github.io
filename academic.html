@@ -287,21 +287,13 @@ function topFunction() {
 <div class="login-footer">
 		<div style="margin-right: 0px;">
 			<footer class="customFooter">
-					
-					<span class="footerdate" id="date"></span>
-					<br>
 					<div style="width: 100%;">
 					<table style="width: 100%;">
 						<tbody>
 							<tr>
-								<td style="width:42%;"><span class="footerinfo" id="info"></span>   </td>
-								<td>
-								<span class="footercc"id ="cc"> <script type="text/javascript">var today=new Date(); var yr = today.getFullYear();
-								document.getElementById('cc').innerHTML = yr</script>
-								 ©&nbsp;Mr. Sudipta Santra, All rights reserved.  </span>
-								 
-								</td>
-								<td class="footertd1">
+								<td style="width:80%;" colspan="2"><span class="footerdate" id="date"></span><span color="grey"></span>
+								</td> 
+								<td rowspan="2" class="footertd1">
 								<div class="footerdivlast">
 								  <div>
 									<ul class="social-network social-circle">
@@ -311,6 +303,16 @@ function topFunction() {
 								  </div>
 								</div>
 								</td>
+							</tr>
+							<tr>
+								<td style="width:40%;"><span class="footerinfo" id="info"></span> </td>
+								<td>
+								<span class="footercc"id ="cc"> <script type="text/javascript">var today=new Date(); var yr = today.getFullYear();
+								document.getElementById('cc').innerHTML = yr</script>
+								 ©&nbsp;Mr. Sudipta Santra, All rights reserved. </span>
+								 
+								</td>
+								
 							</tr>
 						</tbody>
 					</table>
@@ -323,7 +325,7 @@ function topFunction() {
 			<script>
 
 					var d = new Date();
-					document.getElementById("date").innerHTML = d;
+					document.getElementById("date").innerHTML = d + "<span style='color:red'>&nbsp; Desktop Version </span>";
 			</script>
 			<script>
 			$.getJSON("https://api.ipify.org?format=json", function (data) {
