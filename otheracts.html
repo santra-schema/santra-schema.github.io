@@ -302,9 +302,9 @@ function other() {
 					j=0;
 				}
 			}else{
-			if (j==0) {
+			if (j==1) {
 					document.getElementById("menu").style.transform= 'scale(0.7)';				
-					document.getElementById("add").style.transform = 'rotate(45deg)';
+					document.getElementById("add").style.transform = 'rotate(0deg)';
 					i[3].style.transform='translate(0px,25px)';
 					i[1].style.transform='translate(0px,25px)';
 					i[5].style.transform='translate(0px,25px)';
@@ -313,9 +313,9 @@ function other() {
 					i[11].style.transform='translate(0px,25px)';
 					i[13].style.transform='translate(0px,25px)';
 					i[15].style.transform='translate(0px,25px)';
-					j=1;
+					j=0;
 				}else{
-					document.getElementById("add").style.transform = 'rotate(0deg)';
+					document.getElementById("add").style.transform = 'rotate(45deg)';
 					document.getElementById("menu").style.transform= 'scale(0.7)';
 					i[3].style.transform='translate(70px,384px)';
 					i[1].style.transform='translate(0px,25px)';
@@ -325,7 +325,7 @@ function other() {
 					i[11].style.transform='translate(0px,345px)';
 					i[13].style.transform='translate(0px,425px)';
 					i[15].style.transform='translate(0px,505px)';
-					j=0;
+					j=1;
 				}
 			}
 		}
