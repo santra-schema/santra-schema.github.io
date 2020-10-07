@@ -11,7 +11,7 @@
 	font-size:20px;
 }
 .hobbydiv, .actdiv{
-	width:100%; margin-left:-100px;
+	width:100%; margin-left:0px;
 }
 .accatab{
 width:84%;	
@@ -580,6 +580,12 @@ border-top: 70px solid #e06c00;
 margin-left:40px;width:25%;font-size:8px;
 }
 #tagcust, #tagother{
+width:25%;font-size:8px;
+}
+#tagpaint, #tagbook{
+width:25%;font-size:8px;
+}
+#tagtravel, #tagphoto{
 width:25%;font-size:8px;
 }
 #bcomp{
