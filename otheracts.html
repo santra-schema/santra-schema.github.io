@@ -484,7 +484,28 @@ $('.slider').each(function() {
 a:hover {
   color: white;
 }
-
+@media only screen and (max-width: 767px) {
+.flip-card {
+  background-color: #2a2a49;
+  width: 160px;
+  height: 220px;
+  position:relatve;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+#bookimg{
+	width: 100%;
+	height: 100%;
+}
+.flip-card-back h6{
+	font-size: 12px;
+}
+.flip-card-back span{
+	font-size: 10px;
+}
+.flip-card-back a{
+	font-size: 10px;
+}
+}
 </style>
 <div style="display:flex;">
 <div class="flip-card">
