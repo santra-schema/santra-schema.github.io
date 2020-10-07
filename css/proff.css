@@ -574,7 +574,7 @@ border-top: 70px solid #e06c00;
     transform : translate(-100px,10px);
 }
 .gossipdiv, .hobbydiv, .actdiv{
-	width:150%; margin-left:-100px; margin-bottom:300px;
+	width:140%; margin-left:-100px; margin-bottom:300px;
 }
 #tagitprof{
 margin-left:40px;width:25%;font-size:8px;
