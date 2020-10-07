@@ -16,6 +16,14 @@
 .accatab{
 width:84%;	
 }
+
+.slide img{
+	margin-left:10%;width:350px;height:340px;
+}
+.slide span{
+	margin-right:40px;float:right;text-align:justify;
+}
+
 #myBtn {
   display: none;
   position: fixed;
@@ -582,11 +590,18 @@ margin-left:40px;width:25%;font-size:8px;
 #tagcust, #tagother{
 width:25%;font-size:8px;
 }
-#tagpaint, #tagbook{
+#tagpaint {
 width:25%;font-size:8px;
 }
-#tagtravel, #tagphoto{
+#tagbook, #tagtravel, #tagphoto{
 width:25%;font-size:8px;
+}
+.slide img{
+	margin-left:15%;width:80%;height:80%;
+}
+.slide span{
+	margin-left:42px;float:left;text-align:justify;
+	font-size:8px;
 }
 #bcomp{
 	font-size:14px;
