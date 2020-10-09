@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://santra-schema.github.io/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="https://santra-schema.github.io/css/tooplate-santra-style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="C:/Users/ibcartpc03/Desktop/proff.css">
+	<link rel="stylesheet" href="https://santra-schema.github.io/css/proff.css">
 		<link rel="stylesheet" href="https://santra-schema.github.io/css/footer.css">
 
 </head>
@@ -655,6 +655,27 @@ a:hover {
   border-bottom: 3px solid #fff;
   color: #fff;
 }
+.loop-wrapper a{
+color:white;
+}.loop-wrapper a:hover {
+  color: #ed680e;
+}
+.rate1{
+color:#11bf29;
+padding-left:10px;
+font-weight: bold;
+}
+.rate2{
+color:#e8db1c;
+padding-left:10px;
+font-weight: bold;
+}
+.rate3{
+color:#d91d00;
+padding-left:10px;
+font-weight: bold;
+}
+
 .loop-wrapper:hover {
 animation-play-state:paused;
 -webkit-animation-play-state:paused;
@@ -815,7 +836,7 @@ animation: hill 40s 0s linear infinite;
   height: 100px; 
   width: 35px;
   bottom: 0;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130015/tree.svg) no-repeat;
+  background: url(https://santra-schema.github.io//images/tree.svg) no-repeat;
 }
 .rock {
   margin-top: -17%;
@@ -849,7 +870,7 @@ animation: hill 40s 0s linear infinite;
      -35px 18px 0 1.5px #fff;
 }
 .wheels {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130015/wheels.svg) no-repeat;
+  background: url(https://santra-schema.github.io//images/wheels.svg) no-repeat;
   height: 15px;
   margin-bottom: 0;
 }
@@ -914,10 +935,16 @@ animation: hill 40s 0s linear infinite;
   
   
 }
-
+.flag{
+left: 50px;
+animation: hill 40s 0s linear infinite;
+  position: absolute;
+z-index:-5;
+}
 
 </style>
 <div class="loop-wrapper" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+<div class="flag"><img src="https://santra-schema.github.io//images/flag.png" width="30%" height="100%"></div>
   <div class="mountain" ></div>
   <div class="jungle"></div>
   <div class="hill"></div>
@@ -931,17 +958,34 @@ animation: hill 40s 0s linear infinite;
   <div class="rock"></div>
   <div class="truck"></div>
   <div class="wheels"></div>
-  <div class="span1"> Kashmir<br>Sonamarg<br>Goolmarg<br>Pahelgaon</div>
-  <div class="span1a">Darjeeling<br>Sikkim<br>Gangtok<br>Kalimpong<br>Peiling</div>
-  <div class="span1b">Bhutan</div>
-  <div class="span2">Munnar<br>Ooty<br>Coorg<br>Coonor</div>
-  <div class="span2a">Thekaddy<br>Dooars</div>
-  <div class="span2b">Srinagar<br>Siliguri</div>
-  <div class="span3">Kolkata<br>Hyderabad<br>Bangalore<br>Lucknow</div>
-  <div class="span3a">Mysuru<br>Kanpur<br>Kochi<br>Amritsar<br></div>
-  <div class="span5">Dal Lake<br>Periyar Lake<br>Tsongmo Lake</div>
-  <div class="span5a">Puri<br>Digha</div>
+  <div class="span1"> 
+	<a target="_blank" href="http://www.jktourism.jk.gov.in/">Kashmir</a><b class="rate1">8/10</b><br><a target="_blank" href="https://en.wikipedia.org/wiki/Sonamarg">Sonamarg</a><b class="rate1">9/10</b><br><a target="_blank" href="https://en.wikipedia.org/wiki/Gulmarg">Goolmarg</a><b class="rate1">9/10</b><br><a target="_blank" href="https://en.wikipedia.org/wiki/Pahalgam">Pahelgam</a><b class="rate1">10/10</b>
+  </div>
+  <div class="span1a">
+	<a target="_blank" href="https://www.wbtourismgov.in/destination/district/darjeeling">Darjeeling</a><b class="rate2">6/10</b><br><a target="_blank" href="http://www.sikkimtourism.gov.in/Public/Index">Sikkim</a><b class="rate1">8/10</b><br><a target="_blank" href="https://en.wikipedia.org/wiki/Gangtok">Gangtok</a><b class="rate1">7/10</b><br><a target="_blank" href="https://www.wbtourismgov.in/destination/district/kalimpong">Kalimpong</a><b class="rate2">5/10</b><br><a target="_blank" href="https://en.wikipedia.org/wiki/Pelling">Peiling</a><b class="rate1">7/10</b>
+  </div>
+  <div class="span1b"><a target="_blank" href="https://www.tourism.gov.bt/">Bhutan</a><b class="rate2">5/10</b></div>
+  <div class="span2">
+	<a target="_blank" href="https://www.keralatourism.org/destination/munnar/202">Munnar</a><b class="rate1">8/10</b><br><a target="_blank" href="https://ootytourism.co.in/">Ooty</a><b class="rate1">7/10</b><br><a target="_blank" href="https://www.coorgtour.com/">Coorg</a><b class="rate3">3/10</b><br><a target="_blank" href="https://en.wikipedia.org/wiki/Coonoor">Coonor</a><b class="rate2">4/10</b>
+  </div>
+  <div class="span2a">
+	<a target="_blank" href="https://en.wikipedia.org/wiki/Thekkady">Thekaddy</a><b class="rate2">6/10</b><br><a target="_blank" href="https://www.wbtourismgov.in/destination/place/dooars">Dooars</a><b class="rate1">7/10</b>
+  </div>
+  <div class="span2b">
+	<a target="_blank" href="https://en.wikipedia.org/wiki/Srinagar">Srinagar</a><b class="rate2">6/10</b><br><a target="_blank" href="https://www.wbtourismgov.in/destination/place/siliguri">Siliguri</a><b class="rate2">4/10</b>
+  </div>
+  <div class="span3">
+	<a target="_blank" href="https://www.wbtourismgov.in/home/kolkata">Kolkata</a><b class="rate2">6/10</b><br><a target="_blank" href="https://www.telanganatourism.gov.in/">Hyderabad</a><b class="rate3">2/10</b><br><a target="_blank" href="https://www.bangalorecitytour.com/">Bangalore</a><b class="rate2">6/10</b><br></a><a target="_blank" href="http://www.uptourism.gov.in/pages/top/explore/lucknow">Lucknow</a><b class="rate1">7/10</b>
+  </div>
+  <div class="span3a">
+	<a target="_blank" href="https://www.mysoretourism.org.in/sightseeing-places-to-visit-in-mysore">Mysuru</a><b class="rate2">6/10</b><br><a target="_blank" href="https://en.wikipedia.org/wiki/Kanpur">Kanpur</a><b class="rate3">2/10</b><br><a target="_blank" href="https://en.wikipedia.org/wiki/Kochi">Kochi</a><b class="rate2">4/10</b><br><a target="_blank" href="http://punjabtourism.gov.in/Punjab.html#/destination/1/Amritsar">Amritsar</a><b class="rate2">5/10</b>
+  </div>
+  <div class="span5">
+	<a target="_blank" href="https://en.wikipedia.org/wiki/Dal_Lake">Dal Lake</a><b class="rate2">6/10</b><br><a target="_blank" href="https://www.keralatourism.org/destination/periyar-tiger-reserve-idukki/192">Periyar Lake</a><b class="rate2">5/10</b><br><a target="_blank" href="https://en.wikipedia.org/wiki/Lake_Tsomgo">Tsongmo Lake</a><b class="rate1">8/10</b>
+  </div>
+  <div class="span5a"><a target="_blank" href="https://odishatourism.gov.in/content/tourism/en/discover/major-cities/puri.html">Puri</a><b class="rate1">5/10</b><br> <a target="_blank" href="https://www.wbtourismgov.in/destination/place/digha">Digha</a><b class="rate3">3/10</b></div>
 </div> 
+<div>Rating based upon My Experience (<b class="rate1">Wanna go again & again</b>, <b class="rate2">Can visit sometimes</b> , <b class="rate3">Was my last visit</b> )</div>
 <script>
 
 function  bigImg(x) {
@@ -971,6 +1015,7 @@ function  bigImg(x) {
 	$(".span3a").css({"animation-play-state": "paused","-webkit-animation-play-state" : "paused"});
 	$(".span5").css({"animation-play-state": "paused","-webkit-animation-play-state" : "paused"});
 	$(".span5a").css({"animation-play-state": "paused","-webkit-animation-play-state" : "paused"});
+	$(".flag").css({"animation-play-state": "paused","-webkit-animation-play-state" : "paused"});
 }
 
 
@@ -1001,7 +1046,7 @@ function normalImg(y){
 	$(".span3a").css({"animation-play-state": "running","-webkit-animation-play-state" : "running"});
 	$(".span5").css({"animation-play-state": "running","-webkit-animation-play-state" : "running"});
 	$(".span5a").css({"animation-play-state": "running","-webkit-animation-play-state" : "running"});
-  
+  	$(".flag").css({"animation-play-state": "running","-webkit-animation-play-state" : "running"});
 }
 
 </script>
