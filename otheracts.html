@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://santra-schema.github.io/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="https://santra-schema.github.io/css/tooplate-santra-style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://santra-schema.github.io/css/proff.css">
+	<link rel="stylesheet" href="C:/Users/ibcartpc03/Desktop/proff.css">
 		<link rel="stylesheet" href="https://santra-schema.github.io/css/footer.css">
 
 </head>
@@ -942,8 +942,40 @@ animation: hill 40s 0s linear infinite;
 z-index:-5;
 }
 
+@media only screen and (max-width: 767px) {
+#note{
+font-size:8px;
+}
+.truck, .wheels {
+  transition: all ease;
+  width: 85px;
+  margin-right: -60px;
+  bottom: 0px;
+  right: 80%;
+  position: absolute;
+  background: #eee;
+}
+.truck {
+  background: url(https://santra-schema.github.io//images/truck.svg) no-repeat;
+  background-size: contain;
+  height: 60px;
+}
+.truck:before {
+  content: " ";
+  position: absolute;
+  width: 25px;
+  box-shadow:
+    -30px 28px 0 1.5px #fff,
+     -35px 18px 0 1.5px #fff;
+}
+.wheels {
+  background: url(https://santra-schema.github.io//images/wheels.svg) no-repeat;
+  height: 15px;
+  margin-bottom: 0;
+}
+}
 </style>
-<div class="loop-wrapper" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+<div class="loop-wrapper shadow-bottom" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
 <div class="flag"><img src="https://santra-schema.github.io//images/flag.png" width="30%" height="100%"></div>
   <div class="mountain" ></div>
   <div class="jungle"></div>
@@ -985,11 +1017,11 @@ z-index:-5;
   </div>
   <div class="span5a"><a target="_blank" href="https://odishatourism.gov.in/content/tourism/en/discover/major-cities/puri.html">Puri</a><b class="rate1">5/10</b><br> <a target="_blank" href="https://www.wbtourismgov.in/destination/place/digha">Digha</a><b class="rate3">3/10</b></div>
 </div> 
-<div>Rating based upon My Experience (<b class="rate1">Wanna go again & again</b>, <b class="rate2">Can visit sometimes</b> , <b class="rate3">Was my last visit</b> )</div>
+<div id="note">Rating based upon My Experience (<b class="rate1">Wanna go again & again</b>, <b class="rate2">Can visit sometimes</b> , <b class="rate3">Was my last visit</b> )</div>
 <script>
 
 function  bigImg(x) {
-
+	
   $(".truck").css({"animation-play-state": "paused","-webkit-animation-play-state" : "paused"});
   $(".tree:nth-child(2)").css({"animation-play-state": "paused","-webkit-animation-play-state" : "paused"});
   $(".tree:nth-child(3)").css({"animation-play-state": "paused","-webkit-animation-play-state" : "paused"});
@@ -1016,6 +1048,8 @@ function  bigImg(x) {
 	$(".span5").css({"animation-play-state": "paused","-webkit-animation-play-state" : "paused"});
 	$(".span5a").css({"animation-play-state": "paused","-webkit-animation-play-state" : "paused"});
 	$(".flag").css({"animation-play-state": "paused","-webkit-animation-play-state" : "paused"});
+	
+	
 }
 
 
