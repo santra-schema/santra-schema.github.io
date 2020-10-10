@@ -17,7 +17,13 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://santra-schema.github.io/css/aboutcss.css">
 	<link rel="stylesheet" href="https://santra-schema.github.io/css/footer.css">
-
+<script type="text/javascript">
+function zoom() {
+		if(screen.width > 1200 || screen.width < 1600){
+            document.body.style.zoom = "80%" 
+        }
+}
+</script>
 	<style>
 
 .faicon{
@@ -268,7 +274,7 @@ ul {
  
 </style>
 </head>
-<body>
+<body onload="zoom()">
 	<div>
 		<img src="https://santra-schema.github.io//images/header.jpg" style="width:100%;" alt="header"  onContextMenu="return false;">
 	</div>
