@@ -19,8 +19,15 @@
 
 
 </style>
+<script type="text/javascript">
+function zoom() {
+		if(screen.width > 1200 || screen.width < 1600){
+            document.body.style.zoom = "80%" 
+        }
+}
+</script>
 </head>
-<body>
+<body onload="zoom()">
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i><br>Top	</button>
 <script>
 //Get the button
