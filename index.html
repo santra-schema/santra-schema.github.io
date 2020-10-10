@@ -19,8 +19,15 @@
 
 
 </style>
+<script type="text/javascript">
+function zoom() {
+		if(screen.width > 1200 || screen.width < 1600){
+            document.body.style.zoom = "75%" 
+        }
+}
+</script>
 </head>
-<body>
+<body onload="zoom()">
 	<div id="signdiv">
 		<img id="sign" src="https://santra-schema.github.io//images/sign.jpg" onContextMenu="return false;" alt="header">
 	</div>
