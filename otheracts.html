@@ -90,13 +90,6 @@ function topFunction() {
 		$("#br").hide();
 	}
 	</script>
-<span id="spaneq1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-spacing: 0px;"id="aspan">=========</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="bspan">=========</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="cspan">=========</span>
-	<script>
-	if(screen.width < 800){
-		$("#spaneq1").prepend("&nbsp;&nbsp;&nbsp;");
-		$("#cspan").prepend("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
-	}
-	</script>
 	<br>
 	<br>
 	
@@ -780,9 +773,6 @@ $(document).ready(function() {
 	$("#actdiv").show();
 	$("#gossipdiv").hide();
 	$("#hobbydiv").hide();
-	document.getElementById("aspan").style.color = "#ba561c";
-	document.getElementById("bspan").style.color = "white";
-	document.getElementById("cspan").style.color = "white";
 	$("#itprof").show();
 	$("#cust").hide();
 	$("#other").hide();
@@ -797,9 +787,7 @@ function act() {
 	$("#actdiv").show();
 	$("#gossipdiv").hide();
 	$("#hobbydiv").hide();
-	document.getElementById("aspan").style.color = "#ba561c";
-	document.getElementById("bspan").style.color = "white";
-	document.getElementById("cspan").style.color = "white";
+
 }
 function gossip() {
 	$("#actdiv").hide();
@@ -815,9 +803,7 @@ function gossip() {
 	document.getElementById("tagitprof").style.color = "white";
 	document.getElementById("tagcust").style.color = "#4f4e4d";
 	document.getElementById("tagother").style.color = "#4f4e4d";
-	document.getElementById("aspan").style.color = "white";
-	document.getElementById("bspan").style.color = "#ba561c";
-	document.getElementById("cspan").style.color = "white";
+
 }
 function hobby() {
 	$("#actdiv").hide();
@@ -827,9 +813,6 @@ function hobby() {
 	$("#travel").hide();
 	$("#book").hide();
 	$("#photo").hide();
-	document.getElementById("aspan").style.color = "white";
-	document.getElementById("bspan").style.color = "white";
-	document.getElementById("cspan").style.color = "#ba561c";
 	document.getElementById("tagpaint").style.background = "#ba561c";
 	document.getElementById("tagtravel").style.background = "#fff9f2";
 	document.getElementById("tagbook").style.background = "#fff9f2";
