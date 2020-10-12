@@ -290,13 +290,14 @@ animation: hill 40s 0s linear infinite;
   
 }
 .flag{
-left: -50px;
+right: 600px;
 animation: hill 40s 0s linear infinite;
   position: absolute;
 z-index:-5;
 }
 
 @media only screen and (max-width: 767px) {
+	
 .loop-wrapper {
   margin-left: -5px;
   position: relative;
@@ -336,5 +337,156 @@ font-size:8px;
   background: url(https://santra-schema.github.io//images/wheels.svg) no-repeat;
   height: 15px;
   margin-bottom: 0;
+}
+
+.mountain {
+  position: absolute;
+  right: -400px;
+  bottom: -55px;
+  width: 10px;
+  height: 70px;
+  box-shadow: 
+    0 0 0 50px #4d1900,
+    60px 50px 0 70px #523922,
+    90px 90px 0 50px #4d3400,
+    150px 150px 0 50px #6e450f,
+    170px 170px 0 50px #d8edea,
+    200px 250px 0 50px #c4975c,
+    250px 250px 0 50px #451d03,
+    290px 320px 0 50px #9c6e44,
+    325px 400px 0 50px #baedff,
+	400px 450px 0 50px #9c6e44;
+  transform: rotate(130deg);
+  animation: mtn 40s 0s linear infinite;
+}
+.jungle {
+  position: absolute;
+  right: -500px;
+  bottom: -50px;
+  width: 40px;
+  border-radius: 10%;
+  height: 40px;
+  box-shadow: 
+    0 0 0 50px green,
+    50px 0 0 60px #48bd5f,
+    150px 0 0 50px green;
+  animation: hill 40s 0s linear infinite;
+}
+.hill {
+  position: absolute;
+  right: -900px;
+  bottom: -50px;
+  width: 400px;
+  border-radius: 50%;
+  height: 20px;
+  box-shadow: 
+    0 0 0 50px green,
+    -20px 0 0 20px #4DB6AC,
+    -90px 0 0 50px #4DB6AC,
+    250px 0 0 50px #48bd5f,
+    290px 0 0 50px #4DB6AC,
+    620px 0 0 50px #48bd5f;
+  animation: hill 40s 0s linear infinite;
+}
+.city1 {
+  position: absolute;
+  right: -1020px;
+  bottom: -50px;
+  width: 20px;
+  height: 150px;
+  background-color:#5e6773;
+  box-shadow: 
+    0 0 0 50px #6b98d6,
+    250px 0 0 40px #3b3d47,
+    400px 0 0 50px #ebd259;
+	420px 0 0 40px #696b70;
+  animation: hill 40s 0s linear infinite;
+}
+.city2 {
+  position: absolute;
+  right: -1020px;
+  bottom: -50px;
+  width: 10px;
+  height: 100px;
+  background-color:#5e6773;
+  box-shadow: 
+    100px 0 0 30px #4e94f2,
+    220px 0 0 50px #606e6b;
+  animation: hill 40s 0s linear infinite;
+}
+.city3 {
+  position: absolute;
+  right: -1480px;
+  bottom: -50px;
+  width: 15px;
+  height: 100px;
+  background-color:#696b70;
+  box-shadow: 
+    0 0 0 40px #696b70;
+  animation: hill 40s 0s linear infinite;
+}
+.water {
+  position: absolute;
+  right: -2180px;
+  bottom: -50px;
+  width: 700px;
+  border-radius: 65%;
+  height: 16px;
+  box-shadow: 
+    0 0 0 50px #7cb3fc;
+  animation: hill 40s 0s linear infinite;
+}
+.span1{ 
+  position: absolute;
+  right:150px;
+animation: hill 40s 0s linear infinite;
+}
+.span1a{ 
+  position: absolute;
+  right: 0px;
+animation: hill 40s 0s linear infinite;
+}
+
+.span1b{ 
+  position: absolute;
+  right: -150px;
+animation: hill 40s 0s linear infinite;
+}
+
+.span2{ 
+  position: absolute;
+  right: -500px;
+animation: hill 40s 0s linear infinite;
+}
+
+.span2a{ 
+  position: absolute;
+  right: -650px;
+animation: hill 40s 0s linear infinite;
+}
+.span2b{ 
+  position: absolute;
+  right: -800px;
+animation: hill 40s 0s linear infinite;
+}
+.span3{ 
+  position: absolute;
+  right: -1170px;
+animation: hill 40s 0s linear infinite;
+}
+.span3a{ 
+  position: absolute;
+  right: -1300px;
+animation: hill 40s 0s linear infinite;
+}
+.span5{ 
+  position: absolute;
+  right: -1700px;
+animation: hill 40s 0s linear infinite;
+}
+.span5a{ 
+  position: absolute;
+  right: -1850px;
+animation: hill 40s 0s linear infinite;
 }
 }
