@@ -1,0 +1,340 @@
+
+.loop-wrapper {
+  margin-left: -5px;
+  position: relative;
+  display: block;
+  width: 800px;
+  height: 250px;
+  overflow: hidden;
+  border-bottom: 3px solid #fff;
+  color: #fff;
+}
+.loop-wrapper a{
+color:white;
+}.loop-wrapper a:hover {
+  color: #ed680e;
+}
+.rate1{
+color:#11bf29;
+padding-left:10px;
+font-weight: bold;
+}
+.rate2{
+color:#e8db1c;
+padding-left:10px;
+font-weight: bold;
+}
+.rate3{
+color:#d91d00;
+padding-left:10px;
+font-weight: bold;
+}
+
+.loop-wrapper:hover {
+animation-play-state:paused;
+-webkit-animation-play-state:paused;
+  cursor: pointer;
+  }
+.mountain {
+  position: absolute;
+  right: -100px;
+  bottom: -55px;
+  width: 10px;
+  height: 70px;
+  box-shadow: 
+    0 0 0 50px #4d1900,
+    60px 50px 0 70px #523922,
+    90px 90px 0 50px #4d3400,
+    150px 150px 0 50px #6e450f,
+    170px 170px 0 50px #d8edea,
+    200px 250px 0 50px #c4975c,
+    250px 250px 0 50px #451d03,
+    290px 320px 0 50px #9c6e44,
+    325px 400px 0 50px #baedff,
+	400px 450px 0 50px #9c6e44;
+  transform: rotate(130deg);
+  animation: mtn 40s 0s linear infinite;
+}
+.jungle {
+  position: absolute;
+  right: -200px;
+  bottom: -50px;
+  width: 40px;
+  border-radius: 10%;
+  height: 40px;
+  box-shadow: 
+    0 0 0 50px green,
+    50px 0 0 60px #48bd5f,
+    150px 0 0 50px green;
+  animation: hill 40s 0s linear infinite;
+}
+.hill {
+  position: absolute;
+  right: -800px;
+  bottom: -50px;
+  width: 400px;
+  border-radius: 50%;
+  height: 20px;
+  box-shadow: 
+    0 0 0 50px green,
+    -20px 0 0 20px #4DB6AC,
+    -90px 0 0 50px #4DB6AC,
+    250px 0 0 50px #48bd5f,
+    290px 0 0 50px #4DB6AC,
+    620px 0 0 50px #48bd5f;
+  animation: hill 40s 0s linear infinite;
+}
+.city1 {
+  position: absolute;
+  right: -920px;
+  bottom: -50px;
+  width: 20px;
+  height: 150px;
+  background-color:#5e6773;
+  box-shadow: 
+    0 0 0 50px #6b98d6,
+    250px 0 0 40px #3b3d47,
+    400px 0 0 50px #ebd259;
+	420px 0 0 40px #696b70;
+  animation: hill 40s 0s linear infinite;
+}
+.city2 {
+  position: absolute;
+  right: -920px;
+  bottom: -50px;
+  width: 10px;
+  height: 100px;
+  background-color:#5e6773;
+  box-shadow: 
+    100px 0 0 30px #4e94f2,
+    220px 0 0 50px #606e6b;
+  animation: hill 40s 0s linear infinite;
+}
+.city3 {
+  position: absolute;
+  right: -1380px;
+  bottom: -50px;
+  width: 15px;
+  height: 100px;
+  background-color:#696b70;
+  box-shadow: 
+    0 0 0 40px #696b70;
+  animation: hill 40s 0s linear infinite;
+}
+.water {
+  position: absolute;
+  right: -2080px;
+  bottom: -50px;
+  width: 700px;
+  border-radius: 65%;
+  height: 16px;
+  box-shadow: 
+    0 0 0 50px #7cb3fc;
+  animation: hill 40s 0s linear infinite;
+}
+.span1{ 
+  position: absolute;
+  right: 450px;
+animation: hill 40s 0s linear infinite;
+}
+.span1a{ 
+  position: absolute;
+  right: 300px;
+animation: hill 40s 0s linear infinite;
+}
+
+.span1b{ 
+  position: absolute;
+  right: 150px;
+animation: hill 40s 0s linear infinite;
+}
+
+.span2{ 
+  position: absolute;
+  right: -200px;
+animation: hill 40s 0s linear infinite;
+}
+
+.span2a{ 
+  position: absolute;
+  right: -350px;
+animation: hill 40s 0s linear infinite;
+}
+.span2b{ 
+  position: absolute;
+  right: -500px;
+animation: hill 40s 0s linear infinite;
+}
+.span3{ 
+  position: absolute;
+  right: -1070px;
+animation: hill 40s 0s linear infinite;
+}
+.span3a{ 
+  position: absolute;
+  right: -1200px;
+animation: hill 40s 0s linear infinite;
+}
+.span5{ 
+  position: absolute;
+  right: -1600px;
+animation: hill 40s 0s linear infinite;
+}
+.span5a{ 
+  position: absolute;
+  right: -1750px;
+animation: hill 40s 0s linear infinite;
+}
+.tree, .tree:nth-child(2), .tree:nth-child(3) {
+  position: absolute;
+  height: 100px; 
+  width: 35px;
+  bottom: 0;
+  background: url(https://santra-schema.github.io//images/tree.svg) no-repeat;
+}
+.rock {
+  margin-top: -17%;
+  height: 2%; 
+  width: 2%;
+  bottom: -2px;
+  border-radius: 50px;
+  position: absolute;
+  background: #ddd;
+}
+.truck, .wheels {
+  transition: all ease;
+  width: 85px;
+  margin-right: -60px;
+  bottom: 0px;
+  right: 50%;
+  position: absolute;
+  background: #eee;
+}
+.truck {
+  background: url(https://santra-schema.github.io//images/truck.svg) no-repeat;
+  background-size: contain;
+  height: 60px;
+}
+.truck:before {
+  content: " ";
+  position: absolute;
+  width: 25px;
+  box-shadow:
+    -30px 28px 0 1.5px #fff,
+     -35px 18px 0 1.5px #fff;
+}
+.wheels {
+  background: url(https://santra-schema.github.io//images/wheels.svg) no-repeat;
+  height: 15px;
+  margin-bottom: 0;
+}
+
+.tree  { animation: tree 3s 0.000s linear infinite; }
+.tree:nth-child(2)  { animation: tree2 0s 0.150s linear infinite; }
+.tree:nth-child(3)  { animation: tree3 8s 0.050s linear infinite; }
+.rock  { animation: rock 4s   -0.530s linear infinite; }
+.truck  { animation: truck 4s   0.080s ease infinite; }
+.wheels  { animation: truck 4s   0.001s ease infinite; }
+.truck:before { animation: wind 1.5s   0.000s ease infinite; }
+
+@keyframes span {
+   100% {
+    transform: translateX(-2000px);
+  }
+}
+
+@keyframes tree {
+  0%   { transform: translate(1350px); }
+  50% {}
+  100% { transform: translate(-50px); }
+}
+@keyframes tree2 {
+  0%   { transform: translate(650px); }
+  50% {}
+  100% { transform: translate(-50px); }
+}
+@keyframes tree3 {
+  0%   { transform: translate(2750px); }
+  50% {}
+  100% { transform: translate(-50px); }
+}
+
+@keyframes rock {
+  0%   { right: -200px; }
+  100% { right: 2000px; }
+}
+@keyframes truck {
+  0%   { }
+  6%   { transform: translateY(0px); }
+  7%   { transform: translateY(-6px); }
+  9%   { transform: translateY(0px); }
+  10%   { transform: translateY(-1px); }
+  11%   { transform: translateY(0px); }
+  100%   { }
+}
+@keyframes wind {
+  0%   {  }
+  50%   { transform: translateY(3px) }
+  100%   { }
+}
+@keyframes mtn {
+  100% {
+    transform: translateX(-2000px) rotate(130deg);
+  }
+}
+@keyframes hill {
+  100% {
+    transform: translateX(-2000px);
+  }
+  
+  
+}
+.flag{
+left: -50px;
+animation: hill 40s 0s linear infinite;
+  position: absolute;
+z-index:-5;
+}
+
+@media only screen and (max-width: 767px) {
+.loop-wrapper {
+  margin-left: -5px;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-bottom: 3px solid #fff;
+  color: #fff;
+}
+#note{
+font-size:8px;
+}
+.truck, .wheels {
+  transition: all ease;
+  width: 85px;
+  margin-right: -60px;
+  bottom: 0px;
+  right: 80%;
+  position: absolute;
+  background: #eee;
+}
+.truck {
+  background: url(https://santra-schema.github.io//images/truck.svg) no-repeat;
+  background-size: contain;
+  height: 60px;
+}
+.truck:before {
+  content: " ";
+  position: absolute;
+  width: 25px;
+  box-shadow:
+    -30px 28px 0 1.5px #fff,
+     -35px 18px 0 1.5px #fff;
+}
+.wheels {
+  background: url(https://santra-schema.github.io//images/wheels.svg) no-repeat;
+  height: 15px;
+  margin-bottom: 0;
+}
+}
