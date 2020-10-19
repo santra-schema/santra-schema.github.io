@@ -1,7 +1,12 @@
 
-.slider {
+#paint .slider {
 margin-left:0px;
   width: 60%;
+}
+
+#photo .slider {
+margin-left:0px;
+  width: 80%;
 }
 
 .slide_viewer {
