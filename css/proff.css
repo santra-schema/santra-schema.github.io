@@ -17,13 +17,15 @@
 width:84%;	
 }
 
-.slide img{
+#paint .slide img{
 	margin-left:10%;width:350px;height:340px;
 }
 .slide span{
 	float:right;text-align:justify;
 }
-
+#photo .slide img{
+	margin-left:30%;width:420px;height:340px;
+}
 #myBtn {
   display: none;
   position: fixed;
