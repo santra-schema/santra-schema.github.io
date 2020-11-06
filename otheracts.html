@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-<title>Sudipta Santra - Activities</title>
+<title>Santra - Professional</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="https://santra-schema.github.io/images/favicon.ico" />
 	<link href="css/font-awesome.min.css" rel="stylesheet">
@@ -96,10 +96,61 @@ function topFunction() {
 	<br>
 	
 <div id="actdiv" class="actdiv">
-No Contents are uploaded by Author...
+	<button style="background-color:#ba561c; border-color:#ba561c;" id="tagweb" class="btn btn-primary" onclick="web()">Website Designer</button>
+	<button style="color: #4f4e4d; background-color:#fff9f2; border-color:#ba561c;" id="tagcv" class="btn btn-primary" onclick="cv()">Resume Builder</button>
+
+	<div id="bra"><br><br></div>
+	
+	<script>
+	if(screen.width > 800){
+		$("#bra").show();
+	}else{
+		$("#bra").hide();
+	}
+	</script>
+	<div id="web">
+		Individual Website
+		
+	
+	</div>
+	<div id="cv">	
+		<span style="color:#ff7729;">CV format helped many Associates to get an initial impression for shortlisted in</span> <br><br>
+		<img src="https://santra-schema.github.io//images/comapnies.png" style="width:50%;height:50%;" alt="header">
+		<br><br><br><br><br>
+		<div style=" width: 100%;">
+			<div style=" width: 20%; float:left;">
+				<img src="https://santra-schema.github.io//images/resume.jpg" style="width:90%;height:70%;" alt="header"></div>
+			<div style=" width: 50%; float:left;">
+				<span style="font-size:18px;"><a style="color:#ff7729;"target="_blank" href="https://santra-schema.github.io/contact.html">
+				Contact Me</a> for <br>CV Generator Application Form</span><br><br>
+				
+				<input type="radio" id="pdf" name="type" value="0" checked>
+				<label id="pdf">PDF</label> <span style="color:#ff7729;" id="aaaa"><i>&#36;4.99</i></span><br>
+				<input type="radio" id="doc" name="type" value="1">
+				<label id="doc">DOC</label> <span style="color:#ff7729;" id="bbbb"><i>&#36;7.99</i></span><br>
+				<script>
+				$("#aaaa").show();
+				$("#bbbb").hide();
+					$('input[type="radio"]').click(function(){
+						var inputValue = $(this).attr("value");
+						if(inputValue == "0"){
+							$("#aaaa").show();
+							$("#bbbb").hide();
+						}else{
+							$("#aaaa").hide();
+							$("#bbbb").show();
+						}
+					});
+				
+				</script>
+				
+			</div>
+		</div>
+		
+		
+	</div>
 </div>	
 
-	
 <div id="gossipdiv" class="gossipdiv">
 	<button style="background-color:#ba561c; border-color:#ba561c;" id="tagitprof" class="btn btn-primary" onclick="itprof()">Comments from IT Professional</button>
 	<button style="color: #4f4e4d; background-color:#fff9f2; border-color:#ba561c;" id="tagcust" class="btn btn-primary" onclick="cust()">Comments from Customer</button>
@@ -586,6 +637,10 @@ $(document).ready(function() {
 	$("#itprof").show();
 	$("#cust").hide();
 	$("#other").hide();
+	$("#web").show();
+	$("#cv").hide();
+	document.getElementById("tagweb").style.background = "#ba561c";
+	document.getElementById("tagcv").style.background = "#fff9f2";
 	document.getElementById("tagitprof").style.background = "#ba561c";
 	document.getElementById("tagcust").style.background = "#fff9f2";
 	document.getElementById("tagother").style.background = "#fff9f2";
@@ -597,8 +652,15 @@ function act() {
 	$("#actdiv").show();
 	$("#gossipdiv").hide();
 	$("#hobbydiv").hide();
+	$("#web").show();
+	$("#cv").hide();
+	document.getElementById("tagweb").style.background = "#ba561c";
+	document.getElementById("tagcv").style.background = "#fff9f2";
+	document.getElementById("tagweb").style.color = "white";
+	document.getElementById("tagcv").style.color = "#4f4e4d";
 
 }
+
 function gossip() {
 	$("#actdiv").hide();
 	$("#gossipdiv").show();
@@ -633,6 +695,22 @@ function hobby() {
 	document.getElementById("tagphoto").style.color = "#4f4e4d";
 }
 
+function web() {
+	$("#web").show();
+	$("#cv").hide();
+	document.getElementById("tagweb").style.background = "#ba561c";
+	document.getElementById("tagcv").style.background = "#fff9f2";
+	document.getElementById("tagweb").style.color = "white";
+	document.getElementById("tagcv").style.color = "#4f4e4d";
+}
+function cv() {
+	$("#web").hide();
+	$("#cv").show();
+	document.getElementById("tagweb").style.background = "#fff9f2";
+	document.getElementById("tagcv").style.background = "#ba561c";
+	document.getElementById("tagweb").style.color = "#4f4e4d";
+	document.getElementById("tagcv").style.color = "white";
+}
 function itprof() {
 	$("#itprof").show();
 	$("#cust").hide();
