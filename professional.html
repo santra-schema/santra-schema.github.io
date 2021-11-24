@@ -113,7 +113,8 @@ function topFunction() {
 		}else{
 			monthDiff = dt.getMonth()+2;
 			if(monthDiff==12){
-				yearsDiff=yearsDiff+1
+				yearsDiff=yearsDiff;
+				monthDiff=0;
 			}else{
 				yearsDiff = yearsDiff - 1;
 			}
