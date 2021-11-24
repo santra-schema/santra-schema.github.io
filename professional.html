@@ -100,6 +100,48 @@ function topFunction() {
 			</tr>
 		</tbody>
 	</table>
+<script>
+		var date1 = new Date('12/8/2016');
+		var date2 = new Date('11/19/2021');
+		var dt = new Date();
+		var yearsDiff =  dt.getFullYear() - date1.getFullYear();
+		var yearsDiff2 =  dt.getFullYear() - date2.getFullYear();
+		var monthDiff;
+		var monthDiff2;
+		if(dt.getMonth() == date1.getMonth()){
+			monthDiff = 1;
+		}else{
+			monthDiff = dt.getMonth()+2;
+			if(monthDiff==12){
+				yearsDiff=yearsDiff+1
+			}else{
+				yearsDiff = yearsDiff - 1;
+			}
+		}
+		if(dt.getMonth() == date2.getMonth()){
+			monthDiff2 = 1;
+		}else{
+			monthDiff2 = dt.getMonth()+2;
+			yearsDiff2 = yearsDiff2 - 1;
+		}
+		var month;
+		var expY = yearsDiff+" Years";
+		var expM = monthDiff+" Months";
+		var month2;
+		if(monthDiff2 < 6){
+			month2 = monthDiff2;
+		}else if(monthDiff2 >= 6 && monthDiff2 != 12){
+			month2 = monthDiff2-1;
+		}else{
+			month2 = 0;
+		}
+		var exp2 = yearsDiff2+"."+month2+" Y";
+		document.getElementById('exp2').innerHTML = exp;
+		document.getElementById('expY').innerHTML = expY;
+		document.getElementById('expM').innerHTML = expM;
+	</script>	
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <br>
 	<table>
 		<tbody style="vertical-align:top;">
@@ -140,46 +182,7 @@ function topFunction() {
 			</tr>
 		</tbody>
 	</table>
-<script>
-		var date1 = new Date('12/8/2016');
-		var date2 = new Date('11/19/2021');
-		var dt = new Date();
-		var yearsDiff =  dt.getFullYear() - date1.getFullYear();
-		var yearsDiff2 =  dt.getFullYear() - date2.getFullYear();
-		var monthDiff;
-		var monthDiff2;
-		if(dt.getMonth() == date1.getMonth()){
-			monthDiff = 1;
-		}else{
-			monthDiff = dt.getMonth()+2;
-			yearsDiff = yearsDiff - 1;
-		}
-		if(dt.getMonth() == date2.getMonth()){
-			monthDiff2 = 1;
-		}else{
-			monthDiff2 = dt.getMonth()+2;
-			yearsDiff2 = yearsDiff2 - 1;
-		}
-		var month;
-		var expY = yearsDiff+" Years";
-		var expM = monthDiff+" Months";
-		alert(expY+'--'+expM);
-		var month2;
-		if(monthDiff2 < 6){
-			month2 = monthDiff2;
-		}else if(monthDiff2 >= 6 && monthDiff2 != 12){
-			month2 = monthDiff2-1;
-		}else{
-			month2 = 0;
-		}
-		var exp2 = yearsDiff2+"."+month2+" Y";
-alert(exp2);
-document.getElementById('exp2').innerHTML = exp;
-		document.getElementById('expY').innerHTML = expY;
-		document.getElementById('expM').innerHTML = expM;
-	</script>	
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	
 	</div>
 	<div class="logoclass">
