@@ -17,6 +17,7 @@
 .spanhead1{
 	font-size:22px; color:#ff8847;
 }
+dfn {font-style: normal;}
 #myBtn {
   display: none;
   position: fixed;
