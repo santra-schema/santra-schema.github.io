@@ -494,4 +494,9 @@ animation: hill 40s 0s linear infinite;
   right: -1850px;
 animation: hill 40s 0s linear infinite;
 }
+.span5b{ 
+  position: absolute;
+  right: -2050px;
+animation: hill 40s 0s linear infinite;
+}
 }
