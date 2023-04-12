@@ -185,6 +185,11 @@ animation: hill 40s 0s linear infinite;
   right: -1750px;
 animation: hill 40s 0s linear infinite;
 }
+.span5b{ 
+  position: absolute;
+  right: -1900px;
+animation: hill 40s 0s linear infinite;
+}
 .tree, .tree:nth-child(2), .tree:nth-child(3) {
   position: absolute;
   height: 100px; 
